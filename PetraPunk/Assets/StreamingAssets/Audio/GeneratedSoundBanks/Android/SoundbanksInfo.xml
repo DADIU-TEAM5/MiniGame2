@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\dadiu\Documents\GitHub\ProjectPetraPunk\PetraPunk\PetraPunk_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\dadiu\Documents\GitHub\ProjectPetraPunk\PetraPunk\PetraPunk_WwiseProject\.cache\Android\</SourceFilesRoot>
+		<ProjectRoot>C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\</SourceFilesRoot>
 		<SoundBanksRoot>C:\Users\dadiu\Documents\GitHub\ProjectPetraPunk\PetraPunk\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Android\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\dadiu\Documents\GitHub\ProjectPetraPunk\PetraPunk\PetraPunk_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,7 +21,7 @@
 			<ShortName>TestBank</ShortName>
 			<Path>TestBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1269172605" Name="TestAudio" ObjectPath="\Events\Default Work Unit\TestAudio" DurationType="OneShot" DurationMin="2.125011" DurationMax="2.125011"/>
+				<Event Id="1269172605" Name="TestAudio" ObjectPath="\Events\Default Work Unit\TestAudio" DurationType="OneShot" DurationMin="4.528827" DurationMax="4.528827"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="946976637" Language="SFX">
