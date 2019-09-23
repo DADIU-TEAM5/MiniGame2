@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/GyroTest.unity
+    guid: 38e1dd993c5e05e4fa992c806fda09c9
   m_configObjects: {}
