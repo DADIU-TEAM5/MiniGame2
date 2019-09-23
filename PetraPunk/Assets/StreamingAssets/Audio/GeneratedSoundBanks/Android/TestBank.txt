@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1269172605	TestAudio			\Default Work Unit\TestAudio	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	946976637	plantDead	C:\Users\dadiu\Documents\GitHub\ProjectPetraPunk\PetraPunk\PetraPunk_WwiseProject\.cache\Android\SFX\plantDead_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\plantDead		187490
+
