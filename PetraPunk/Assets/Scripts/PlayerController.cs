@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
 
         }
         
-        print("speed: "+Speed + " speed on slope: " + Speed * slopeMultiplier);
+       // print("speed: "+Speed + " speed on slope: " + Speed * slopeMultiplier);
 
     }
 
