@@ -128,6 +128,8 @@ public class PlayerController : MonoBehaviour
             OnSlope = hit.transform.CompareTag("Slope");
 
         }
+        
+        print("speed: "+Speed + " speed on slope: " + Speed * slopeMultiplier);
 
     }
 
