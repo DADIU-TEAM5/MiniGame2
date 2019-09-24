@@ -1,0 +1,18 @@
+Event	ID	Name			Wwise Object Path	Notes
+	365331358	AmbienceMain			\Ambience\AmbienceMain	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	51958291	CricketsLFO_01			\Default Work Unit\CricketsLFO_01	
+	391208523	CricketsLFO_02			\Default Work Unit\CricketsLFO_02	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	52993535	FluteAmb_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\FluteAmb_01_32A0B821.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\Flutes\FluteAmb_01		407213
+	66492164	Crickets	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\Crickets_9F132F2F.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\Crickets		1360560
+	283056197	MouthWind_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\MouthWind_02_9F132F2F.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\WindBlend\MouthWind_02		745137
+	319432359	FluteAmb_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\FluteAmb_05_32A0B821.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\Flutes\FluteAmb_05		350952
+	557655837	MouthWind_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\MouthWind_01_9F132F2F.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\WindBlend\MouthWind_01		1462110
+	606289397	FluteAmb_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\FluteAmb_03_32A0B821.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\Flutes\FluteAmb_03		328843
+	725757526	FluteAmb_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\FluteAmb_02_32A0B821.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\Flutes\FluteAmb_02		385732
+	757000106	MouthWind_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\MouthWind_03_9F132F2F.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\WindBlend\MouthWind_03		891703
+	775343429	FluteAmb_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\FluteAmb_04_32A0B821.wem		\Actor-Mixer Hierarchy\Ambience\AmbienceMix\Flutes\FluteAmb_04		410103
+
