@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	1269172605	TestAudio			\Default Work Unit\TestAudio	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	946976637	plantDead	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\plantDead_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\plantDead		187490
+	946976637	plantDead	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\plantDead_32A0B821.wem		\Actor-Mixer Hierarchy\Default Work Unit\plantDead		32022
 
