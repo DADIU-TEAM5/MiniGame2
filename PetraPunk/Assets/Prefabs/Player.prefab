@@ -173,13 +173,13 @@ MonoBehaviour:
   FlatSpeed: 45
   SlopeSpeed: 80
   FlatAcceleration: 2
-  SlopeAcceleration: 80
+  SlopeAcceleration: 4
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
   MinSpeed: 20
   HorizontalSpeed: 10
-  SlopeHorizontalSpeed: 5
-  slopeMultiplier: 5
+  SlopeHorizontalSpeed: 10
+  slopeMultiplier: 2
   invulnerableSecs: 1
   life: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
   SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
