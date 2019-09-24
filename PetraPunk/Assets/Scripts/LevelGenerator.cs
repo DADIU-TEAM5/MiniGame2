@@ -7,6 +7,7 @@ public class LevelGenerator : MonoBehaviour
 
     public GameObject[] LevelSegments;
 
+    SceneGenrator LevelGenerationData;
 
 
     // Start is called before the first frame update
