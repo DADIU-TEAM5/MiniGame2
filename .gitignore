@@ -34,3 +34,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+PetraPunk/Assets/Wwise/Deployment/Plugins/Android/arm64-v8a/Profile/libAkSoundEngine.so.meta
+PetraPunk/Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/Profile/libAkSoundEngine.so.meta
+PetraPunk/Assets/Wwise/Deployment/Plugins/Android/x86/Profile/libAkSoundEngine.so.meta
