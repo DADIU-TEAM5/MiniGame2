@@ -4,19 +4,14 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public int RunTimeMinutes = 1;
     public IntVariable runTime;
     public IntVariable timePoints;
     public GameObject FloatingTextPrefab;
-
-    private float fraction = 0;
-    public float speed = 0.5f;
       
     // Start is called before the first frame update
     void Start()
     {
-        // Transfer value to ScriptableObject and convert to milliseconds.
-        runTime.Value = (RunTimeMinutes * 60 * 1000);
+
     }
 
     // Update is called once per frame
