@@ -17,7 +17,10 @@ public class PressScreen : MonoBehaviour
     {
         if(Input.touchCount > 0||Input.anyKeyDown)
         {
+            
+
             SceneManager.LoadScene(0);
+            
         }
         
     }
