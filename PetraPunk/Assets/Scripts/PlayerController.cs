@@ -5,15 +5,25 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float Speed;
-    public float SlopeSpeed;
+    float Speed;
 
-    float currentSpeed;
+    [Header("Controller Parameters")]
+    public float FlatSpeed;
+    public float SlopeSpeed;
+    public float FlatAcceleration;
+    public float SlopeAcceleration;
+    public float OffSlopeDecay;
+    public float ObstacleSpeedLoss;
+    public float MinSpeed;
+    public float HorizontalSpeed;
+
+    [Header("Other stuff")]
+
 
     public FloatVariable SteeringInput;
 
 
-    public float HorizontalSpeed;
+    
 
 
     RaycastHit[] collisions;
@@ -55,12 +65,43 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         if (OnSlope)
-            currentSpeed = SlopeSpeed;
+        {
+            if(Speed < SlopeSpeed)
+            {
+                Speed += SlopeAcceleration *Time.deltaTime;
+
+                if(Speed> SlopeSpeed)
+                {
+                    Speed = SlopeSpeed;
+                }
+            }
+            
+        }
         else
-            currentSpeed = Speed;
+        {
+            if(Speed< FlatSpeed)
+            {
+                Speed += FlatAcceleration * Time.deltaTime;
+                if (Speed > FlatSpeed)
+                {
+                    Speed = FlatSpeed;
+                }
+
+            }
+            else if(Speed > FlatSpeed)
+            {
+                Speed -= OffSlopeDecay * Time.deltaTime;
+                if (Speed < FlatSpeed)
+                {
+                    Speed = FlatSpeed;
+                }
+
+            }
+            
+        }
 
 
-        transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
+        transform.Translate(Vector3.forward * Speed * Time.deltaTime);
 
         transform.Translate(Vector3.right *input * Time.deltaTime* HorizontalSpeed);
 
@@ -83,6 +124,16 @@ public class PlayerController : MonoBehaviour
     {
         direction.y = 0;
         transform.Translate(direction);
+
+        if( Speed > MinSpeed)
+        {
+            Speed -= ObstacleSpeedLoss;
+            if( Speed< MinSpeed)
+            {
+                Speed = MinSpeed;
+            }
+
+        }
     }
 
     public void RotatePlayer(Vector3 normal)
