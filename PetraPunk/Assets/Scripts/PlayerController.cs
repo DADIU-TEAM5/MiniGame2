@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     float currentSpeed;
 
+    public FloatVariable SteeringInput;
+
 
     public float HorizontalSpeed;
 
@@ -21,6 +23,9 @@ public class PlayerController : MonoBehaviour
 
     public bool OnSlope = false;
 
+
+    float input;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +35,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        input = SteeringInput.Value;
+        input += Input.GetAxis("Horizontal");
 
         Move();
 
@@ -54,7 +62,7 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
 
-        transform.Translate(Vector3.right * Input.GetAxis("Horizontal") * Time.deltaTime* HorizontalSpeed);
+        transform.Translate(Vector3.right *input * Time.deltaTime* HorizontalSpeed);
 
         int layerMask = 1 << 9;
         RaycastHit hit;

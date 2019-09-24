@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class GyroController : MonoBehaviour
 {
-    public Text text;
     public float steeringInput;
     public float maxVelocity;
+
+
+    public FloatVariable steeringInputFloat;
 
     //public Text tex;
 
@@ -33,16 +35,14 @@ public class GyroController : MonoBehaviour
         
         float cappedRotation = 
 
-        steeringInput = currentRot;
+        steeringInput = currentRot *-10f;
         Debug.Log(steeringInput);
-        string temp = "Steering value:  " + steeringInput;
-        text.text = temp;
 
 
-        
-       
+
+        steeringInputFloat.Value = steeringInput;
         //transform.Rotate(Vector3.up * Mathf.Min(steeringInput * 100, maxVelocity) * Time.deltaTime);
-        transform.Translate(Vector3.left * steeringInput * 10 * Time.deltaTime);
+       // transform.Translate(Vector3.left * steeringInput * 10 * Time.deltaTime);
 
         //if (Mathf.Abs(currentRot) > rotationThreshHold)
         //{
