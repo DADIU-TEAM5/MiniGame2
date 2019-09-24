@@ -50,6 +50,10 @@ public class PlayerController : MonoBehaviour
 
         Speed = MinSpeed;
     }
+    private void Awake()
+    {
+        progress = transform.position.z;
+    }
 
     // Update is called once per frame
     void Update()
