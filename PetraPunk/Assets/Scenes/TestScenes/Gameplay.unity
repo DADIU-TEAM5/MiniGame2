@@ -953,10 +953,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelSegments:
-  - {fileID: 11400000, guid: 16ae26f6fedc6264ab64dd38105eba66, type: 2}
-  - {fileID: 11400000, guid: 6adcd6448b283244d9437622309d59aa, type: 2}
-  - {fileID: 11400000, guid: d6be6246c10946845b040e2012547e21, type: 2}
   - {fileID: 11400000, guid: eae0ef302d73d324b87110ea02759c89, type: 2}
+  - {fileID: 11400000, guid: f764a403fda2d2d41b150dfff02dd6e5, type: 2}
   LevelGenerationData: {fileID: 11400000, guid: 0a07730cd95f26a4d818fca4e0ae6ea0,
     type: 2}
   lastSegement: {fileID: 900880344}
@@ -1040,6 +1038,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: SlopeAcceleration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: SlopeHorizontalSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: slopeMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59b232afd2bc9c44d9372467360cfa7e, type: 3}
