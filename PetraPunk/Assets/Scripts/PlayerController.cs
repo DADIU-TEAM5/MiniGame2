@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float ObstacleSpeedLoss;
     public float MinSpeed;
     public float HorizontalSpeed;
+    public float SlopeHorizontalSpeed;
 
     [Header("Other stuff")]
 
@@ -39,7 +40,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        Speed = MinSpeed;
     }
 
     // Update is called once per frame
@@ -103,7 +105,10 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(Vector3.forward * Speed * Time.deltaTime);
 
-        transform.Translate(Vector3.right *input * Time.deltaTime* HorizontalSpeed);
+        if(OnSlope)
+            transform.Translate(Vector3.right *input * Time.deltaTime* SlopeHorizontalSpeed);
+        else
+            transform.Translate(Vector3.right * input * Time.deltaTime * HorizontalSpeed);
 
         int layerMask = 1 << 9;
         RaycastHit hit;
