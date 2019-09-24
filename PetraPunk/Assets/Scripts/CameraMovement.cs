@@ -24,7 +24,7 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
 
-        print("cam");
+        //print("cam");
         Vector3 temp = transform.position;
         elevation = PlayerGraphics.position.y;
 
