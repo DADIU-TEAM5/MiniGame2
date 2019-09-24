@@ -2984,12 +2984,12 @@ PrefabInstance:
     - target: {fileID: 4158825360292436027, guid: e94aa01a7b8c22f4484e00c8e063c2d2,
         type: 3}
       propertyPath: maxVelocity
-      value: 14
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4158825360292436027, guid: e94aa01a7b8c22f4484e00c8e063c2d2,
         type: 3}
       propertyPath: speedMultiplier
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e94aa01a7b8c22f4484e00c8e063c2d2, type: 3}

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static float progress;
+
 
     float Speed;
 
@@ -52,6 +54,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        progress = transform.position.z;
 
         if (hitCooldown < invulnerableSecs)
         {
