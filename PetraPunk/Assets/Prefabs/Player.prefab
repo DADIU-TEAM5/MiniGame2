@@ -179,6 +179,9 @@ MonoBehaviour:
   MinSpeed: 20
   HorizontalSpeed: 10
   SlopeHorizontalSpeed: 5
+  slopeMultiplier: 5
+  invulnerableSecs: 1
+  life: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
   SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
   colliderAndGraphics: {fileID: 4612853147910741485}
   OnSlope: 0
