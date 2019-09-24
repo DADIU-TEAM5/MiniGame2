@@ -6,4 +6,6 @@ using UnityEngine;
 public class LevelSegment : ScriptableObject
 {
     public GameObject Segment;
+    public int Difficulty;
+
 }
