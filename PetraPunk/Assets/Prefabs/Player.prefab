@@ -176,8 +176,9 @@ MonoBehaviour:
   SlopeAcceleration: 80
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
-  MinSpeed: 40
+  MinSpeed: 20
   HorizontalSpeed: 10
+  SlopeHorizontalSpeed: 5
   SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
   colliderAndGraphics: {fileID: 4612853147910741485}
   OnSlope: 0
