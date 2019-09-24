@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public float MinSpeed;
     public float HorizontalSpeed;
     public float SlopeHorizontalSpeed;
+    public float slopeMultiplier = 5;
 
     [Header("Other stuff")]
 
@@ -103,12 +104,18 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        transform.Translate(Vector3.forward * Speed * Time.deltaTime);
+        
 
-        if(OnSlope)
-            transform.Translate(Vector3.right *input * Time.deltaTime* SlopeHorizontalSpeed);
+        if (OnSlope)
+        {
+            transform.Translate(Vector3.forward * Speed * Time.deltaTime* slopeMultiplier);
+            transform.Translate(Vector3.right * input * Time.deltaTime * SlopeHorizontalSpeed);
+        }
         else
+        {
+            transform.Translate(Vector3.forward * Speed * Time.deltaTime);
             transform.Translate(Vector3.right * input * Time.deltaTime * HorizontalSpeed);
+        }
 
         int layerMask = 1 << 9;
         RaycastHit hit;
