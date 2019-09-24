@@ -7,8 +7,9 @@ public class GyroController : MonoBehaviour
 {
 
     private float gyroInput;
-    public float speedMultiplier =10;
+    public float speedMultiplier = 10;
     public float maxVelocity;
+
 
     public enum control { New, Old };
 
@@ -48,18 +49,33 @@ public class GyroController : MonoBehaviour
             rotRate = Input.gyro.rotationRate.z;
         }
 
-
+        // Add speed multiplier to input
         currentRot += rotRate * Time.deltaTime;
-
-
         gyroInput = currentRot * -speedMultiplier;
-        
+
+        // Standardized data sucks
+        //if (gyroInput > 0)
+        //    gyroInput = 1 - (1 / gyroInput);
+
+        //if (gyroInput < 0)
+        //    gyroInput =  -1 + (1 / gyroInput);
+
+
+        //Set speed cap
+        if (gyroInput > 0)
+        {
+            steeringOutput.Value = Mathf.Min(gyroInput, maxVelocity);
+        }
+        else
+        {
+            steeringOutput.Value = Mathf.Max(gyroInput, -maxVelocity);
+        }
 
 
 
-        steeringOutput.Value = gyroInput;
-       
-        
+
+
+
         // Dampening
         //transform.Rotate(Vector3.up * Mathf.Min(steeringInput * 100, maxVelocity) * Time.deltaTime);
         // transform.Translate(Vector3.left * steeringInput * 10 * Time.deltaTime);
@@ -87,4 +103,5 @@ public class GyroController : MonoBehaviour
 
 
     }
+
 }
