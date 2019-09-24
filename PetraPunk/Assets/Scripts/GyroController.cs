@@ -41,7 +41,7 @@ public class GyroController : MonoBehaviour
 
         if (controlType == control.Old)
         {
-            rotRate = Input.gyro.rotationRate.y;
+            rotRate = -Input.gyro.rotationRate.y;
         }
         else
         {
