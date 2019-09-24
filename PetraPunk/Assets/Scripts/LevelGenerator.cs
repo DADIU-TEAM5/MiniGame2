@@ -10,6 +10,7 @@ public class LevelGenerator : MonoBehaviour
     [Header("Level order")]
     public SceneGenrator LevelGenerationData;
 
+    [Header("Set this up as the first Segment")]
     public Segment lastSegement;
 
     
