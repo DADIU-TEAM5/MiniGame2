@@ -170,10 +170,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb98bbb7556b39459536ba5b35570c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 45
+  FlatSpeed: 45
   SlopeSpeed: 80
-  SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
+  FlatAcceleration: 5
+  SlopeAcceleration: 80
+  OffSlopeDecay: 40
+  ObstacleSpeedLoss: 30
+  MinSpeed: 20
   HorizontalSpeed: 10
+  SlopeHorizontalSpeed: 5
+  SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
   colliderAndGraphics: {fileID: 4612853147910741485}
   OnSlope: 0
 --- !u!1 &4612853149412508616
