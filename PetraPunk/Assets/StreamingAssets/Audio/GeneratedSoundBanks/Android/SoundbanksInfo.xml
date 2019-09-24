@@ -11,6 +11,52 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="85412153" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambience</ObjectPath>
+			<ShortName>Ambience</ShortName>
+			<Path>Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="365331358" Name="AmbienceMain" ObjectPath="\Events\Ambience\AmbienceMain" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="52993535" Language="SFX">
+					<ShortName>FluteAmb_01.wav</ShortName>
+					<Path>SFX\FluteAmb_01_32A0B821.wem</Path>
+				</File>
+				<File Id="66492164" Language="SFX">
+					<ShortName>Crickets.wav</ShortName>
+					<Path>SFX\Crickets_9F132F2F.wem</Path>
+				</File>
+				<File Id="283056197" Language="SFX">
+					<ShortName>MouthWind_02.wav</ShortName>
+					<Path>SFX\MouthWind_02_9F132F2F.wem</Path>
+				</File>
+				<File Id="319432359" Language="SFX">
+					<ShortName>FluteAmb_05.wav</ShortName>
+					<Path>SFX\FluteAmb_05_32A0B821.wem</Path>
+				</File>
+				<File Id="557655837" Language="SFX">
+					<ShortName>MouthWind_01.wav</ShortName>
+					<Path>SFX\MouthWind_01_9F132F2F.wem</Path>
+				</File>
+				<File Id="606289397" Language="SFX">
+					<ShortName>FluteAmb_03.wav</ShortName>
+					<Path>SFX\FluteAmb_03_32A0B821.wem</Path>
+				</File>
+				<File Id="725757526" Language="SFX">
+					<ShortName>FluteAmb_02.wav</ShortName>
+					<Path>SFX\FluteAmb_02_32A0B821.wem</Path>
+				</File>
+				<File Id="757000106" Language="SFX">
+					<ShortName>MouthWind_03.wav</ShortName>
+					<Path>SFX\MouthWind_03_9F132F2F.wem</Path>
+				</File>
+				<File Id="775343429" Language="SFX">
+					<ShortName>FluteAmb_04.wav</ShortName>
+					<Path>SFX\FluteAmb_04_32A0B821.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -26,7 +72,7 @@
 			<IncludedMemoryFiles>
 				<File Id="946976637" Language="SFX">
 					<ShortName>plantDead.wav</ShortName>
-					<Path>SFX\plantDead_10C4C929.wem</Path>
+					<Path>SFX\plantDead_32A0B821.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
