@@ -1088,6 +1088,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: SlopeAcceleration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: SlopeHorizontalSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: slopeMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59b232afd2bc9c44d9372467360cfa7e, type: 3}
 --- !u!1001 &1238265350
