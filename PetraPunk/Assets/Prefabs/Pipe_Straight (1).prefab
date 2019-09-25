@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 9036241706419129862}
   - component: {fileID: 16936102432715824}
   - component: {fileID: 5980958567458031817}
+  - component: {fileID: 2197536665318066521}
   m_Layer: 0
   m_Name: Pipe_Straight (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,3 +79,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &2197536665318066521
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421335785254714389}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.31
+  m_Height: 1.13
+  m_Direction: 1
+  m_Center: {x: -0.000000014901161, y: 0, z: 0.00000011920929}
