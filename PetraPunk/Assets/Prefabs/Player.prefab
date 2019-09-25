@@ -374,6 +374,9 @@ MonoBehaviour:
   SlopeHorizontalSpeed: 10
   slopeMultiplier: 1.5
   invulnerableSecs: 1
+  gyroTilt: {fileID: 11400000, guid: 76f3fc3616df04b479a9df10ad39a1ad, type: 2}
+  playerSpeed: {fileID: 11400000, guid: d92c3c674db15fa49b6285130a87a678, type: 2}
+  audioSlope: {fileID: 11400000, guid: 1013881f05bb3dc49938e7948c4dbb28, type: 2}
   life: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
   SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
   colliderAndGraphics: {fileID: 4612853147910741485}
