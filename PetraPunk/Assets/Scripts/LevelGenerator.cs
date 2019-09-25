@@ -48,7 +48,7 @@ public class LevelGenerator : MonoBehaviour
             {
                 Destroy(lastBlock);
                 lastBlock = currentBlock;
-                print("next segment created");
+                //print("next segment created");
                 GenerateBlock();
 
             }
@@ -79,7 +79,7 @@ public class LevelGenerator : MonoBehaviour
 
     void GenerateBlock()
     {
-        print(currentSegmentToPlace);
+        //print(currentSegmentToPlace);
 
         currentBlock = new GameObject();
         currentBlock.name = "currentBlock";

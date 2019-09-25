@@ -2,10 +2,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	2385628199	FootstepR			\PlayerCharacter\Movement\Footsteps\FootstepR	
 	2385628217	FootstepL			\PlayerCharacter\Movement\Footsteps\FootstepL	
 	2767591232	SpeedWhoosh			\PlayerCharacter\Movement\SpeedWhoosh	
+	2886188696	FootStepLoopPlaceholder			\PlayerCharacter\Movement\FootStepLoopPlaceholder	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
+	3899915506	PlayerOnSlope			\Default Work Unit\PlayerOnSlope	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	453202908	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\PlayerCharacter\PlayerSpeedWoosh\SoundSeed Air Wind	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	681854934	Runplaceholder	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\Runplaceholder_9F132F2F.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Runplaceholder		225740
 

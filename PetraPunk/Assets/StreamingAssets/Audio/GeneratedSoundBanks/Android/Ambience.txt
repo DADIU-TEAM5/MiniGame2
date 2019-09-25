@@ -1,6 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	365331358	AmbienceMain			\Ambience\AmbienceMain	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3899915506	PlayerOnSlope			\Default Work Unit\PlayerOnSlope	
+
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	51958291	CricketsLFO_01			\Default Work Unit\CricketsLFO_01	
 	391208523	CricketsLFO_02			\Default Work Unit\CricketsLFO_02	
