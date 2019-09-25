@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2385628199	FootstepR			\PlayerCharacter\Movement\Footsteps\FootstepR	
+	2385628217	FootstepL			\PlayerCharacter\Movement\Footsteps\FootstepL	
+	2767591232	SpeedWhoosh			\PlayerCharacter\Movement\SpeedWhoosh	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	453202908	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\PlayerCharacter\PlayerSpeedWoosh\SoundSeed Air Wind	
+

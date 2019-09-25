@@ -18,7 +18,9 @@ public class LevelGenerator : MonoBehaviour
     GameObject currentBlock;
     GameObject lastBlock;
 
+    int currentSegmentToPlace =0;
 
+    float segementLength;
 
     //first list is difficulty second list is segments of that difficuly
     List<List<int>> listOfLists = new List<List<int>>();
@@ -37,13 +39,16 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsEndless)
+        if (IsEndless ||currentSegmentToPlace!= LevelGenerationData.SegementDifficulty.Length)
         {
-            if (PlayerController.progress >= lastSegement.EndOfScene.transform.position.z - 300)
+            
+
+            segementLength =  lastSegement.EndOfScene.transform.position.z - lastSegement.StartOfScene.transform.position.z;
+            if (PlayerController.progress >= lastSegement.EndOfScene.transform.position.z - segementLength)
             {
                 Destroy(lastBlock);
                 lastBlock = currentBlock;
-                print("next segment created");
+                //print("next segment created");
                 GenerateBlock();
 
             }
@@ -56,7 +61,7 @@ public class LevelGenerator : MonoBehaviour
         for (int i = 0; i < LevelSegments.Length; i++)
         {
 
-            print(LevelSegments[i].Difficulty > listOfLists.Count - 1);
+            //print(LevelSegments[i].Difficulty > listOfLists.Count - 1);
             while (LevelSegments[i].Difficulty > listOfLists.Count - 1)
             {
 
@@ -71,6 +76,43 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
+
+    void GenerateBlock()
+    {
+        //print(currentSegmentToPlace);
+
+        currentBlock = new GameObject();
+        currentBlock.name = "currentBlock";
+
+        
+            //print(LevelGenerationData.SegementDifficulty[i]);
+            int selectedLevelOfDiff = Mathf.RoundToInt(Random.Range(0, listOfLists[LevelGenerationData.SegementDifficulty[currentSegmentToPlace]].Count));
+
+            //print(selectedLevelOfDiff);
+
+            GameObject segmentToSpawn = LevelSegments[listOfLists[LevelGenerationData.SegementDifficulty[currentSegmentToPlace]][selectedLevelOfDiff]].Segment;
+            GameObject spawnedSegment = Instantiate(segmentToSpawn);
+
+            Segment segemntData = spawnedSegment.GetComponent<Segment>();
+        
+            spawnedSegment.transform.position = lastSegement.EndOfScene.transform.position - segemntData.StartOfScene.transform.position;
+            lastSegement = segemntData;
+
+            spawnedSegment.transform.SetParent(currentBlock.transform);
+
+        if (!IsEndless)
+        {
+            currentSegmentToPlace++;
+        }
+        else
+        {
+            currentSegmentToPlace = (currentSegmentToPlace + 1) % LevelGenerationData.SegementDifficulty.Length;
+        }
+    }
+
+
+
+    /*
     void GenerateBlock()
     {
         currentBlock = new GameObject();
@@ -78,21 +120,21 @@ public class LevelGenerator : MonoBehaviour
 
         for (int i = 0; i < LevelGenerationData.SegementDifficulty.Length; i++)
         {
-            print(LevelGenerationData.SegementDifficulty[i]);
+            //print(LevelGenerationData.SegementDifficulty[i]);
             int selectedLevelOfDiff = Mathf.RoundToInt(Random.Range(0, listOfLists[LevelGenerationData.SegementDifficulty[i]].Count));
 
-            print(selectedLevelOfDiff);
+            //print(selectedLevelOfDiff);
 
             GameObject segmentToSpawn = LevelSegments[listOfLists[LevelGenerationData.SegementDifficulty[i]][selectedLevelOfDiff]].Segment;
-            segmentToSpawn = Instantiate(segmentToSpawn);
+            GameObject spawnedSegment = Instantiate(segmentToSpawn);
 
-            Segment segemntData = segmentToSpawn.GetComponent<Segment>();
+            Segment segemntData = spawnedSegment.GetComponent<Segment>();
 
-            segmentToSpawn.transform.position = lastSegement.EndOfScene.transform.position - segemntData.StartOfScene.transform.position;
+            spawnedSegment.transform.position = lastSegement.EndOfScene.transform.position - segemntData.StartOfScene.transform.position;
             lastSegement = segemntData;
 
-            segmentToSpawn.transform.SetParent(currentBlock.transform);
+            spawnedSegment.transform.SetParent(currentBlock.transform);
 
         }
-    }
+    }*/
 }
