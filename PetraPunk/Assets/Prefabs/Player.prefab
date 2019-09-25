@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerTrans: {fileID: 4612853149198441980}
   playerController: {fileID: 4612853149198441983}
+  audioCue: {fileID: 11400000, guid: 2506e6da8adf7cb4f9331029bbaa1245, type: 2}
 --- !u!1 &4612853149198441982
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +180,7 @@ MonoBehaviour:
   MinSpeed: 20
   HorizontalSpeed: 10
   SlopeHorizontalSpeed: 10
-  slopeMultiplier: 2
+  slopeMultiplier: 1.5
   invulnerableSecs: 1
   life: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
   SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
@@ -198,7 +199,6 @@ GameObject:
   - component: {fileID: 4612853149412508620}
   - component: {fileID: 4612853149412508617}
   - component: {fileID: 162327509537404794}
-  - component: {fileID: 430008746114902136}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -300,19 +300,6 @@ MonoBehaviour:
   isDefaultListener: 1
   listenerId: 0
 --- !u!114 &162327509537404794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4612853149412508616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6846acdc96932d47ab0765363d96fa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerGraphics: {fileID: 4612853147910741485}
---- !u!114 &430008746114902136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
