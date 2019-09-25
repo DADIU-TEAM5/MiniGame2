@@ -19,6 +19,7 @@ public class LevelGenerator : MonoBehaviour
     GameObject lastBlock;
 
 
+    float segementLength;
 
     //first list is difficulty second list is segments of that difficuly
     List<List<int>> listOfLists = new List<List<int>>();
@@ -39,7 +40,9 @@ public class LevelGenerator : MonoBehaviour
     {
         if (IsEndless)
         {
-            if (PlayerController.progress >= lastSegement.EndOfScene.transform.position.z - 300)
+
+            segementLength =  lastSegement.EndOfScene.transform.position.z - lastSegement.StartOfScene.transform.position.z;
+            if (PlayerController.progress >= lastSegement.EndOfScene.transform.position.z - segementLength)
             {
                 Destroy(lastBlock);
                 lastBlock = currentBlock;
