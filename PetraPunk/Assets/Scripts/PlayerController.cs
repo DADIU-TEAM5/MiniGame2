@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Other stuff")]
 
+    public CameraMovement camScript;
+
     public FloatVariable gyroTilt;
     public FloatVariable playerSpeed;
     public BoolVariable audioSlope;
@@ -161,6 +163,7 @@ public class PlayerController : MonoBehaviour
 
     public void GetHit(Vector3 direction)
     {
+        camScript.ShakeCam();
         direction.y = 0;
         transform.Translate(direction);
 

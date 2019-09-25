@@ -319,6 +319,9 @@ MonoBehaviour:
   tiltedCamera: {fileID: 5948774518202955115}
   slopeBackDistance: 2
   transitionTime: 3
+  ShakeMaxAngle: 45
+  ShakeSpeed: 0
+  ShakeTime: 0
 --- !u!1 &6302871270875934596
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +377,7 @@ MonoBehaviour:
   SlopeHorizontalSpeed: 10
   slopeMultiplier: 1.5
   invulnerableSecs: 1
+  camScript: {fileID: 162327509537404794}
   gyroTilt: {fileID: 11400000, guid: 76f3fc3616df04b479a9df10ad39a1ad, type: 2}
   playerSpeed: {fileID: 11400000, guid: d92c3c674db15fa49b6285130a87a678, type: 2}
   audioSlope: {fileID: 11400000, guid: 1013881f05bb3dc49938e7948c4dbb28, type: 2}
