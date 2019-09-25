@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
 
     [Header("Other stuff")]
 
+    public FloatVariable gyroTilt;
+    public FloatVariable playerSpeed;
+    public BoolVariable audioSlope;
+
     public FloatVariable life;
 
     public FloatVariable SteeringInput;
@@ -58,6 +62,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         progress = transform.position.z;
 
         if (hitCooldown < invulnerableSecs)
@@ -73,7 +79,9 @@ public class PlayerController : MonoBehaviour
 
 
 
-
+        audioSlope.Value = OnSlope;
+        playerSpeed.Value = Speed;
+        gyroTilt.Value = input;
         
         
         
@@ -179,5 +187,10 @@ public class PlayerController : MonoBehaviour
         colliderAndGraphics.rotation = Quaternion.LookRotation(normal);
     }
 
+
+    public float GetSpeed()
+    {
+        return Speed;
+    }
     
 }

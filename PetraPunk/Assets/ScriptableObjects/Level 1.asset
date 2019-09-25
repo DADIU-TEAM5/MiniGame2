@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da7f9ff61a17264f844ebfee265ad94, type: 3}
   m_Name: Level 1
   m_EditorClassIdentifier: 
-  SegementDifficulty: 0000000001000000010000000000000001000000
+  SegementDifficulty: 0000000000000000000000000000000000000000
