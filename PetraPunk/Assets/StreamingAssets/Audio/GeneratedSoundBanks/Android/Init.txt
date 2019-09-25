@@ -1,6 +1,7 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	436743010	Character			\Default Work Unit\Master Audio Bus\Character	
+	3257506471	Impact			\Default Work Unit\Master Audio Bus\Impact	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
