@@ -28,7 +28,7 @@ public class UI_menu : MonoBehaviour
                 break;
             case 1:
                 Debug.Log("new game");
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(1);
                 break;
         }
     }
