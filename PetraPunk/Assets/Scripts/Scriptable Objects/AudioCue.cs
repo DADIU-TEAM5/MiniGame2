@@ -6,7 +6,7 @@ using UnityEngine;
 public class AudioCue : ScriptableObject
 {
    
-    public void Play(Vector3 point)
+    public void Play(GameObject hitGameObject)
     {
 
     }
