@@ -319,9 +319,9 @@ MonoBehaviour:
   tiltedCamera: {fileID: 5948774518202955115}
   slopeBackDistance: 2
   transitionTime: 3
-  ShakeMaxAngle: 45
-  ShakeSpeed: 0
-  ShakeTime: 0
+  ShakeMaxAngle: 5
+  ShakeSpeed: 50
+  ShakeTime: 0.4
 --- !u!1 &6302871270875934596
 GameObject:
   m_ObjectHideFlags: 0
