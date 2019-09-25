@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5b6150c128c83c4ca279669dc8671df, type: 3}
-  m_Name: LevelSegmentMedium2
+  m_Name: LevelSegmentMedium1
   m_EditorClassIdentifier: 
-  Segment: {fileID: 0}
-  Difficulty: 0
+  Segment: {fileID: 2226053116078752483, guid: ef146fa537402144e92314a30b510abb, type: 3}
+  Difficulty: 1
