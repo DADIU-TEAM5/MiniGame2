@@ -6,6 +6,8 @@ public class PlayerCollisionInfo : MonoBehaviour
 {
     public Transform PlayerTrans;
     public PlayerController playerController;
+    public AudioCue audioCue;
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -15,7 +17,7 @@ public class PlayerCollisionInfo : MonoBehaviour
         {
             playerController.GetHit(collision.GetContact(0).normal);
 
-            
+            audioCue.Play(collision.gameObject);
 
 
         }

@@ -11,6 +11,169 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="85412153" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambience</ObjectPath>
+			<ShortName>Ambience</ShortName>
+			<Path>Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="365331358" Name="AmbienceMain" ObjectPath="\Events\Ambience\AmbienceMain" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="52993535" Language="SFX">
+					<ShortName>FluteAmb_01.wav</ShortName>
+					<Path>SFX\FluteAmb_01_32A0B821.wem</Path>
+				</File>
+				<File Id="66492164" Language="SFX">
+					<ShortName>Crickets.wav</ShortName>
+					<Path>SFX\Crickets_9F132F2F.wem</Path>
+				</File>
+				<File Id="283056197" Language="SFX">
+					<ShortName>MouthWind_02.wav</ShortName>
+					<Path>SFX\MouthWind_02_9F132F2F.wem</Path>
+				</File>
+				<File Id="319432359" Language="SFX">
+					<ShortName>FluteAmb_05.wav</ShortName>
+					<Path>SFX\FluteAmb_05_32A0B821.wem</Path>
+				</File>
+				<File Id="557655837" Language="SFX">
+					<ShortName>MouthWind_01.wav</ShortName>
+					<Path>SFX\MouthWind_01_9F132F2F.wem</Path>
+				</File>
+				<File Id="606289397" Language="SFX">
+					<ShortName>FluteAmb_03.wav</ShortName>
+					<Path>SFX\FluteAmb_03_32A0B821.wem</Path>
+				</File>
+				<File Id="725757526" Language="SFX">
+					<ShortName>FluteAmb_02.wav</ShortName>
+					<Path>SFX\FluteAmb_02_32A0B821.wem</Path>
+				</File>
+				<File Id="757000106" Language="SFX">
+					<ShortName>MouthWind_03.wav</ShortName>
+					<Path>SFX\MouthWind_03_9F132F2F.wem</Path>
+				</File>
+				<File Id="775343429" Language="SFX">
+					<ShortName>FluteAmb_04.wav</ShortName>
+					<Path>SFX\FluteAmb_04_32A0B821.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1069431850" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2385628217" Name="FootstepL" ObjectPath="\Events\PlayerCharacter\Movement\Footsteps\FootstepL" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2385628199" Name="FootstepR" ObjectPath="\Events\PlayerCharacter\Movement\Footsteps\FootstepR" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2767591232" Name="SpeedWhoosh" ObjectPath="\Events\PlayerCharacter\Movement\SpeedWhoosh" DurationType="Infinite"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1229948536" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
+			<ShortName>Environment</ShortName>
+			<Path>Environment.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3015288684" Name="PipeHit" ObjectPath="\Events\Obstacles\PipeHit" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.076922" DurationMax="3.055603"/>
+				<Event Id="900571619" Name="SteamPipe" ObjectPath="\Events\Obstacles\SteamPipe" MaxAttenuation="100.000000" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="55594322" Language="SFX">
+					<ShortName>PipeSTEAM.wav</ShortName>
+					<Path>SFX\PipeSTEAM_9F132F2F.wem</Path>
+				</File>
+				<File Id="67673841" Language="SFX">
+					<ShortName>Radiate_03.wav</ShortName>
+					<Path>SFX\Radiate_03_32A0B821.wem</Path>
+				</File>
+				<File Id="82547838" Language="SFX">
+					<ShortName>PipeRattle_01.wav</ShortName>
+					<Path>SFX\PipeRattle_01_32A0B821.wem</Path>
+				</File>
+				<File Id="84086993" Language="SFX">
+					<ShortName>Radiate_01.wav</ShortName>
+					<Path>SFX\Radiate_01_32A0B821.wem</Path>
+				</File>
+				<File Id="86676600" Language="SFX">
+					<ShortName>VentHit_06.wav</ShortName>
+					<Path>SFX\VentHit_06_32A0B821.wem</Path>
+				</File>
+				<File Id="314638672" Language="SFX">
+					<ShortName>VentHit_02.wav</ShortName>
+					<Path>SFX\VentHit_02_32A0B821.wem</Path>
+				</File>
+				<File Id="334814868" Language="SFX">
+					<ShortName>PipeRattle_05.wav</ShortName>
+					<Path>SFX\PipeRattle_05_32A0B821.wem</Path>
+				</File>
+				<File Id="363871090" Language="SFX">
+					<ShortName>HumanoidHitPC_01.wav</ShortName>
+					<Path>SFX\HumanoidHitPC_01_32A0B821.wem</Path>
+				</File>
+				<File Id="373720796" Language="SFX">
+					<ShortName>Radiate_04.wav</ShortName>
+					<Path>SFX\Radiate_04_32A0B821.wem</Path>
+				</File>
+				<File Id="406581483" Language="SFX">
+					<ShortName>PipeRattle_06.wav</ShortName>
+					<Path>SFX\PipeRattle_06_32A0B821.wem</Path>
+				</File>
+				<File Id="483743850" Language="SFX">
+					<ShortName>VentHit_05.wav</ShortName>
+					<Path>SFX\VentHit_05_32A0B821.wem</Path>
+				</File>
+				<File Id="489056844" Language="SFX">
+					<ShortName>PipeRattle_04.wav</ShortName>
+					<Path>SFX\PipeRattle_04_32A0B821.wem</Path>
+				</File>
+				<File Id="639032088" Language="SFX">
+					<ShortName>Radiate_07.wav</ShortName>
+					<Path>SFX\Radiate_07_32A0B821.wem</Path>
+				</File>
+				<File Id="659495786" Language="SFX">
+					<ShortName>Radiate_05.wav</ShortName>
+					<Path>SFX\Radiate_05_32A0B821.wem</Path>
+				</File>
+				<File Id="718911144" Language="SFX">
+					<ShortName>GoodHit_01.wav</ShortName>
+					<Path>SFX\GoodHit_01_32A0B821.wem</Path>
+				</File>
+				<File Id="734867289" Language="SFX">
+					<ShortName>Radiate_02.wav</ShortName>
+					<Path>SFX\Radiate_02_32A0B821.wem</Path>
+				</File>
+				<File Id="769073162" Language="SFX">
+					<ShortName>PipeRattle_03.wav</ShortName>
+					<Path>SFX\PipeRattle_03_32A0B821.wem</Path>
+				</File>
+				<File Id="831092031" Language="SFX">
+					<ShortName>PipeRattle_07.wav</ShortName>
+					<Path>SFX\PipeRattle_07_32A0B821.wem</Path>
+				</File>
+				<File Id="858333934" Language="SFX">
+					<ShortName>VentHit_03.wav</ShortName>
+					<Path>SFX\VentHit_03_32A0B821.wem</Path>
+				</File>
+				<File Id="865403475" Language="SFX">
+					<ShortName>Radiate_06.wav</ShortName>
+					<Path>SFX\Radiate_06_32A0B821.wem</Path>
+				</File>
+				<File Id="905546332" Language="SFX">
+					<ShortName>PipeRattle_02.wav</ShortName>
+					<Path>SFX\PipeRattle_02_32A0B821.wem</Path>
+				</File>
+				<File Id="947768029" Language="SFX">
+					<ShortName>VentHit_04.wav</ShortName>
+					<Path>SFX\VentHit_04_32A0B821.wem</Path>
+				</File>
+				<File Id="961476253" Language="SFX">
+					<ShortName>VentHit_07.wav</ShortName>
+					<Path>SFX\VentHit_07_32A0B821.wem</Path>
+				</File>
+				<File Id="1065397013" Language="SFX">
+					<ShortName>VentHit_01.wav</ShortName>
+					<Path>SFX\VentHit_01_32A0B821.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -26,7 +189,7 @@
 			<IncludedMemoryFiles>
 				<File Id="946976637" Language="SFX">
 					<ShortName>plantDead.wav</ShortName>
-					<Path>SFX\plantDead_10C4C929.wem</Path>
+					<Path>SFX\plantDead_32A0B821.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

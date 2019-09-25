@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &404017739179450093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5948774518202955115}
+  m_Layer: 0
+  m_Name: tiledCameraTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5948774518202955115
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404017739179450093}
+  m_LocalRotation: {x: 0.14994866, y: 0.05313213, z: 0.08503821, w: 0.9835959}
+  m_LocalPosition: {x: -1.29, y: 2.56, z: -2.42}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4612853149198441980}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 16.615002, y: 7.7980003, z: 11.023001}
 --- !u!1 &4612853147910741480
 GameObject:
   m_ObjectHideFlags: 0
@@ -32,7 +62,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4612853149198441980}
+  m_Father: {fileID: 7839458431460443598}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4612853147910741484
@@ -124,7 +154,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerTrans: {fileID: 4612853149198441980}
-  playerController: {fileID: 4612853149198441983}
+  playerController: {fileID: 3790281797879785047}
+  audioCue: {fileID: 11400000, guid: 2506e6da8adf7cb4f9331029bbaa1245, type: 2}
 --- !u!1 &4612853149198441982
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,7 +165,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4612853149198441980}
-  - component: {fileID: 4612853149198441983}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -150,41 +180,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4612853149198441982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.02, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4612853147910741485}
+  - {fileID: 7839458431460443598}
   - {fileID: 4612853149412508623}
+  - {fileID: 5948774518202955115}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4612853149198441983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4612853149198441982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cb98bbb7556b39459536ba5b35570c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FlatSpeed: 45
-  SlopeSpeed: 80
-  FlatAcceleration: 2
-  SlopeAcceleration: 4
-  OffSlopeDecay: 40
-  ObstacleSpeedLoss: 30
-  MinSpeed: 20
-  HorizontalSpeed: 10
-  SlopeHorizontalSpeed: 10
-  slopeMultiplier: 2
-  invulnerableSecs: 1
-  life: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
-  SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
-  colliderAndGraphics: {fileID: 4612853147910741485}
-  OnSlope: 0
 --- !u!1 &4612853149412508616
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,7 +202,6 @@ GameObject:
   - component: {fileID: 4612853149412508620}
   - component: {fileID: 4612853149412508617}
   - component: {fileID: 162327509537404794}
-  - component: {fileID: 430008746114902136}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -312,16 +315,73 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerGraphics: {fileID: 4612853147910741485}
---- !u!114 &430008746114902136
+  playerController: {fileID: 3790281797879785047}
+  tiltedCamera: {fileID: 5948774518202955115}
+  slopeBackDistance: 2
+  transitionTime: 3
+  ShakeMaxAngle: 45
+  ShakeSpeed: 0
+  ShakeTime: 0
+--- !u!1 &6302871270875934596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7839458431460443598}
+  - component: {fileID: 3790281797879785047}
+  m_Layer: 0
+  m_Name: Player Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7839458431460443598
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302871270875934596}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4612853147910741485}
+  m_Father: {fileID: 4612853149198441980}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3790281797879785047
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4612853149412508616}
+  m_GameObject: {fileID: 6302871270875934596}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6846acdc96932d47ab0765363d96fa1, type: 3}
+  m_Script: {fileID: 11500000, guid: 6cb98bbb7556b39459536ba5b35570c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerGraphics: {fileID: 4612853147910741485}
+  FlatSpeed: 45
+  SlopeSpeed: 80
+  FlatAcceleration: 2
+  SlopeAcceleration: 4
+  OffSlopeDecay: 40
+  ObstacleSpeedLoss: 30
+  MinSpeed: 20
+  HorizontalSpeed: 10
+  SlopeHorizontalSpeed: 10
+  slopeMultiplier: 1.5
+  invulnerableSecs: 1
+  camScript: {fileID: 162327509537404794}
+  gyroTilt: {fileID: 11400000, guid: 76f3fc3616df04b479a9df10ad39a1ad, type: 2}
+  playerSpeed: {fileID: 11400000, guid: d92c3c674db15fa49b6285130a87a678, type: 2}
+  audioSlope: {fileID: 11400000, guid: 1013881f05bb3dc49938e7948c4dbb28, type: 2}
+  life: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
+  SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
+  colliderAndGraphics: {fileID: 4612853147910741485}
+  OnSlope: 0
