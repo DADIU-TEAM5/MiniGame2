@@ -63,9 +63,16 @@
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2385628217" Name="FootstepL" ObjectPath="\Events\PlayerCharacter\Movement\Footsteps\FootstepL" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2886188696" Name="FootStepLoopPlaceholder" ObjectPath="\Events\PlayerCharacter\Movement\FootStepLoopPlaceholder" DurationType="Infinite"/>
 				<Event Id="2385628199" Name="FootstepR" ObjectPath="\Events\PlayerCharacter\Movement\Footsteps\FootstepR" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2767591232" Name="SpeedWhoosh" ObjectPath="\Events\PlayerCharacter\Movement\SpeedWhoosh" DurationType="Infinite"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="681854934" Language="SFX">
+					<ShortName>Runplaceholder.wav</ShortName>
+					<Path>SFX\Runplaceholder_9F132F2F.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 		<SoundBank Id="1229948536" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Environment</ObjectPath>
@@ -190,6 +197,28 @@
 				<File Id="946976637" Language="SFX">
 					<ShortName>plantDead.wav</ShortName>
 					<Path>SFX\plantDead_32A0B821.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4195921398" Name="MusicTest" ObjectPath="\Events\MusicEvents\MusicTest" DurationType="Infinite"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="633560826" Language="SFX">
+					<ShortName>DronePLacehoLDEr.wav</ShortName>
+					<Path>SFX\DronePLacehoLDEr_9F132F2F.wem</Path>
+				</File>
+				<File Id="732194452" Language="SFX">
+					<ShortName>BottleBeatBassTest.wav</ShortName>
+					<Path>SFX\BottleBeatBassTest_9F132F2F.wem</Path>
+				</File>
+				<File Id="880957931" Language="SFX">
+					<ShortName>BottleBeatTest.wav</ShortName>
+					<Path>SFX\BottleBeatTest_9F132F2F.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
