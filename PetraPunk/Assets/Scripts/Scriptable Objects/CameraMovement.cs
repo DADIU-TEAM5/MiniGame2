@@ -19,9 +19,12 @@ public class CameraMovement : MonoBehaviour
     Quaternion flatGoalRotation, slopeGoalRotationRight, slopeGoalRotationLeft;
 
 
+    public float ShakeMaxAngle = 45;
+    public float ShakeSpeed;
+    public float ShakeTime;
 
 
-    
+    float shakeDuration;
 
     float timeOnSlope ;
 
@@ -31,7 +34,7 @@ public class CameraMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        shakeDuration = ShakeTime * ShakeSpeed;
         
         flatGoalPoistion =  transform.position - PlayerGraphics.position;
         slopeGoalPoistionRight = tiltedCamera.position - PlayerGraphics.position;
@@ -57,7 +60,15 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MoveCamera();
 
+        
+        ShakeScreen();
+        
+
+    }
+    void MoveCamera()
+    {
         if (playerController.transform.position.x > 0)
         {
             transform.position = Vector3.Lerp(PlayerGraphics.position + flatGoalPoistion, PlayerGraphics.position + slopeGoalPoistionRight + Vector3.back * slopeBackDistance, timeOnSlope);
@@ -82,36 +93,28 @@ public class CameraMovement : MonoBehaviour
             if (timeOnSlope <= 0)
                 timeOnSlope = 0;
         }
-
-
     }
 
-    /*
-    if (timer < transitionTime)
-        timer += Time.deltaTime;
+    
 
 
-
-    if(lastSlopeCheck != playerController.OnSlope)
+     void ShakeScreen()
     {
-        timer = 0;
-        lerpPoint = transform.position;
+        if (shakeDuration < ShakeTime * ShakeSpeed)
+        {
+            shakeDuration += Time.deltaTime * ShakeSpeed;
+
+            transform.Rotate(transform.forward, Mathf.Sin(shakeDuration) * ShakeMaxAngle);
+        }
+
+
+        
     }
 
-    if (playerController.OnSlope)
+    public void ShakeCam()
     {
-        transform.position = Vector3.Lerp(lerpPoint, PlayerGraphics.position + flatGoalPoistion +Vector3.back, timer / transitionTime);
+        shakeDuration = 0;
     }
-    else
-    {
-        transform.position = Vector3.Lerp(lerpPoint, PlayerGraphics.position + flatGoalPoistion, timer / transitionTime);
-    }
-
-    print(timer);
-
-    lastSlopeCheck = playerController.OnSlope;
-
-*/
 
 }
 

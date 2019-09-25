@@ -467,6 +467,16 @@ PrefabInstance:
       propertyPath: slopeBackDistance
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 162327509537404794, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: ShakeSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 162327509537404794, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: ShakeTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7839458431460443598, guid: 59b232afd2bc9c44d9372467360cfa7e,
         type: 3}
       propertyPath: m_LocalPosition.x
