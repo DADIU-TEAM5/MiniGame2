@@ -253,11 +253,10 @@ public class PlayerController : MonoBehaviour
         {
             dashTime += Time.deltaTime;
 
-            if(OnSlope)
-                transform.position = Vector3.Lerp(dashStartPos, dashStartPos + Vector3.right * dashDirection + (Vector3.forward * Speed * Time.deltaTime * slopeMultiplier), dashTime / DashDuration);
-            else
-                transform.position = Vector3.Lerp(dashStartPos, dashStartPos  + Vector3.right * dashDirection+(Vector3.forward *Speed*Time.deltaTime), dashTime/ DashDuration);
-
+            dashStartPos.z = transform.position.z;
+            
+            transform.position = Vector3.Lerp(dashStartPos, dashStartPos + (Vector3.right * dashDirection), dashTime / DashDuration);
+            
             if(dashTime >= DashDuration)
             {
                 endDash();

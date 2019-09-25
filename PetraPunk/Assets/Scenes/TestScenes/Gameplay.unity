@@ -475,11 +475,26 @@ PrefabInstance:
     - target: {fileID: 162327509537404794, guid: 59b232afd2bc9c44d9372467360cfa7e,
         type: 3}
       propertyPath: ShakeTime
-      value: 5
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7839458431460443598, guid: 59b232afd2bc9c44d9372467360cfa7e,
         type: 3}
       propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: DashLength
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: DashDuration
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: DashCD
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
