@@ -5,36 +5,51 @@ using UnityEngine;
 public class tutorialController : MonoBehaviour
 {
 
-    private bool isTurningRight=false;
-    private bool isTurningLeft=true;
+    public GameObject player;
+    public GameObject phoneUI;
+    public Animator animator;
+
+
+    private bool isTurningRight=true;
+    private bool isTurningLeft=false;
+
+    public float animationSpeed;
+    public float maxTurn;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator.speed = animationSpeed;
     }
 
     // Update is called once per frame
     void Update()
     {
         
-
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        System.Console.WriteLine("collision");
-        Debug.Log("collision tag: " + collision.gameObject.tag);
-
-        //if (collision.gameObject.CompareTag("tutorialLeft") && isTurningLeft)
+        // Part 1 - start turning left - Automatic
+        //if(player.transform.position.x!=0 && !isTurningRight)
         //{
-        //    Debug.Log("Hit left collider");
+        //    isTurningRight = true;
+        //    animator.SetBool("startTutorial", true);
         //}
 
-        //else if (collision.gameObject.CompareTag("tutorialRight") && isTurningRight)
-        //{
-        //    Debug.Log("Hit right collider");
-        //}
+        // Part 2 - start turning right
+        if(player.transform.position.x > maxTurn && isTurningRight)
+        {
+            Debug.Log("position: " + player.transform.position.x);
+            isTurningRight = false;
+            isTurningLeft = true;
+            animator.SetBool("turnedRight", true);
+        }
+
+        if (player.transform.position.x < -maxTurn && isTurningLeft)
+        {
+            Debug.Log("position: " + player.transform.position.x);
+            isTurningLeft = false;
+            GameObject.Destroy(phoneUI);
+        }
     }
+
+    
 }
