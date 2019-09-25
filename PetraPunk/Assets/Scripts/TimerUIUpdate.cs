@@ -9,6 +9,7 @@ public class TimerUIUpdate : MonoBehaviour
     public IntVariable runTime;
     public BoolVariable deathVar;
     private Text timerUI;
+    public GameEvent death;
     
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,9 @@ public class TimerUIUpdate : MonoBehaviour
             if (runTime.Value <= 0)
             {
                 runTime.Value = 0;
-                deathVar.Value = true;
+                //deathVar.Value = true;
+                death.Raise();
+                
                 Debug.Log("DEAD");
             }
 

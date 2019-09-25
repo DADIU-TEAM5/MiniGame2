@@ -8,6 +8,7 @@ public class LifeManager : MonoBehaviour
 {
     public FloatVariable Lifes;
     public Text lifeDisplay;
+    public GameEvent death;
 
     public int NumberOfLifes;
 
@@ -27,10 +28,15 @@ public class LifeManager : MonoBehaviour
 
         if(Lifes.Value <= 0)
         {
-            print("game Over");
-            
-            SceneManager.LoadScene(1);
+            death.Raise();
         }
 
+    }
+
+    public void EvokeDeath()
+    {
+        print("game Over");
+
+        SceneManager.LoadScene(1);
     }
 }

@@ -120,6 +120,41 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &943122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4512068902882869908, guid: 957cccc546c67fb48a039c7a5075dba4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1324142019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &943123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f74a0f2fb81c47a7011e2ddac7dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: d60e7c0c714b0254ba7915482a514ef5, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1324142020}
+        m_MethodName: EvokeDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &73145926
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -266,8 +301,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869909, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 11400000, guid: d60e7c0c714b0254ba7915482a514ef5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 957cccc546c67fb48a039c7a5075dba4, type: 3}
+--- !u!114 &1324142020 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4512068902882869909, guid: 957cccc546c67fb48a039c7a5075dba4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1324142019}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74cab4b9df503c2438dde7d8cce8d5b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1661905450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,5 +438,46 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1873030714753685048, guid: f3598abcac3bb9a4b94fbde66101d793,
+        type: 3}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 11400000, guid: d60e7c0c714b0254ba7915482a514ef5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3598abcac3bb9a4b94fbde66101d793, type: 3}
+--- !u!1 &1661905451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1873030714753685054, guid: f3598abcac3bb9a4b94fbde66101d793,
+    type: 3}
+  m_PrefabInstance: {fileID: 1661905450}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1661905452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661905451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f74a0f2fb81c47a7011e2ddac7dea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: d60e7c0c714b0254ba7915482a514ef5, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1324142020}
+        m_MethodName: EvokeDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
