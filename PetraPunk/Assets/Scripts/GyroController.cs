@@ -42,11 +42,13 @@ public class GyroController : MonoBehaviour
 
         if (controlType == control.Old)
         {
-            rotRate = -Input.gyro.rotationRate.y;
+            //rotRate = -Input.gyro.rotationRate.y;
+            rotRate = -Input.gyro.rotationRateUnbiased.y;
         }
         else
         {
-            rotRate = Input.gyro.rotationRate.z;
+            //rotRate = Input.gyro.rotationRate.z;
+            rotRate = Input.gyro.rotationRateUnbiased.z;
         }
 
         // Add speed multiplier to input
