@@ -29,7 +29,7 @@ public class LifeManager : MonoBehaviour
         {
             print("game Over");
             
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
     }
