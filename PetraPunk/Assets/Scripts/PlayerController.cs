@@ -179,5 +179,10 @@ public class PlayerController : MonoBehaviour
         colliderAndGraphics.rotation = Quaternion.LookRotation(normal);
     }
 
+
+    public float GetSpeed()
+    {
+        return Speed;
+    }
     
 }
