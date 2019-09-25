@@ -17,7 +17,7 @@ public class PlayerCollisionInfo : MonoBehaviour
         {
             playerController.GetHit(collision.GetContact(0).normal);
 
-            audioCue.Play(collision.GetContact(0).point);
+            audioCue.Play(collision.gameObject);
 
 
         }
