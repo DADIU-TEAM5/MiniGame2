@@ -1,0 +1,30 @@
+Event	ID	Name			Wwise Object Path	Notes
+	900571619	SteamPipe			\Obstacles\SteamPipe	
+	3015288684	PipeHit			\Obstacles\PipeHit	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	55594322	PipeSTEAM	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\PipeSTEAM_9F132F2F.wem		\Actor-Mixer Hierarchy\Pipes\Steam\PipeSTEAM		789587
+	67673841	Radiate_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Radiate_03_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\RadiatorHit\Radiate_03		31685
+	82547838	PipeRattle_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\PipeRattle_01_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\Rattle\PipeRattle_01		56740
+	84086993	Radiate_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Radiate_01_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\RadiatorHit\Radiate_01		17193
+	86676600	VentHit_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\VentHit_06_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\VentHit\VentHit_06		54281
+	314638672	VentHit_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\VentHit_02_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\VentHit\VentHit_02		53322
+	334814868	PipeRattle_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\PipeRattle_05_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\Rattle\PipeRattle_05		53532
+	363871090	HumanoidHitPC_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\HumanoidHitPC_01_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\HumanoidHitPC_01		17637
+	373720796	Radiate_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Radiate_04_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\RadiatorHit\Radiate_04		23829
+	406581483	PipeRattle_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\PipeRattle_06_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\Rattle\PipeRattle_06		53645
+	483743850	VentHit_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\VentHit_05_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\VentHit\VentHit_05		36785
+	489056844	PipeRattle_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\PipeRattle_04_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\Rattle\PipeRattle_04		60203
+	639032088	Radiate_07	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Radiate_07_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\RadiatorHit\Radiate_07		24061
+	659495786	Radiate_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Radiate_05_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\RadiatorHit\Radiate_05		37061
+	718911144	GoodHit_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\GoodHit_01_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\GoodHit_01		30516
+	734867289	Radiate_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Radiate_02_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\RadiatorHit\Radiate_02		31790
+	769073162	PipeRattle_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\PipeRattle_03_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\Rattle\PipeRattle_03		62408
+	831092031	PipeRattle_07	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\PipeRattle_07_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\Rattle\PipeRattle_07		53099
+	858333934	VentHit_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\VentHit_03_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\VentHit\VentHit_03		55282
+	865403475	Radiate_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Radiate_06_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\RadiatorHit\Radiate_06		24315
+	905546332	PipeRattle_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\PipeRattle_02_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\Rattle\PipeRattle_02		60916
+	947768029	VentHit_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\VentHit_04_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\VentHit\VentHit_04		54915
+	961476253	VentHit_07	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\VentHit_07_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\VentHit\VentHit_07		54281
+	1065397013	VentHit_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\VentHit_01_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\HitBlend\VentHit\VentHit_01		45781
+
