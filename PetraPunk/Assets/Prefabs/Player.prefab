@@ -332,6 +332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7839458431460443598}
   - component: {fileID: 3790281797879785047}
+  - component: {fileID: 6453053320240262777}
   m_Layer: 0
   m_Name: Player Controller
   m_TagString: Untagged
@@ -377,6 +378,9 @@ MonoBehaviour:
   SlopeHorizontalSpeed: 10
   slopeMultiplier: 1.5
   invulnerableSecs: 1
+  DashLength: 2
+  DashCD: 1
+  DashDuration: 0.5
   camScript: {fileID: 162327509537404794}
   gyroTilt: {fileID: 11400000, guid: 76f3fc3616df04b479a9df10ad39a1ad, type: 2}
   playerSpeed: {fileID: 11400000, guid: d92c3c674db15fa49b6285130a87a678, type: 2}
@@ -385,3 +389,16 @@ MonoBehaviour:
   SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
   colliderAndGraphics: {fileID: 4612853147910741485}
   OnSlope: 0
+--- !u!114 &6453053320240262777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302871270875934596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d73b388a66e277b4a9ec630b41183a91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCOntroller: {fileID: 3790281797879785047}

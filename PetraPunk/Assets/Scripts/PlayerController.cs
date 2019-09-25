@@ -94,11 +94,11 @@ public class PlayerController : MonoBehaviour
 
         Move();
 
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetKeyDown(KeyCode.Q))
         {
             Dash(-1);
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Dash(1);
         }
@@ -223,7 +223,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void Dash(float direction)
+    public void Dash(float direction)
     {
         if (dashCDtimer <= 0)
         {
@@ -243,7 +243,7 @@ public class PlayerController : MonoBehaviour
     }
     void ApplyDashMovement()
     {
-        print(dashCDtimer);
+        //print(dashCDtimer);
         if (dashCDtimer > 0 && !isDashing)
         {
             dashCDtimer -= Time.deltaTime;
