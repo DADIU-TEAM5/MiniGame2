@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static float progress;
+
 
     float Speed;
 
@@ -19,13 +21,16 @@ public class PlayerController : MonoBehaviour
     public float SlopeHorizontalSpeed;
     public float slopeMultiplier = 5;
 
+    public float invulnerableSecs = 1;
+
     [Header("Other stuff")]
 
+    public FloatVariable life;
 
     public FloatVariable SteeringInput;
 
+    float hitCooldown;
 
-    
 
 
     RaycastHit[] collisions;
@@ -41,6 +46,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        hitCooldown = invulnerableSecs;
 
         Speed = MinSpeed;
     }
@@ -48,6 +54,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        progress = transform.position.z;
+
+        if (hitCooldown < invulnerableSecs)
+        {
+            hitCooldown += Time.deltaTime;
+        }
 
         input = SteeringInput.Value;
         input += Input.GetAxis("Horizontal");
@@ -133,6 +145,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    
 
     public void GetHit(Vector3 direction)
     {
@@ -147,6 +160,12 @@ public class PlayerController : MonoBehaviour
                 Speed = MinSpeed;
             }
 
+        }
+        if (hitCooldown >= invulnerableSecs)
+        {
+            life.Value--;
+
+            hitCooldown = 0;
         }
     }
 
