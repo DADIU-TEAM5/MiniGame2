@@ -46,3 +46,142 @@ PetraPunk/Assets/Wwise/Deployment/Plugins/Android/x86/Profile/libAkSoundEngine.s
 PetraPunk/Assets/Wwise/Deployment/Plugins/Android/arm64-v8a/Profile/libAkSoundEngine.so.meta
 PetraPunk/Assets/Wwise/Deployment/Plugins/Android/armeabi-v7a/Profile/libAkSoundEngine.so.meta
 PetraPunk/Assets/Wwise/Deployment/Plugins/Android/x86/Profile/libAkSoundEngine.so.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Nodes.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Canvas.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/UI/Buttons.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Textures.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP/LWSRPTemplates.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP/LWSRPTemplates (Legacy).unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP/HDSRPTemplates.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP/HDSRPTemplates (Legacy).unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/PPStackTemplates.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/Legacy.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/CustomRTTemplates.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Shaders.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/ShaderLibrary.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/ShaderFunctions.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Previews.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Nodes.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/GUISkins.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Wires.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Version.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Utils.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Templates.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Vertex/Tessellation.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Textures.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/SurfaceShaderInputs.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/SimpleNodes.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Operators.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Misc/Transformation.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Master.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/LogicalOperators.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/ImageEffects.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/HelperFuncs.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Constants/ShaderVariables/Various.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Constants/ShaderVariables/Transform.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Constants/ShaderVariables/Time.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Constants/ShaderVariables/Lighting.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Constants/ShaderVariables/FogAndAmbient.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Constants/ShaderVariables/CameraAndScreen.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Native.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Menu/Tools.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Menu/Palette.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Graphs.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/CustomDrawers.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Actions.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/XRay.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/WorldPosSLices.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Water.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/VertexNormalReconstruction.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/UVLightReveal.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/UnlitWithLightmap.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/UISpriteFX.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TwoSidedWithFace.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TriplanarProjection.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Transparency.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Transmission.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Translucency/Materials.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TextureArray.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Tessellation.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TerrainSnowCoverage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/UI/SimpleUI.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/UI/MaskedUI.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Sprites/SpriteMask.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Sprites/SimpleSprite.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/PostProcess/Sobel.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/PostProcess/FilmGrain.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Particles/HeatHaze.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Substance2018/Substance2018.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Substance/LegacySubstanceExample.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/StencilExample/RefractionsPanels.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal03.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal02.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals/Portal01.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SnowAccum.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Smear.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimpleTexture.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimpleTerrain/ApplyGrassWindToTerrain.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimpleRefraction.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimplePotionLiquid.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimpleNoise.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimpleLambert.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimpleGPUInstancing.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimpleBlur.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/ScreenSpaceDetail.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/ScreenSpaceCurvature.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/RimLight.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/RefractedShadows.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/ReflectRefractSoapBubble.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/ReadFromAtlasTiled.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/RadialUVDistortion.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Projectors.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/PositionCutoff.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/ParallaxOffsetFakeInterior.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/ParallaxOcclusionMappingPOM.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/ParallaxMapping.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Outline.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/OrientationBasedSprite.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/ObjectNormalRefraction.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/MultiPassDistortion.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Mosaic Effect PPS/MosaicEffectPPS.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Matcap.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Extrusion.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/DoubleLayerCustomSurface.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Dithering.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/CustomRTRain/Custom RT Samples.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/CustomOutlineToon.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/CustomLightingToon.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/CubemapReflections.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Burn.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/AnimatedUVDistortion.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/AnimatedFire.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/AnimatedFire-ShaderFunction.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/LW SRP Samples.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/HD SRP Samples.unitypackage.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Textures.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Shaders.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Prefabs.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Meshes/Materials.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Materials.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Demo.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/SingleChannelMasking.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Melting.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/LowPolyWater.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/HologramSimple.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/HighlightAnimated.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/ForceShield.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/EnvironmentGradient/Materials.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Dissolve Burn.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/2Sided.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures/Tiles.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures/Snow.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures/SceneTextures.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures/Sand.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures/Rock.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures/Misc.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures/Grass.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures/FakeWindow.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/ShaderFunctions/Official.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Prefabs/Ambient-Occlusion.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Models/Materials.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Materials.meta
