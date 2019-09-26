@@ -233,3 +233,4 @@ PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Vertex.meta
 PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP.meta
 PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/UI.meta
 PetraPunk/Assets/Prefabs/Slopes.meta
+*.meta
