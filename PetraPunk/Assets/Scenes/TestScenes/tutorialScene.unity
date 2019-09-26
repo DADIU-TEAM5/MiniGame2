@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -515,7 +515,7 @@ Light:
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6.51
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -557,7 +557,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 2
+  m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -1030,10 +1030,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2104747072, guid: f6b915ea55a531c4196ad0605ab100b1, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5855166734372820634, guid: f6b915ea55a531c4196ad0605ab100b1,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -1048,6 +1044,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104747072, guid: f6b915ea55a531c4196ad0605ab100b1, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2104747073, guid: f6b915ea55a531c4196ad0605ab100b1, type: 3}
       propertyPath: myObject
