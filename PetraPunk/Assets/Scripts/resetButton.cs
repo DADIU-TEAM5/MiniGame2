@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class resetButton : MonoBehaviour
 {
+    public GameObject myObject;
+    
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -13,9 +15,18 @@ public class resetButton : MonoBehaviour
 
     public void ResetGyro()
     {
-        Debug.Log("Reset Gyro");
         //Screen.orientation = ScreenOrientation.Landscape;
-        Input.gyro.rotationRate.Set(0,0,0);
+        //Input.gyro.rotationRate.Set(0,0,0);
+        try
+        {
+            myObject.GetComponent<GyroController>().calibrateGyro();
+        }
+        catch(System.Exception e)
+        {
+            Debug.LogError("GyroController not found");
+        }
+
+        
     }
 
 }
