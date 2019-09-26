@@ -62,15 +62,85 @@
 			<ShortName>Player</ShortName>
 			<Path>Player.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\PlayerCharacter\Movement\Dash" DurationType="OneShot" DurationMin="0.572032" DurationMax="0.986647"/>
+				<Event Id="2404675871" Name="DashUncool" ObjectPath="\Events\PlayerCharacter\Movement\DashUncool" DurationType="OneShot" DurationMin="0.804555" DurationMax="1.276603"/>
 				<Event Id="2385628217" Name="FootstepL" ObjectPath="\Events\PlayerCharacter\Movement\Footsteps\FootstepL" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2886188696" Name="FootStepLoopPlaceholder" ObjectPath="\Events\PlayerCharacter\Movement\FootStepLoopPlaceholder" DurationType="Infinite"/>
 				<Event Id="2385628199" Name="FootstepR" ObjectPath="\Events\PlayerCharacter\Movement\Footsteps\FootstepR" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2767591232" Name="SpeedWhoosh" ObjectPath="\Events\PlayerCharacter\Movement\SpeedWhoosh" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="97762032" Language="SFX">
+					<ShortName>DashRattle_01.wav</ShortName>
+					<Path>SFX\DashRattle_01_32A0B821.wem</Path>
+				</File>
+				<File Id="184406732" Language="SFX">
+					<ShortName>DashPipe_02.wav</ShortName>
+					<Path>SFX\DashPipe_02_32A0B821.wem</Path>
+				</File>
+				<File Id="186639405" Language="SFX">
+					<ShortName>DashRattle_02.wav</ShortName>
+					<Path>SFX\DashRattle_02_32A0B821.wem</Path>
+				</File>
+				<File Id="225611178" Language="SFX">
+					<ShortName>DashSwirl_02.wav</ShortName>
+					<Path>SFX\DashSwirl_02_32A0B821.wem</Path>
+				</File>
+				<File Id="261360263" Language="SFX">
+					<ShortName>CooldownOver_04.wav</ShortName>
+					<Path>SFX\CooldownOver_04_32A0B821.wem</Path>
+				</File>
+				<File Id="344386262" Language="SFX">
+					<ShortName>CooldownOver_03.wav</ShortName>
+					<Path>SFX\CooldownOver_03_32A0B821.wem</Path>
+				</File>
+				<File Id="427601425" Language="SFX">
+					<ShortName>CooldownOver_02.wav</ShortName>
+					<Path>SFX\CooldownOver_02_32A0B821.wem</Path>
+				</File>
+				<File Id="478313817" Language="SFX">
+					<ShortName>DashSwirlyli_02.wav</ShortName>
+					<Path>SFX\DashSwirlyli_02_32A0B821.wem</Path>
+				</File>
+				<File Id="510864419" Language="SFX">
+					<ShortName>DashPipe_01.wav</ShortName>
+					<Path>SFX\DashPipe_01_32A0B821.wem</Path>
+				</File>
+				<File Id="599041593" Language="SFX">
+					<ShortName>DashSwirl_03.wav</ShortName>
+					<Path>SFX\DashSwirl_03_32A0B821.wem</Path>
+				</File>
+				<File Id="675159911" Language="SFX">
+					<ShortName>DashSwirlyli_03.wav</ShortName>
+					<Path>SFX\DashSwirlyli_03_32A0B821.wem</Path>
+				</File>
 				<File Id="681854934" Language="SFX">
 					<ShortName>Runplaceholder.wav</ShortName>
 					<Path>SFX\Runplaceholder_9F132F2F.wem</Path>
+				</File>
+				<File Id="710076068" Language="SFX">
+					<ShortName>DashSwirlyli_01.wav</ShortName>
+					<Path>SFX\DashSwirlyli_01_32A0B821.wem</Path>
+				</File>
+				<File Id="799040413" Language="SFX">
+					<ShortName>CooldownOver_01.wav</ShortName>
+					<Path>SFX\CooldownOver_01_32A0B821.wem</Path>
+				</File>
+				<File Id="881954957" Language="SFX">
+					<ShortName>DashSwirl_01.wav</ShortName>
+					<Path>SFX\DashSwirl_01_32A0B821.wem</Path>
+				</File>
+				<File Id="992243382" Language="SFX">
+					<ShortName>DashPipe_03.wav</ShortName>
+					<Path>SFX\DashPipe_03_32A0B821.wem</Path>
+				</File>
+				<File Id="1004127604" Language="SFX">
+					<ShortName>DashRattle_03.wav</ShortName>
+					<Path>SFX\DashRattle_03_32A0B821.wem</Path>
+				</File>
+				<File Id="1039658552" Language="SFX">
+					<ShortName>DashWhooshPlaceholder.wav</ShortName>
+					<Path>SFX\DashWhooshPlaceholder_32A0B821.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
