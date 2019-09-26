@@ -390,11 +390,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlatSpeed: 45
   SlopeSpeed: 80
-  FlatAcceleration: 2
+  FlatAcceleration: 0.5
   SlopeAcceleration: 4
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
-  MinSpeed: 20
+  MinSpeed: 15
   HorizontalSpeed: 15
   SlopeHorizontalSpeed: 15
   slopeMultiplier: 1.5
