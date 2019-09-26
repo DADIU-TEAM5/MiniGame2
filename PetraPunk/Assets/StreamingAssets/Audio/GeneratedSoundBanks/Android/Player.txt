@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1942692385	Dash			\PlayerCharacter\Movement\Dash	
 	2385628199	FootstepR			\PlayerCharacter\Movement\Footsteps\FootstepR	
 	2385628217	FootstepL			\PlayerCharacter\Movement\Footsteps\FootstepL	
+	2404675871	DashUncool			\PlayerCharacter\Movement\DashUncool	
 	2767591232	SpeedWhoosh			\PlayerCharacter\Movement\SpeedWhoosh	
 	2886188696	FootStepLoopPlaceholder			\PlayerCharacter\Movement\FootStepLoopPlaceholder	
 
@@ -12,5 +14,22 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	453202908	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\PlayerCharacter\PlayerSpeedWoosh\SoundSeed Air Wind	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	97762032	DashRattle_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashRattle_01_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashRattle\DashRattle_01		25177
+	184406732	DashPipe_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashPipe_02_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashPipe\DashPipe_02		17019
+	186639405	DashRattle_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashRattle_02_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashRattle\DashRattle_02		24594
+	225611178	DashSwirl_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashSwirl_02_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashSwirl\DashSwirl_02		15188
+	261360263	CooldownOver_04	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\CooldownOver_04_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashUncool\DashUncool\CooldownOver_04		21303
+	344386262	CooldownOver_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\CooldownOver_03_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashUncool\DashUncool\CooldownOver_03		24761
+	427601425	CooldownOver_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\CooldownOver_02_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashUncool\DashUncool\CooldownOver_02		26614
+	478313817	DashSwirlyli_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashSwirlyli_02_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashSwirl2\DashSwirlyli_02		8922
+	510864419	DashPipe_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashPipe_01_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashPipe\DashPipe_01		11042
+	599041593	DashSwirl_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashSwirl_03_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashSwirl\DashSwirl_03		15755
+	675159911	DashSwirlyli_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashSwirlyli_03_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashSwirl2\DashSwirlyli_03		12442
 	681854934	Runplaceholder	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Runplaceholder_9F132F2F.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Runplaceholder		225740
+	710076068	DashSwirlyli_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashSwirlyli_01_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashSwirl2\DashSwirlyli_01		12271
+	799040413	CooldownOver_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\CooldownOver_01_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashUncool\DashUncool\CooldownOver_01		24187
+	881954957	DashSwirl_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashSwirl_01_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashSwirl\DashSwirl_01		16784
+	992243382	DashPipe_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashPipe_03_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashPipe\DashPipe_03		13180
+	1004127604	DashRattle_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashRattle_03_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashRattle\DashRattle_03		19993
+	1039658552	DashWhooshPlaceholder	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DashWhooshPlaceholder_32A0B821.wem		\Actor-Mixer Hierarchy\PlayerCharacter\Dash\DashMixdown\DashWhooshPlaceholder		9031
 
