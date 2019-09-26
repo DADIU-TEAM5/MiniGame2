@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Other stuff")]
 
-    float dashCDtimer;
+    public FloatVariable dashCDtimer;
     float dashTime;
     Vector3 dashStartPos;
     bool isDashing;
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
     float hitCooldown;
 
-
+    bool limitLeft, limitRight;
 
     RaycastHit[] collisions;
 
@@ -92,6 +92,8 @@ public class PlayerController : MonoBehaviour
         else
             input = 0;
 
+        limitMovementInput();
+
         Move();
 
         if(Input.GetKeyDown(KeyCode.Q))
@@ -114,6 +116,17 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    void limitMovementInput()
+    {
+        if (limitRight  && input < 0)
+        {
+            input = 0;
+        }
+        if (limitLeft && input > 0)
+        {
+            input = 0;
+        }
+    }
 
 
     void Move()
@@ -191,6 +204,15 @@ public class PlayerController : MonoBehaviour
         endDash();
         camScript.ShakeCam();
         direction.y = 0;
+        if (limitLeft && direction.x > 0)
+        {
+            direction.x = direction.x * -1;
+        }
+        if (limitRight && direction.x < 0)
+        {
+            direction.x = direction.x * -1;
+        }
+
         transform.Translate(direction);
 
         if( Speed > MinSpeed)
@@ -225,9 +247,18 @@ public class PlayerController : MonoBehaviour
 
     public void Dash(float direction)
     {
-        if (dashCDtimer <= 0)
+        if (limitLeft && direction > 0)
         {
-            dashCDtimer = DashCD;
+            direction = 0;
+        }
+        if (limitRight && direction < 0)
+        {
+            direction = 0;
+        }
+
+        if (dashCDtimer.Value <= 0)
+        {
+            dashCDtimer.Value = DashCD;
 
             dashDirection = DashLength * direction;
                 //print("DASH!");
@@ -244,9 +275,9 @@ public class PlayerController : MonoBehaviour
     void ApplyDashMovement()
     {
         //print(dashCDtimer);
-        if (dashCDtimer > 0 && !isDashing)
+        if (dashCDtimer.Value > 0 && !isDashing)
         {
-            dashCDtimer -= Time.deltaTime;
+            dashCDtimer.Value -= Time.deltaTime;
 
         }
         if (isDashing)
@@ -271,5 +302,33 @@ public class PlayerController : MonoBehaviour
         
 
     }
-    
+
+
+    public void HitWall(float direction, float xHitPos)
+    {
+        endDash();
+
+        if(direction < 0)
+        {
+            limitLeft = true;
+        }
+        if(direction > 0)
+        {
+            limitRight = true;
+        }
+
+        Vector3 temp = transform.position;
+
+        temp.x = xHitPos;
+        transform.position = temp;
+
+    }
+    public void leaveWall()
+    {
+        if (limitLeft )
+            limitLeft = false;
+        if (limitRight)
+            limitRight = false;
+    }
+
 }

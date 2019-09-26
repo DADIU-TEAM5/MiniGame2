@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gyrocontroller: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
-  angle: 15
+  angle: 45
 --- !u!1 &6302871270875934596
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,13 +392,14 @@ MonoBehaviour:
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
   MinSpeed: 20
-  HorizontalSpeed: 10
-  SlopeHorizontalSpeed: 10
+  HorizontalSpeed: 15
+  SlopeHorizontalSpeed: 15
   slopeMultiplier: 1.5
   invulnerableSecs: 1
   DashLength: 8
   DashCD: 1
-  DashDuration: 0.15
+  DashDuration: 0.1
+  dashCDtimer: {fileID: 11400000, guid: 3dfe75c0337420f40831067b569d4a58, type: 2}
   camScript: {fileID: 162327509537404794}
   gyroTilt: {fileID: 11400000, guid: 76f3fc3616df04b479a9df10ad39a1ad, type: 2}
   playerSpeed: {fileID: 11400000, guid: d92c3c674db15fa49b6285130a87a678, type: 2}
