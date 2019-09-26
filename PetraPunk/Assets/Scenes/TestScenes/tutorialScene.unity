@@ -483,7 +483,6 @@ MonoBehaviour:
   player: {fileID: 736361915}
   phoneUI: {fileID: 35218931}
   dashText: {fileID: 1875064064}
-  dashEvent: {fileID: 0}
   animator: {fileID: 35218933}
   animationSpeed: 0.6
   maxTurn: 9
@@ -516,9 +515,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1745643300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff6f1982a3d4f82439639f5da76fc693, type: 3}
+  m_Script: {fileID: 11500000, guid: dbfa45642fe0d1f44b35d8d46d99e57e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 398c6829b04ab9d4880aff2ecd6bb9b6, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1745643301}
+        m_MethodName: IncreaseDashCount
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1866258356
 GameObject:
   m_ObjectHideFlags: 0
