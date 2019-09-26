@@ -15,6 +15,9 @@ public class tutorialController : MonoBehaviour
 
     public float animationSpeed;
     public float maxTurn;
+
+    public GameObject[] tutorialSegments;
+    public LevelSegment nextSegment;
     
 
     // Start is called before the first frame update
@@ -47,7 +50,8 @@ public class tutorialController : MonoBehaviour
         {
             Debug.Log("position: " + player.transform.position.x);
             isTurningLeft = false;
-            GameObject.Destroy(phoneUI);
+            Destroy(phoneUI);
+            nextSegment.Segment = tutorialSegments[0];
         }
     }
 
