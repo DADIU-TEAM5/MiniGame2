@@ -874,7 +874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1052525803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,8 +1170,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498f1428f17f3764cbe79e53db37516f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMultiplier: 10
-  maxVelocity: 0
+  speedMultiplier: 2
+  maxVelocity: 1
   controlType: 0
   steeringOutput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
 --- !u!4 &1289592141
