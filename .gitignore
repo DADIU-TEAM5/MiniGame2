@@ -209,3 +209,28 @@ PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Vertex.meta
 PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP.meta
 PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/UI.meta
 PetraPunk/Assets/Prefabs/Slopes.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Models.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Prefabs.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/ShaderFunctions.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Assets/Textures.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/EnvironmentGradient.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Community/Skybox Cubemap Extended/Meshes.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/CustomRTRain.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Mosaic Effect PPS.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/SimpleTerrain.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/StencilExample/Portals.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Substance.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Substance2018.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Particles.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/PostProcess.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/Sprites.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/TemplateExamples/UI.meta
+PetraPunk/Assets/AmplifyShaderEditor/Examples/Official/Translucency.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Menu.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Constants/ShaderVariables.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Misc.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/Vertex.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/Templates/SRP.meta
+PetraPunk/Assets/AmplifyShaderEditor/Plugins/EditorResources/UI.meta
+PetraPunk/Assets/Prefabs/Slopes.meta
+*.meta
