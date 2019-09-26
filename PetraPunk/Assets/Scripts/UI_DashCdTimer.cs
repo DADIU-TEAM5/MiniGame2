@@ -7,7 +7,6 @@ public class UI_DashCdTimer : MonoBehaviour
 {
     public FloatVariable DashCDTimer;
     public Text UIText;
-    public GameEvent cooldownOverAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,6 @@ public class UI_DashCdTimer : MonoBehaviour
             UIText.text = "Dash Cooldown";
         } else {
             UIText.enabled = false;
-            cooldownOverAudio.Raise();
         }
     }
 }
