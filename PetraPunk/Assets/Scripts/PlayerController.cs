@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour
     Vector3 dashStartPos;
     bool isDashing;
     float dashDirection;
+    public GameEvent dashAudio;
 
     public CameraMovement camScript;
 
@@ -260,6 +261,8 @@ public class PlayerController : MonoBehaviour
 
         if (dashCDtimer.Value <= 0)
         {
+            dashAudio.Raise();
+
             dashCDtimer.Value = DashCD;
 
             dashDirection = DashLength * direction;
@@ -276,11 +279,12 @@ public class PlayerController : MonoBehaviour
     }
     void ApplyDashMovement()
     {
+
         //print(dashCDtimer);
         if (dashCDtimer.Value > 0 && !isDashing)
         {
             dashCDtimer.Value -= Time.deltaTime;
-
+            
         }
         if (isDashing)
         {

@@ -250,6 +250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundButton: {fileID: 0}
+  startNewLevelAudio: {fileID: 11400000, guid: 34734d50eed1fd247b8a0b66a5f0f152, type: 2}
+  buttonClickAudio: {fileID: 11400000, guid: f93d539d5adc9834c89b0bfbf94019c4, type: 2}
 --- !u!1 &3355849025517128713
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,6 +602,17 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

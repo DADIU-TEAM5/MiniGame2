@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1873030713840535677}
   - component: {fileID: 1873030713840535676}
   m_Layer: 5
-  m_Name: UI
+  m_Name: UI_inGameHUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,4 +192,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runTime: {fileID: 11400000, guid: 6e2b955ab5e10654b8b3b0f3c4547e76, type: 2}
-  deathVar: {fileID: 11400000, guid: afc29172247e75c45b5749f6a13d6de2, type: 2}
+  death: {fileID: 11400000, guid: 4f800320a374d1a40bda01a521c41b52, type: 2}
+  deathAudio: {fileID: 11400000, guid: 0879480d1ac96f848b5eae3312d1ffe3, type: 2}

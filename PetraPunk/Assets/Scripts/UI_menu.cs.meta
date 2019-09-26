@@ -4,11 +4,10 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - optionsMenu: {fileID: 7262866728385737679, guid: d78d64c4a1cee354b9cf2c8cbb220b90,
-      type: 3}
-  - mainMenu: {fileID: 8586240548819977054, guid: c69d03c8ca75f0344946c681a55399db,
-      type: 3}
   - soundButton: {instanceID: 0}
+  - startNewLevelAudio: {fileID: 11400000, guid: 34734d50eed1fd247b8a0b66a5f0f152,
+      type: 2}
+  - buttonClickAudio: {fileID: 11400000, guid: f93d539d5adc9834c89b0bfbf94019c4, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
