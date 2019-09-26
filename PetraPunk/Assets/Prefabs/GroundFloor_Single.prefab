@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1639287240917463152}
   - component: {fileID: 7774600198956255814}
   - component: {fileID: 4096134753755068095}
+  - component: {fileID: 8700572466556204496}
   m_Layer: 9
   m_Name: GroundFloor_Single
   m_TagString: Untagged
@@ -78,3 +79,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8700572466556204496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370215942541132387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.000008, y: 0.10000005, z: 6}
+  m_Center: {x: -0.0000014305115, y: 0.050000086, z: 0}
