@@ -11,4 +11,11 @@ public class resetButton : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void ResetGyro()
+    {
+        Debug.Log("Reset Gyro");
+        //Screen.orientation = ScreenOrientation.Landscape;
+        Input.gyro.rotationRate.Set(0,0,0);
+    }
+
 }

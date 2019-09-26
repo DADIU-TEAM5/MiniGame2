@@ -610,6 +610,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2104747072, guid: f6b915ea55a531c4196ad0605ab100b1, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104747072, guid: f6b915ea55a531c4196ad0605ab100b1, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104747072, guid: f6b915ea55a531c4196ad0605ab100b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 97.79999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104747074, guid: f6b915ea55a531c4196ad0605ab100b1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetGyro
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6b915ea55a531c4196ad0605ab100b1, type: 3}
 --- !u!1001 &1497741673

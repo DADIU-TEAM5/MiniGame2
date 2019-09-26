@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4195921398	MusicTest			\MusicEvents\MusicTest	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3899915506	PlayerOnSlope			\Default Work Unit\PlayerOnSlope	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	633560826	DronePLacehoLDEr	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DronePLacehoLDEr_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\TrashDrone\DronePLacehoLDEr\DronePLacehoLDEr		3346217
+	732194452	BottleBeatBassTest	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\BottleBeatBassTest_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\BeatMain\BottleBeatBassTest\BottleBeatBassTest		90958
+	880957931	BottleBeatTest	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\BottleBeatTest_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\Beat2\BottleBeatTest\BottleBeatTest		409084
+

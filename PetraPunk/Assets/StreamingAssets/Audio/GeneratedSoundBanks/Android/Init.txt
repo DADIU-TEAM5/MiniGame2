@@ -1,12 +1,26 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	103106329	MusicSideVolume			\Default Work Unit\Music\MusicSideVolume	
+	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
+	3899915506	PlayerOnSlope			\Default Work Unit\PlayerOnSlope	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
+	138295086	Kicks			\Default Work Unit\Master Audio Bus\Music\Kicks	
 	436743010	Character			\Default Work Unit\Master Audio Bus\Character	
+	2739838641	Drone			\Default Work Unit\Master Audio Bus\Music\Drone	
 	3257506471	Impact			\Default Work Unit\Master Audio Bus\Impact	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1320542602	ReverbMain			\Default Work Unit\Master Audio Bus\ReverbMain	
+
 Effect plug-ins	ID	Name	Type				Notes
+	281231728	Wwise Meter (Custom)	Wwise Meter			
 	702543456	Tunnel1	Wwise Matrix Reverb			
+	819134163	Tunnel1_(Custom)	Wwise Matrix Reverb			
+	890205218	Metal_Hangar (Custom)	Wwise RoomVerb			
+	1055070446	SidechainMeter	Wwise Meter			
 	2849147824	Medium	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
