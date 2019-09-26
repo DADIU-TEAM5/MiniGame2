@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 3677568758547451629}
   - component: {fileID: 6932676064887992852}
   - component: {fileID: 7451924569707515105}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SideSlope_04
-  m_TagString: Untagged
+  m_TagString: Slope
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
