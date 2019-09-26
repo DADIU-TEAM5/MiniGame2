@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 4612853149412508620}
   - component: {fileID: 4612853149412508617}
   - component: {fileID: 162327509537404794}
+  - component: {fileID: 6769385842949030837}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -323,6 +324,20 @@ MonoBehaviour:
   ShakeMaxAngle: 5
   ShakeSpeed: 50
   ShakeTime: 0.4
+--- !u!114 &6769385842949030837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612853149412508616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10d494f4ec5d1f4bb41ad626d704a07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gyrocontroller: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
+  angle: 45
 --- !u!1 &6302871270875934596
 GameObject:
   m_ObjectHideFlags: 0
