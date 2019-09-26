@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
     bool isDashing;
     float dashDirection;
     public GameEvent dashAudio;
+    public GameEvent cooldownOverAudio;
 
     public CameraMovement camScript;
 
@@ -297,6 +298,7 @@ public class PlayerController : MonoBehaviour
             if(dashTime >= DashDuration)
             {
                 endDash();
+                cooldownOverAudio.Raise();
             }
         }
     }
