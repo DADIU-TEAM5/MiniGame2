@@ -8,7 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
-	3899915506	PlayerOnSlope			\Default Work Unit\PlayerOnSlope	
+	3353550816	DistanceToObstacle			\Default Work Unit\DistanceToObstacle	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	453202908	SoundSeed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\PlayerCharacter\PlayerSpeedWoosh\SoundSeed Air Wind	

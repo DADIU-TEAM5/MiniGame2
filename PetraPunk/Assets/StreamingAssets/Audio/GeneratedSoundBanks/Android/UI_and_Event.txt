@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	779278001	Death			\UI and Event\Death	
+	1432588725	Select			\UI and Event\Select	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	391935103	Cartoon, Orchestral, Trumpet, Vintage, Failure, Sad SND11701	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Cartoon, Orchestral, Trumpet, Vintage, Failure, Sad SND11701_32A0B821.wem		\Actor-Mixer Hierarchy\Ambience\Cartoon, Orchestral, Trumpet, Vintage, Failure, Sad SND11701		237546
+	946976637	plantDead	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\plantDead_32A0B821.wem		\Actor-Mixer Hierarchy\Default Work Unit\plantDead		32022
+
