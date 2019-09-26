@@ -470,7 +470,7 @@ MonoBehaviour:
   animationSpeed: 0.6
   maxTurn: 9
   tutorialSegments:
-  - {fileID: 36780754178830879, guid: 95779825f7ec86b49984e989954499ed, type: 3}
+  - {fileID: 36780754178830879, guid: 693fcf3dae65d2c418acaa6b49e6f44f, type: 3}
   nextSegment: {fileID: 11400000, guid: f57b5a0492e711d4489537eaad87d1fa, type: 2}
 --- !u!4 &1745643302
 Transform:
