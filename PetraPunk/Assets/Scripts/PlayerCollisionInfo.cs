@@ -40,7 +40,7 @@ public class PlayerCollisionInfo : MonoBehaviour
             distanceToObstacle.Value = 0;
         }
 
-        print(distanceToObstacle.Value);
+        //print(distanceToObstacle.Value);
 
     }
 

@@ -7,6 +7,7 @@ public class UI_DashCdTimer : MonoBehaviour
 {
     public FloatVariable DashCDTimer;
     public Text UIText;
+    public BoolVariable dashCooldownActive;
 
     // Start is called before the first frame update
     void Start()
