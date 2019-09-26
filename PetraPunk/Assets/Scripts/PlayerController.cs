@@ -261,6 +261,8 @@ public class PlayerController : MonoBehaviour
 
         if (dashCDtimer.Value <= 0)
         {
+            dashAudio.Raise();
+
             dashCDtimer.Value = DashCD;
 
             dashDirection = DashLength * direction;
@@ -281,8 +283,6 @@ public class PlayerController : MonoBehaviour
         //print(dashCDtimer);
         if (dashCDtimer.Value > 0 && !isDashing)
         {
-            dashAudio.Raise();
-
             dashCDtimer.Value -= Time.deltaTime;
             
         }
