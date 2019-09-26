@@ -9,6 +9,9 @@ public class GyroController : MonoBehaviour
     private float gyroInput;
     public float speedMultiplier = 2;
     public float maxVelocity = 1;
+    //public float threshold = 0.2f;
+
+    public Text text;
 
 
     public enum control { New, Old };
@@ -17,7 +20,7 @@ public class GyroController : MonoBehaviour
 
 
     public FloatVariable steeringOutput;
-    private Vector3 gyroOffset;
+    private float gyroOffset = 0;
 
     float currentRot = 0;
 
@@ -33,6 +36,7 @@ public class GyroController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         float rotRate = 0;
 
         if (controlType == control.Old)
@@ -46,16 +50,24 @@ public class GyroController : MonoBehaviour
             //rotRate = Input.gyro.rotationRate.z;
 
             // Drift
-            rotRate = Input.gyro.rotationRateUnbiased.z - gyroOffset.z;
+            rotRate = Input.gyro.rotationRateUnbiased.z;
 
            // rotRate = Input.gyro.attitude.eulerAngles.z;
 
         }
 
+        //if (Mathf.Abs(rotRate) < threshold)
+        //    rotRate = 0;
+
         // Add speed multiplier to input
         currentRot += rotRate * Time.deltaTime;
-        gyroInput = currentRot * -speedMultiplier;
+        //currentRot = rotRate;
+        gyroInput = (currentRot - gyroOffset) * -speedMultiplier;
 
+        if (text != null)
+        {
+            text.text = "gyroIntput:  " + (float)gyroInput;
+        }
 
         //Set speed cap
         if (gyroInput > 0)
@@ -70,9 +82,12 @@ public class GyroController : MonoBehaviour
 
     }
 
+    // Resets gyro rotation to 0
     public void calibrateGyro()
     {
-        gyroOffset = Input.gyro.rotationRateUnbiased;
+        Debug.Log("Reset Gyro");
+        gyroOffset = currentRot;
+        
     }
 
 }
