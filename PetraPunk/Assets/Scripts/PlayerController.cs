@@ -64,6 +64,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+
         hitCooldown = invulnerableSecs;
 
         Speed = MinSpeed;
@@ -93,7 +95,7 @@ public class PlayerController : MonoBehaviour
         else
             input = 0;
 
-        limitMovement();
+        limitMovementInput();
 
         Move();
 
@@ -117,11 +119,15 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    void limitMovement()
+    void limitMovementInput()
     {
-        if (limitRight)
+        if (limitRight  && input < 0)
         {
-
+            input = 0;
+        }
+        if (limitLeft && input > 0)
+        {
+            input = 0;
         }
     }
 
@@ -201,6 +207,15 @@ public class PlayerController : MonoBehaviour
         endDash();
         camScript.ShakeCam();
         direction.y = 0;
+        if (limitLeft && direction.x > 0)
+        {
+            direction.x = direction.x * -1;
+        }
+        if (limitRight && direction.x < 0)
+        {
+            direction.x = direction.x * -1;
+        }
+
         transform.Translate(direction);
 
         if( Speed > MinSpeed)
@@ -235,6 +250,15 @@ public class PlayerController : MonoBehaviour
 
     public void Dash(float direction)
     {
+        if (limitLeft && direction > 0)
+        {
+            direction = 0;
+        }
+        if (limitRight && direction < 0)
+        {
+            direction = 0;
+        }
+
         if (dashCDtimer.Value <= 0)
         {
             dashCDtimer.Value = DashCD;
@@ -286,8 +310,9 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public void HitWall(float direction)
+    public void HitWall(float direction, float xHitPos)
     {
+        endDash();
 
         if(direction < 0)
         {
@@ -298,6 +323,10 @@ public class PlayerController : MonoBehaviour
             limitRight = true;
         }
 
+        Vector3 temp = transform.position;
+
+        temp.x = xHitPos;
+        transform.position = temp;
 
     }
     public void leaveWall()

@@ -23,7 +23,8 @@ public class PlayerCollisionInfo : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Wall"))
         {
-            playerController.HitWall(collision.GetContact(0).normal.x);
+            float xPos = collision.collider.ClosestPoint(transform.position).x;
+            playerController.HitWall(collision.GetContact(0).normal.x,xPos);
         }
 
     }
