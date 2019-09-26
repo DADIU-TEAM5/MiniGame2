@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SwipeInput : MonoBehaviour
 {
+    public static bool swipeEnabled;
     public PlayerController playerCOntroller;
 
     Touch currentTouch;
@@ -22,42 +23,45 @@ public class SwipeInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        swipeEnabled = true;
        // debby.text = Input.touchCount + "";
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
-        
-
-        if(Input.touchCount > 0)
+        if (swipeEnabled == true)
         {
-            
-            currentTouch = Input.GetTouch(0);
 
-            if(startPos == Vector2.zero)
-            startPos = currentTouch.position;
 
-            endPos = currentTouch.position;
 
-            //debby.text = startPos.x + " - " + endPos.x;
-            direction = startPos.x - endPos.x;
+            if (Input.touchCount > 0)
+            {
 
-        }
-        else
-        {
-            if (direction < 0)
-                direction = 1;
-            else if (direction > 0)
-                direction = -1;
+                currentTouch = Input.GetTouch(0);
 
-            if (startPos != Vector2.zero)
-                playerCOntroller.Dash(direction);
+                if (startPos == Vector2.zero)
+                    startPos = currentTouch.position;
 
-            startPos = Vector2.zero;
-           // debby.text = direction + "";
+                endPos = currentTouch.position;
+
+                //debby.text = startPos.x + " - " + endPos.x;
+                direction = startPos.x - endPos.x;
+
+            }
+            else
+            {
+                if (direction < 0)
+                    direction = 1;
+                else if (direction > 0)
+                    direction = -1;
+
+                if (startPos != Vector2.zero)
+                    playerCOntroller.Dash(direction);
+
+                startPos = Vector2.zero;
+                // debby.text = direction + "";
+            }
         }
     }
 
