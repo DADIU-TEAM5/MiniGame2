@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4512068902882869914}
   - component: {fileID: 4512068902882869909}
+  - component: {fileID: 7984584494837175570}
   m_Layer: 0
   m_Name: Life Manager
   m_TagString: Untagged
@@ -46,7 +47,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Lifes: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
   lifeDisplay: {fileID: 4512068903373436211}
+  death: {fileID: 11400000, guid: 4f800320a374d1a40bda01a521c41b52, type: 2}
+  deathAudio: {fileID: 11400000, guid: 0879480d1ac96f848b5eae3312d1ffe3, type: 2}
   NumberOfLifes: 3
+--- !u!114 &7984584494837175570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4512068902882869908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfa45642fe0d1f44b35d8d46d99e57e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 4f800320a374d1a40bda01a521c41b52, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4512068902882869909}
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &4512068903311151445
 GameObject:
   m_ObjectHideFlags: 0

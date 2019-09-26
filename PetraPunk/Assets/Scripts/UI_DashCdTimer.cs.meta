@@ -3,7 +3,11 @@ guid: 968d69a7940b8bc42a5c218e8a548f9e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - DashCDTimer: {instanceID: 0}
+  - UIText: {instanceID: 0}
+  - cooldownOverAudio: {fileID: 11400000, guid: 3b0ceb7cd69c3d449ac41b94d29bbadb,
+      type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

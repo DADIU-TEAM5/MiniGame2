@@ -7,6 +7,7 @@ public class tutorialController : MonoBehaviour
 
     public GameObject player;
     public GameObject phoneUI;
+    public GameObject dangerObject;
     public Animator animator;
 
 

@@ -3,7 +3,18 @@ guid: 6cb98bbb7556b39459536ba5b35570c3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - dashCDtimer: {instanceID: 0}
+  - dashAudio: {fileID: 11400000, guid: 398c6829b04ab9d4880aff2ecd6bb9b6, type: 2}
+  - cooldownOverAudio: {fileID: 11400000, guid: 3b0ceb7cd69c3d449ac41b94d29bbadb,
+      type: 2}
+  - camScript: {instanceID: 0}
+  - gyroTilt: {instanceID: 0}
+  - playerSpeed: {instanceID: 0}
+  - audioSlope: {instanceID: 0}
+  - life: {instanceID: 0}
+  - SteeringInput: {instanceID: 0}
+  - colliderAndGraphics: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
