@@ -392,8 +392,8 @@ MonoBehaviour:
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
   MinSpeed: 20
-  HorizontalSpeed: 10
-  SlopeHorizontalSpeed: 10
+  HorizontalSpeed: 15
+  SlopeHorizontalSpeed: 15
   slopeMultiplier: 1.5
   invulnerableSecs: 1
   DashLength: 8
