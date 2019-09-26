@@ -36,6 +36,8 @@ public class PlayerController : MonoBehaviour
     bool isDashing;
     float dashDirection;
     public GameEvent dashAudio;
+    public GameEvent cooldownOverAudio;
+    public BoolVariable dashCooldownActiveVar;
 
     public CameraMovement camScript;
 
@@ -284,8 +286,23 @@ public class PlayerController : MonoBehaviour
         if (dashCDtimer.Value > 0 && !isDashing)
         {
             dashCDtimer.Value -= Time.deltaTime;
-            
+
+            dashCooldownActiveVar.Value = true;
         }
+
+        if (dashCDtimer.Value <= 0 && dashCooldownActiveVar.Value == true)
+        {
+            //Debug.Log("if " + dashCooldownActiveVar.Value);
+            //Debug.Log("if " + dashCDtimer.Value);
+
+            cooldownOverAudio.Raise();
+            dashCooldownActiveVar.Value = false;
+        } //else if(dashCDtimer.Value > 0 && dashCooldownActiveVar.Value == false)
+       // {
+           // Debug.Log("else " + dashCooldownActiveVar.Value);
+           // Debug.Log("else " + dashCDtimer.Value);
+       // }
+
         if (isDashing)
         {
             dashTime += Time.deltaTime;
@@ -293,8 +310,8 @@ public class PlayerController : MonoBehaviour
             dashStartPos.z = transform.position.z;
             
             transform.position = Vector3.Lerp(dashStartPos, dashStartPos + (Vector3.right * dashDirection), dashTime / DashDuration);
-            
-            if(dashTime >= DashDuration)
+
+            if (dashTime >= DashDuration)
             {
                 endDash();
             }

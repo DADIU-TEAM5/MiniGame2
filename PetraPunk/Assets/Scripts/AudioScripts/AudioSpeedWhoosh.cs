@@ -7,8 +7,10 @@ public class AudioSpeedWhoosh : MonoBehaviour
 
     public AK.Wwise.Event WhooshSound;
     public FloatVariable PlayerSpeed;
+    public FloatVariable DistanceToPipes;
     public BoolVariable OnSlope;
     public float SeeSpeed;
+    public float SeePipeDistance;
     public bool SeeOnSlope;
 
     void Start()
@@ -20,6 +22,9 @@ public class AudioSpeedWhoosh : MonoBehaviour
     {
         AkSoundEngine.SetRTPCValue("PlayerSpeed", PlayerSpeed.Value);
         SeeSpeed = PlayerSpeed.Value;
+
+        AkSoundEngine.SetRTPCValue("DistanceToObstacle", DistanceToPipes.Value);
+        SeePipeDistance = DistanceToPipes.Value;
 
         if (OnSlope.Value == true)
         {

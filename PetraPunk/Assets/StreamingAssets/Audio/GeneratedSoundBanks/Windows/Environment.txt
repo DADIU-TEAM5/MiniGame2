@@ -2,6 +2,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	900571619	SteamPipe			\Obstacles\SteamPipe	
 	3015288684	PipeHit			\Obstacles\PipeHit	
 
+Effect plug-ins	ID	Name	Type				Notes
+	933393503	Wwise_Gain_(Custom)	Wwise Gain			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	55594322	PipeSTEAM	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\PipeSTEAM_9F132F2F.wem		\Actor-Mixer Hierarchy\Pipes\Steam\PipeSTEAM		789587
 	67673841	Radiate_03	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\Radiate_03_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\Pipehitter\RadiatorHit\Radiate_03		31685
