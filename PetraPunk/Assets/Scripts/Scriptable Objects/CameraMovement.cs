@@ -5,6 +5,9 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
 
+
+    public bool UseSlopeAngle;
+
     public Transform PlayerGraphics;
     public PlayerController playerController;
 
@@ -69,17 +72,32 @@ public class CameraMovement : MonoBehaviour
     }
     void MoveCamera()
     {
-        if (playerController.transform.position.x > 0)
+        if (UseSlopeAngle)
         {
-            transform.position = Vector3.Lerp(PlayerGraphics.position + flatGoalPoistion, PlayerGraphics.position + slopeGoalPoistionRight + Vector3.back * slopeBackDistance, timeOnSlope);
-            transform.rotation = Quaternion.Lerp(flatGoalRotation, slopeGoalRotationRight, timeOnSlope);
+            if (playerController.transform.position.x > 0)
+            {
+                transform.position = Vector3.Lerp(PlayerGraphics.position + flatGoalPoistion, PlayerGraphics.position + slopeGoalPoistionRight + Vector3.back * slopeBackDistance, timeOnSlope);
+
+
+                transform.rotation = Quaternion.Lerp(flatGoalRotation, slopeGoalRotationRight, timeOnSlope);
+            }
+            else
+            {
+                transform.position = Vector3.Lerp(PlayerGraphics.position + flatGoalPoistion, PlayerGraphics.position + slopeGoalPoistionLeft + Vector3.back * slopeBackDistance, timeOnSlope);
+
+
+                transform.rotation = Quaternion.Lerp(flatGoalRotation, slopeGoalRotationLeft, timeOnSlope);
+
+            }
+
+
         }
         else
         {
-            transform.position = Vector3.Lerp(PlayerGraphics.position + flatGoalPoistion, PlayerGraphics.position + slopeGoalPoistionLeft + Vector3.back * slopeBackDistance, timeOnSlope);
-            transform.rotation = Quaternion.Lerp(flatGoalRotation, slopeGoalRotationLeft, timeOnSlope);
-
+            transform.position = Vector3.Lerp(PlayerGraphics.position + flatGoalPoistion, PlayerGraphics.position + flatGoalPoistion + Vector3.back * slopeBackDistance, timeOnSlope);
+            transform.rotation = flatGoalRotation;
         }
+
 
         if (playerController.OnSlope)
         {

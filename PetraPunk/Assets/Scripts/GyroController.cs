@@ -7,8 +7,8 @@ public class GyroController : MonoBehaviour
 {
 
     private float gyroInput;
-    public float speedMultiplier = 10;
-    public float maxVelocity;
+    public float speedMultiplier = 2;
+    public float maxVelocity = 1;
 
 
     public enum control { New, Old };
@@ -17,13 +17,8 @@ public class GyroController : MonoBehaviour
 
 
     public FloatVariable steeringOutput;
+    private Vector3 gyroOffset;
 
-    //public Text tex;
-
-
-    // float timer = 0;
-
-    // float rotationThreshHold = 0.2f;
     float currentRot = 0;
 
 
@@ -47,20 +42,19 @@ public class GyroController : MonoBehaviour
         }
         else
         {
+            // Drift
             //rotRate = Input.gyro.rotationRate.z;
-            rotRate = Input.gyro.rotationRateUnbiased.z;
+
+            // Drift
+            rotRate = Input.gyro.rotationRateUnbiased.z - gyroOffset.z;
+
+           // rotRate = Input.gyro.attitude.eulerAngles.z;
+
         }
 
         // Add speed multiplier to input
         currentRot += rotRate * Time.deltaTime;
         gyroInput = currentRot * -speedMultiplier;
-
-        // Standardized data sucks
-        //if (gyroInput > 0)
-        //    gyroInput = 1 - (1 / gyroInput);
-
-        //if (gyroInput < 0)
-        //    gyroInput =  -1 + (1 / gyroInput);
 
 
         //Set speed cap
@@ -74,36 +68,11 @@ public class GyroController : MonoBehaviour
         }
 
 
+    }
 
-
-
-
-        // Dampening
-        //transform.Rotate(Vector3.up * Mathf.Min(steeringInput * 100, maxVelocity) * Time.deltaTime);
-        // transform.Translate(Vector3.left * steeringInput * 10 * Time.deltaTime);
-
-        // Old Threshold
-        //if (Mathf.Abs(currentRot) > rotationThreshHold)
-        //{
-        //    //timer = 0;
-        //    if (currentRot < 0)
-        //    {
-        //        steeringInput = -1;
-        //    }
-        //    else
-        //    {
-
-        //        steeringInput = 1;
-        //    }
-        //}
-        //else
-        //{
-
-        //    steeringInput = 0;
-
-        //}
-
-
+    public void calibrateGyro()
+    {
+        gyroOffset = Input.gyro.rotationRateUnbiased;
     }
 
 }
