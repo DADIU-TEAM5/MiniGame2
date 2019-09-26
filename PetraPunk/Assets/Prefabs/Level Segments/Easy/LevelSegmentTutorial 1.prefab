@@ -72,6 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6600345826420464085}
   - component: {fileID: 2814034036972859796}
+  - component: {fileID: 5865727050473872102}
   m_Layer: 0
   m_Name: LevelSegmentTutorial 1
   m_TagString: Untagged
@@ -111,6 +112,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartOfScene: {fileID: 6967550909085759196}
   EndOfScene: {fileID: 3081969342549822193}
+--- !u!114 &5865727050473872102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5856490195718869472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8edcbefacd67324c92334b68e451d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dangerObject: {fileID: 433059046742798280}
+  ActivationDistance: 150
 --- !u!1001 &661268607877432870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -221,7 +236,7 @@ PrefabInstance:
     - target: {fileID: 2597273415424940044, guid: 1f199b4823d024945a137e1487c98f77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.82
+      value: 4.84
       objectReference: {fileID: 0}
     - target: {fileID: 2597273415424940044, guid: 1f199b4823d024945a137e1487c98f77,
         type: 3}
@@ -268,18 +283,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2597273415424940044, guid: 1f199b4823d024945a137e1487c98f77,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2597273415424940044, guid: 1f199b4823d024945a137e1487c98f77,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f199b4823d024945a137e1487c98f77, type: 3}
+--- !u!1 &433059046742798280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2597273415424940043, guid: 1f199b4823d024945a137e1487c98f77,
+    type: 3}
+  m_PrefabInstance: {fileID: 2452727324188587971}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &433059046742798287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2597273415424940044, guid: 1f199b4823d024945a137e1487c98f77,

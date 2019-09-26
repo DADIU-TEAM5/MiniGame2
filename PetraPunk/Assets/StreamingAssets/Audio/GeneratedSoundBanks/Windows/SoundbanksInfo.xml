@@ -261,9 +261,28 @@
 			<ShortName>TestBank</ShortName>
 			<Path>TestBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1269172605" Name="TestAudio" ObjectPath="\Events\Default Work Unit\TestAudio" DurationType="OneShot" DurationMin="4.528827" DurationMax="4.528827"/>
+				<Event Id="1269172605" Name="TestAudio" ObjectPath="\Events\Default Work Unit\TestAudio" DurationType="OneShot" DurationMin="2.125011" DurationMax="2.125011"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="946976637" Language="SFX">
+					<ShortName>plantDead.wav</ShortName>
+					<Path>SFX\plantDead_32A0B821.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3707080400" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\UI_and_Event</ObjectPath>
+			<ShortName>UI_and_Event</ShortName>
+			<Path>UI_and_Event.bnk</Path>
+			<IncludedEvents>
+				<Event Id="779278001" Name="Death" ObjectPath="\Events\UI and Event\Death" DurationType="OneShot" DurationMin="6.777761" DurationMax="6.777761"/>
+				<Event Id="1432588725" Name="Select" ObjectPath="\Events\UI and Event\Select" DurationType="OneShot" DurationMin="2.125011" DurationMax="2.125011"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="391935103" Language="SFX">
+					<ShortName>Cartoon, Orchestral, Trumpet, Vintage, Failure, Sad SND11701.wav</ShortName>
+					<Path>SFX\Cartoon, Orchestral, Trumpet, Vintage, Failure, Sad SND11701_32A0B821.wem</Path>
+				</File>
 				<File Id="946976637" Language="SFX">
 					<ShortName>plantDead.wav</ShortName>
 					<Path>SFX\plantDead_32A0B821.wem</Path>
