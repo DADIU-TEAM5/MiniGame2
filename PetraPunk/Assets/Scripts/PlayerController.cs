@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Other stuff")]
 
-    float dashCDtimer;
+    public FloatVariable dashCDtimer;
     float dashTime;
     Vector3 dashStartPos;
     bool isDashing;
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
 
     float hitCooldown;
 
-
+    bool limitLeft, limitRight;
 
     RaycastHit[] collisions;
 
@@ -92,6 +92,8 @@ public class PlayerController : MonoBehaviour
         else
             input = 0;
 
+        limitMovement();
+
         Move();
 
         if(Input.GetKeyDown(KeyCode.Q))
@@ -114,6 +116,13 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    void limitMovement()
+    {
+        if (limitRight)
+        {
+
+        }
+    }
 
 
     void Move()
@@ -225,9 +234,9 @@ public class PlayerController : MonoBehaviour
 
     public void Dash(float direction)
     {
-        if (dashCDtimer <= 0)
+        if (dashCDtimer.Value <= 0)
         {
-            dashCDtimer = DashCD;
+            dashCDtimer.Value = DashCD;
 
             dashDirection = DashLength * direction;
                 //print("DASH!");
@@ -244,9 +253,9 @@ public class PlayerController : MonoBehaviour
     void ApplyDashMovement()
     {
         //print(dashCDtimer);
-        if (dashCDtimer > 0 && !isDashing)
+        if (dashCDtimer.Value > 0 && !isDashing)
         {
-            dashCDtimer -= Time.deltaTime;
+            dashCDtimer.Value -= Time.deltaTime;
 
         }
         if (isDashing)
@@ -271,5 +280,28 @@ public class PlayerController : MonoBehaviour
         
 
     }
-    
+
+
+    public void HitWall(float direction)
+    {
+
+        if(direction < 0)
+        {
+            limitLeft = true;
+        }
+        if(direction > 0)
+        {
+            limitRight = true;
+        }
+
+
+    }
+    public void leaveWall()
+    {
+        if (limitLeft )
+            limitLeft = false;
+        if (limitRight)
+            limitRight = false;
+    }
+
 }

@@ -12,7 +12,7 @@ public class PlayerCollisionInfo : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         
-
+        
         if(collision.gameObject.CompareTag("Obstacle"))
         {
             playerController.GetHit(collision.GetContact(0).normal);
@@ -21,5 +21,21 @@ public class PlayerCollisionInfo : MonoBehaviour
 
 
         }
+
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            playerController.HitWall(collision.GetContact(0).normal.x);
+        }
+
     }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            playerController.leaveWall();
+        }
+    }
+
+
 }

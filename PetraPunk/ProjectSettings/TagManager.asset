@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Slope
   - Obstacle
+  - UI_optionsMenu
+  - UI_mainMenu
+  - Timer
+  - Wall
   layers:
   - Default
   - TransparentFX
