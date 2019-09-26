@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -753,6 +753,41 @@ PrefabInstance:
     - target: {fileID: 4612853149198441980, guid: 59b232afd2bc9c44d9372467360cfa7e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 162327509537404794, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: UseSlopeAngle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149412508623, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13571554
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149412508623, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149412508623, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149412508623, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99074787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149412508623, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6769385842949030837, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: angle
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
