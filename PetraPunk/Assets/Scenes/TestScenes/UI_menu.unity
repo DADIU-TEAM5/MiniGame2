@@ -823,18 +823,6 @@ PrefabInstance:
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b344c87ad61862a4d9c1366848bc4420, type: 3}
---- !u!114 &2830305581266897635 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3355849025493196684, guid: b344c87ad61862a4d9c1366848bc4420,
-    type: 3}
-  m_PrefabInstance: {fileID: 2830305581266897634}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 708504430762579313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a849347620601784fb11e11a637990c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3721131296148835249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -997,11 +985,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3721131296981588621, guid: c0430bfb41c56384a857f74e48cd2ad8,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2830305581266897635}
     - target: {fileID: 1929281937009957522, guid: c0430bfb41c56384a857f74e48cd2ad8,
         type: 3}
       propertyPath: menuOpenAudio
