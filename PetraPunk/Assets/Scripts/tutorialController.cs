@@ -18,7 +18,11 @@ public class tutorialController : MonoBehaviour
 
     public GameObject[] tutorialSegments;
     public LevelSegment nextSegment;
-    
+
+    private void Awake()
+    {
+        nextSegment.Segment = tutorialSegments[0];
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +55,7 @@ public class tutorialController : MonoBehaviour
             Debug.Log("position: " + player.transform.position.x);
             isTurningLeft = false;
             Destroy(phoneUI);
-            nextSegment.Segment = tutorialSegments[0];
+            nextSegment.Segment = tutorialSegments[1];
         }
     }
 
