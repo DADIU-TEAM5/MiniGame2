@@ -43,7 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498f1428f17f3764cbe79e53db37516f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMultiplier: 10
-  maxVelocity: 0
-  controlType: 1
+  speedMultiplier: 2
+  maxVelocity: 1
+  text: {fileID: 0}
+  controlType: 0
   steeringOutput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
