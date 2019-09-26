@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6846acdc96932d47ab0765363d96fa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UseSlopeAngle: 0
+  UseSlopeAngle: 1
   PlayerGraphics: {fileID: 4612853147910741485}
   playerController: {fileID: 3790281797879785047}
   tiltedCamera: {fileID: 5948774518202955115}
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4612853149412508616}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d10d494f4ec5d1f4bb41ad626d704a07, type: 3}
   m_Name: 
@@ -392,13 +392,13 @@ MonoBehaviour:
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
   MinSpeed: 20
-  HorizontalSpeed: 10
-  SlopeHorizontalSpeed: 10
+  HorizontalSpeed: 15
+  SlopeHorizontalSpeed: 15
   slopeMultiplier: 1.5
   invulnerableSecs: 1
-  DashLength: 5
+  DashLength: 8
   DashCD: 1
-  DashDuration: 0.3
+  DashDuration: 0.1
   dashCDtimer: {fileID: 11400000, guid: 3dfe75c0337420f40831067b569d4a58, type: 2}
   camScript: {fileID: 162327509537404794}
   gyroTilt: {fileID: 11400000, guid: 76f3fc3616df04b479a9df10ad39a1ad, type: 2}
