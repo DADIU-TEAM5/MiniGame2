@@ -16,7 +16,6 @@ public class PlayerCollisionInfo : MonoBehaviour
         if(collision.gameObject.CompareTag("Obstacle"))
         {
             playerController.GetHit(collision.GetContact(0).normal);
-
             audioCue.Play(collision.gameObject);
 
 

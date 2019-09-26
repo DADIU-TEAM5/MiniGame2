@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 7839458431460443598}
   - component: {fileID: 3790281797879785047}
   - component: {fileID: 6453053320240262777}
+  - component: {fileID: 4821387865526884122}
   m_Layer: 0
   m_Name: Player Controller
   m_TagString: Untagged
@@ -397,9 +398,10 @@ MonoBehaviour:
   slopeMultiplier: 1.5
   invulnerableSecs: 1
   DashLength: 8
-  DashCD: 1
+  DashCD: 10
   DashDuration: 0.1
   dashCDtimer: {fileID: 11400000, guid: 3dfe75c0337420f40831067b569d4a58, type: 2}
+  dashAudio: {fileID: 11400000, guid: 398c6829b04ab9d4880aff2ecd6bb9b6, type: 2}
   camScript: {fileID: 162327509537404794}
   gyroTilt: {fileID: 11400000, guid: 76f3fc3616df04b479a9df10ad39a1ad, type: 2}
   playerSpeed: {fileID: 11400000, guid: d92c3c674db15fa49b6285130a87a678, type: 2}
@@ -421,6 +423,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCOntroller: {fileID: 3790281797879785047}
+--- !u!114 &4821387865526884122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6302871270875934596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbfa45642fe0d1f44b35d8d46d99e57e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 0879480d1ac96f848b5eae3312d1ffe3, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &705389923
 PrefabInstance:
   m_ObjectHideFlags: 0
