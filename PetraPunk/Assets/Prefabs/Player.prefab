@@ -398,7 +398,7 @@ MonoBehaviour:
   slopeMultiplier: 1.5
   invulnerableSecs: 1
   DashLength: 8
-  DashCD: 1
+  DashCD: 10
   DashDuration: 0.1
   dashCDtimer: {fileID: 11400000, guid: 3dfe75c0337420f40831067b569d4a58, type: 2}
   dashAudio: {fileID: 11400000, guid: 398c6829b04ab9d4880aff2ecd6bb9b6, type: 2}
