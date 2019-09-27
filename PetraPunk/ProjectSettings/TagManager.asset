@@ -12,6 +12,8 @@ TagManager:
   - Wall
   - Jump
   - PitFall
+  - TimeUp
+  - Collectible
   layers:
   - Default
   - TransparentFX

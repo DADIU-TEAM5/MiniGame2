@@ -11,6 +11,8 @@ public class PlayerCollisionInfo : MonoBehaviour
     public GameEvent jumpEvent;
 
     public int TimeUp = 10;
+    public IntVariable specialPoints;
+    public FloatVariable timePoints;
     public IntVariable time;
 
     public float radiusOfSphere = 5;
@@ -57,8 +59,14 @@ public class PlayerCollisionInfo : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
+        if (collision.gameObject.CompareTag("Collectible"))
+        {
+            specialPoints.Value += 1;
+            Destroy(collision.gameObject);
+        }
 
-            if (collision.gameObject.CompareTag("Obstacle"))
+
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             playerController.GetHit(collision.GetContact(0).normal);
             audioCue.Play(collision.gameObject);
