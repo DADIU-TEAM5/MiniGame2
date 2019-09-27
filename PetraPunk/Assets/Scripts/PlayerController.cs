@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public static float progress;
 
 
-    float Speed;
+    public float Speed;
 
     [Header("Controller Parameters")]
     public float FlatSpeed;

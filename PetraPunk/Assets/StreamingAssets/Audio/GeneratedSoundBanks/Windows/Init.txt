@@ -1,3 +1,12 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2456446846	LevelZones			\Default Work Unit\LevelZones	
+
+State	ID	Name	State Group			Notes
+	0	None	LevelZones			
+	529018163	Easy	LevelZones			
+	1160234136	Normal	LevelZones			
+	3599861390	Hard	LevelZones			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	103106329	MusicSideVolume			\Default Work Unit\Music\MusicSideVolume	
 	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
@@ -6,6 +15,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	138295086	Kicks			\Default Work Unit\Master Audio Bus\Music\Kicks	
+	254731411	Whooshes			\Default Work Unit\Master Audio Bus\Whooshes	
 	436743010	Character			\Default Work Unit\Master Audio Bus\Character	
 	2739838641	Drone			\Default Work Unit\Master Audio Bus\Music\Drone	
 	3257506471	Impact			\Default Work Unit\Master Audio Bus\Impact	
@@ -19,6 +29,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	281231728	Wwise Meter (Custom)	Wwise Meter			
 	702543456	Tunnel1	Wwise Matrix Reverb			
 	819134163	Tunnel1_(Custom)	Wwise Matrix Reverb			
+	848629617	Wwise_Compressor_(Custom)	Wwise Compressor			
 	890205218	Metal_Hangar (Custom)	Wwise RoomVerb			
 	1055070446	SidechainMeter	Wwise Meter			
 	2849147824	Medium	Wwise RoomVerb			
