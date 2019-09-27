@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
 
     [Header("Other stuff")]
 
+    bool fallAndDie;
+
     AnimationCurve jumpCurve;
     float maxAirTime;
     float airTimer;
@@ -83,6 +85,8 @@ public class PlayerController : MonoBehaviour
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
+        fallAndDie = false;
+
         hitCooldown = invulnerableSecs;
 
         Speed = MinSpeed;
@@ -95,9 +99,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
 
+        if(!fallAndDie)
+        { 
 
         progress = transform.position.z;
 
@@ -118,7 +122,7 @@ public class PlayerController : MonoBehaviour
 
         Move();
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Dash(-1);
         }
@@ -131,6 +135,17 @@ public class PlayerController : MonoBehaviour
 
         ApplyJump();
 
+        if (falling && height < 1f)
+        {
+            print(height);
+            height = 0;
+            inAir = false;
+        }
+    }
+        else
+        {
+            FallAndDie();
+        }
 
         //audio setup
         audioSlope.Value = OnSlope;
@@ -140,12 +155,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-        if (falling && height < 1f)
-        {
-            print(height);
-            height = 0;
-            inAir = false;
-        }
+        
 
     }
 
@@ -247,6 +257,10 @@ public class PlayerController : MonoBehaviour
             }
 
             
+            if(!inAir && hit.collider.gameObject.CompareTag("PitFall"))
+            {
+                fallAndDie = true;
+            }
 
 
             
@@ -468,6 +482,12 @@ public class PlayerController : MonoBehaviour
         //print("height " + height);
 
         
+    }
+
+    void FallAndDie()
+    {
+
+        print("you be dead");
     }
 
 }
