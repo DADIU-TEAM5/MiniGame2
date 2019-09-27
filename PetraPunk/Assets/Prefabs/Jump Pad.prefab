@@ -102,10 +102,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7645256052771208370}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6d3b474864c1fd48b07129835f74b5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ac668186a218e549b09c946740b8733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Height: 10
+  Height: 5
   AirTime: 3
   JumpCurve:
     serializedVersion: 2
@@ -122,11 +122,11 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0.5458221
-      outSlope: 0.5458221
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.23333335
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
