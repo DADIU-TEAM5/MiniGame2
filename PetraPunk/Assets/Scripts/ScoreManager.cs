@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
-    float Score;
+    public FloatVariable Score;
+    public IntVariable SpecialPoints;
     public Text ScoreDisplay;
+    public Text SpecialPointsDisplay;
 
     public float ScoreMultiplier;
 
 
 
     string startString;
+    string startSpecialPointsString;
 
     float playerStart;
     // Start is called before the first frame update
@@ -21,18 +24,21 @@ public class ScoreManager : MonoBehaviour
     {
 
         playerStart = PlayerController.progress;
-        Score = 0;
+        Score.Value = 0;
+        SpecialPoints.Value = 0;
         startString = ScoreDisplay.text;
+        startSpecialPointsString = SpecialPointsDisplay.text;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Score = PlayerController.progress - playerStart;
-        Score *= ScoreMultiplier;
-        ScoreDisplay.text = startString + (int) Score;
+        Score.Value = PlayerController.progress - playerStart;
+        Score.Value *= ScoreMultiplier;
+        ScoreDisplay.text = startString + (int) Score.Value;
 
-       
+        SpecialPointsDisplay.text = startSpecialPointsString + SpecialPoints.Value;
 
     }
 }
