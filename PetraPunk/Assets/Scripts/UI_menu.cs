@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UI_menu : MonoBehaviour
 {
+    public LocaleVariable CurrentLocale;
 
     public GameObject soundButton;
     public GameObject languageButton;
@@ -23,6 +24,7 @@ public class UI_menu : MonoBehaviour
     private GameEvent btClick;
     private GameEvent menuOpenClick;
     private GameEvent menuCloseClick;
+
 
     private void Start()
     {
@@ -70,12 +72,7 @@ public class UI_menu : MonoBehaviour
 
                 foreach (var children in languageButton.GetComponentsInChildren<Text>())
                 {
-                    if (language.Value == false)
-                        children.text = "language:english";
-                    else
-                    {
-                        children.text = "language:dansk";
-                    }
+                    children.text = $"language: {CurrentLocale.Value.name}";
                 }
  
                 language.Value = !language.Value;
