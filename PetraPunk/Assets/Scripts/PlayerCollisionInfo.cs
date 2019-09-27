@@ -8,7 +8,7 @@ public class PlayerCollisionInfo : MonoBehaviour
     public PlayerController playerController;
     public AudioCue audioCue;
     public FloatVariable distanceToObstacle;
-
+    public GameEvent jumpEvent;
     public float radiusOfSphere = 5;
 
     private void Update()
@@ -64,6 +64,7 @@ public class PlayerCollisionInfo : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Jump"))
         {
+            jumpEvent.Raise();
             JumpData temp = collision.gameObject.GetComponent<JumpData>();
             playerController.Jump(temp.Height, temp.AirTime,temp.JumpCurve);
         }

@@ -97,7 +97,7 @@ public class tutorialController : MonoBehaviour
         if (isJumping)
         {
             Debug.Log("We Jumping");
-            isFinal = true;
+            
         }
 
         // Part Final
@@ -120,6 +120,13 @@ public class tutorialController : MonoBehaviour
     {
         dashCount++;
         Debug.Log("Dash Count: " + dashCount);
+    }
+
+    public void JumpDone()
+    {
+        Debug.Log("Jump is has been completed");
+            isJumping = false;
+            isFinal = true;
     }
 
 }
