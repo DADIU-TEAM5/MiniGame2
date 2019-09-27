@@ -402,8 +402,8 @@ MonoBehaviour:
   DashLength: 8
   DashCD: 10
   DashDuration: 0.1
-  airMultiplier: 2
-  airHorizontalSpeed: 3
+  airMultiplier: 1
+  airHorizontalSpeed: 15
   dashCDtimer: {fileID: 11400000, guid: 3dfe75c0337420f40831067b569d4a58, type: 2}
   dashAudio: {fileID: 11400000, guid: 398c6829b04ab9d4880aff2ecd6bb9b6, type: 2}
   cooldownOverAudio: {fileID: 11400000, guid: 3b0ceb7cd69c3d449ac41b94d29bbadb, type: 2}
