@@ -156,7 +156,7 @@ MonoBehaviour:
   PlayerTrans: {fileID: 4612853149198441980}
   playerController: {fileID: 3790281797879785047}
   audioCue: {fileID: 11400000, guid: 2506e6da8adf7cb4f9331029bbaa1245, type: 2}
-  distanceToObstacle: {fileID: 11400000, guid: fee763d1b6789e649b27e905a14d2db8, type: 2}
+  distanceToObstacle: {fileID: 11400000, guid: 7eea5d7bdcdd10a47825f48a7ebebdb3, type: 2}
   radiusOfSphere: 5
 --- !u!1 &4612853149198441982
 GameObject:
@@ -389,9 +389,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FlatSpeed: 45
-  SlopeSpeed: 80
+  SlopeSpeed: 45
   FlatAcceleration: 0.5
-  SlopeAcceleration: 4
+  SlopeAcceleration: 0.5
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
   MinSpeed: 15
@@ -402,10 +402,12 @@ MonoBehaviour:
   DashLength: 8
   DashCD: 10
   DashDuration: 0.1
+  airMultiplier: 1
+  airHorizontalSpeed: 0
   dashCDtimer: {fileID: 11400000, guid: 3dfe75c0337420f40831067b569d4a58, type: 2}
   dashAudio: {fileID: 11400000, guid: 398c6829b04ab9d4880aff2ecd6bb9b6, type: 2}
   cooldownOverAudio: {fileID: 11400000, guid: 3b0ceb7cd69c3d449ac41b94d29bbadb, type: 2}
-  dashCooldownActiveVar: {fileID: 11400000, guid: 16b893f7cb56bdb4faa0611397061ea8,
+  dashCooldownActiveVar: {fileID: 11400000, guid: 893d105e21f50244597f65a665838821,
     type: 2}
   camScript: {fileID: 162327509537404794}
   gyroTilt: {fileID: 11400000, guid: 76f3fc3616df04b479a9df10ad39a1ad, type: 2}
@@ -513,12 +515,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 692005850503962715, guid: d14fd0811ce0c8d4d8885b849b8247a4,
-        type: 3}
-      propertyPath: DistanceToPipes
-      value: 
-      objectReference: {fileID: 11400000, guid: fee763d1b6789e649b27e905a14d2db8,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d14fd0811ce0c8d4d8885b849b8247a4, type: 3}
 --- !u!4 &692005851208910137 stripped
