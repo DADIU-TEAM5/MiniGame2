@@ -28,7 +28,22 @@ public class PlayerController : MonoBehaviour
     public float DashCD = 1;
     public float DashDuration = 0.5f;
 
+    public float airMultiplier = 1;
+    public float airHorizontalSpeed;
+
+
     [Header("Other stuff")]
+
+    AnimationCurve jumpCurve;
+    float maxAirTime;
+    float airTimer;
+    float maxHeight;
+    float height =0;
+    bool inAir = false;
+    bool falling;
+    float groundHeight;
+    Vector3 airHitPoint;
+
 
     public FloatVariable dashCDtimer;
     float dashTime;
@@ -78,6 +93,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
 
 
         progress = transform.position.z;
@@ -110,13 +127,24 @@ public class PlayerController : MonoBehaviour
 
         ApplyDashMovement();
 
+        ApplyJump();
+
+
         //audio setup
         audioSlope.Value = OnSlope;
         playerSpeed.Value = Speed;
         gyroTilt.Value = input;
-        
-        
-        
+
+
+
+
+        if (falling && height < 1f)
+        {
+            print(height);
+            height = 0;
+            inAir = false;
+        }
+
     }
 
     void limitMovementInput()
@@ -170,13 +198,15 @@ public class PlayerController : MonoBehaviour
             
         }
 
-
-        
-
         if (OnSlope)
         {
-            transform.Translate(Vector3.forward * Speed * Time.deltaTime* slopeMultiplier);
+            transform.Translate(Vector3.forward * Speed * Time.deltaTime * slopeMultiplier);
             transform.Translate(Vector3.right * input * Time.deltaTime * SlopeHorizontalSpeed);
+        }
+        else if (inAir)
+        {
+            transform.Translate(Vector3.forward * Speed * Time.deltaTime * airMultiplier);
+            transform.Translate(Vector3.right * input * Time.deltaTime * airHorizontalSpeed);
         }
         else
         {
@@ -184,19 +214,54 @@ public class PlayerController : MonoBehaviour
             transform.Translate(Vector3.right * input * Time.deltaTime * HorizontalSpeed);
         }
 
+
+
+
         int layerMask = 1 << 9;
         RaycastHit hit;
 
         if (Physics.Raycast(transform.position + Vector3.up * 100, transform.TransformDirection(Vector3.down), out hit, Mathf.Infinity, layerMask))
         {
-            colliderAndGraphics.position = hit.point + Vector3.up;
+
+            //print(inAir);
+
+            if (inAir && hit.point.y > colliderAndGraphics.position.y)
+            {
+                inAir = false;
+                height = 0;
+            }
+
+            if (!inAir)
+            {
+                colliderAndGraphics.position = hit.point + (Vector3.up * height) + Vector3.up;
+                airHitPoint = hit.point;
+            }
+            else
+            {
+                airHitPoint.x = transform.position.x;
+                airHitPoint.z = transform.position.z;
+
+                colliderAndGraphics.position = airHitPoint + (Vector3.up * height) + Vector3.up;
+            }
+
+            
 
 
-            OnSlope = hit.transform.CompareTag("Slope");
+            
+
+            //groundHeight = (hit.point + Vector3.up).y;
+
+            if (!inAir)
+                OnSlope = hit.transform.CompareTag("Slope");
+            else
+                OnSlope = false;
 
         }
+
+
         
-       // print("speed: "+Speed + " speed on slope: " + Speed * slopeMultiplier);
+
+        // print("speed: "+Speed + " speed on slope: " + Speed * slopeMultiplier);
 
     }
 
@@ -335,6 +400,57 @@ public class PlayerController : MonoBehaviour
             limitLeft = false;
         if (limitRight)
             limitRight = false;
+    }
+
+    public void Jump(float height, float airTime,AnimationCurve curve)
+    {
+        maxAirTime = airTime;
+        maxHeight = height;
+        jumpCurve = curve;
+
+        airTimer = 0;
+
+        inAir = true;
+        falling = false;
+    }
+
+    void ApplyJump()
+    {
+        if (inAir)
+        {
+            if (airTimer < maxAirTime)
+            {
+                airTimer += Time.deltaTime;
+
+                if (airTimer >= maxAirTime)
+                {
+                    inAir = false;
+                    height = 0;
+                }
+            }
+
+            if (airTimer>(maxAirTime/2))
+            {
+                falling = true;
+            }
+
+            /*
+            if (!falling)
+                height = Mathf.Lerp(0, maxHeight, (airTimer / maxAirTime)*2);
+            else
+                height = Mathf.Lerp( maxHeight,0, (airTimer / maxAirTime)*2-(maxAirTime/2));
+            */
+            height = Mathf.Lerp(0, maxHeight, jumpCurve.Evaluate(Mathf.Sin((airTimer / maxAirTime ) * Mathf.PI*2)));
+
+            //print(jumpCurve.Evaluate( airTimer / maxAirTime));
+           
+        }
+       
+
+        //print("AIR TIMER"+ airTimer);
+        //print("height " + height);
+
+        
     }
 
 }

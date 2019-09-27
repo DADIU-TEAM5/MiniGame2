@@ -40,7 +40,7 @@ public class PlayerCollisionInfo : MonoBehaviour
             distanceToObstacle.Value = 0;
         }
 
-        print(distanceToObstacle.Value);
+        //print(distanceToObstacle.Value);
 
     }
 
@@ -60,6 +60,12 @@ public class PlayerCollisionInfo : MonoBehaviour
         {
             float xPos = collision.collider.ClosestPoint(transform.position).x;
             playerController.HitWall(collision.GetContact(0).normal.x,xPos);
+        }
+
+        if (collision.gameObject.CompareTag("Jump"))
+        {
+            JumpData temp = collision.gameObject.GetComponent<JumpData>();
+            playerController.Jump(temp.Height, temp.AirTime,temp.JumpCurve);
         }
 
     }
