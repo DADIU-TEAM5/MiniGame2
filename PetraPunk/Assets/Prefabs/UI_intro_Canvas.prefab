@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 376272485174130539}
   - component: {fileID: 5250511710226238266}
   - component: {fileID: 4923332865772116512}
-  - component: {fileID: 1827877742965664599}
+  - component: {fileID: 2133043476399765418}
   m_Layer: 5
   m_Name: Bt_intro04
   m_TagString: Untagged
@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -294,11 +294,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundButton: {fileID: 0}
+  languageButton: {fileID: 0}
+  volumeMusic: {fileID: 11400000, guid: 454b00f1edf444240a2137998baa6abf, type: 2}
+  volumeSfx: {fileID: 11400000, guid: 6867035cafcf65142bf7f94f40b996e0, type: 2}
   startNewLevelAudio: {fileID: 11400000, guid: 34734d50eed1fd247b8a0b66a5f0f152, type: 2}
   buttonClickAudio: {fileID: 11400000, guid: f93d539d5adc9834c89b0bfbf94019c4, type: 2}
   menuOpenAudio: {fileID: 0}
   menuCloseAudio: {fileID: 0}
---- !u!95 &1827877742965664599
+  language: {fileID: 11400000, guid: 21ef104b0b2b6ba429f0c4479038d4ae, type: 2}
+--- !u!95 &2133043476399765418
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -308,10 +312,10 @@ Animator:
   m_GameObject: {fileID: 2284423817973558335}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c8a5e151bd4b4d41bccc01418e02ff1, type: 2}
+  m_Controller: {fileID: 9100000, guid: d4927f4dfbadaf244b265174acdec9a1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -721,10 +725,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundButton: {fileID: 0}
+  languageButton: {fileID: 0}
+  volumeMusic: {fileID: 11400000, guid: 454b00f1edf444240a2137998baa6abf, type: 2}
+  volumeSfx: {fileID: 11400000, guid: 6867035cafcf65142bf7f94f40b996e0, type: 2}
   startNewLevelAudio: {fileID: 11400000, guid: 34734d50eed1fd247b8a0b66a5f0f152, type: 2}
   buttonClickAudio: {fileID: 11400000, guid: f93d539d5adc9834c89b0bfbf94019c4, type: 2}
   menuOpenAudio: {fileID: 0}
   menuCloseAudio: {fileID: 0}
+  language: {fileID: 11400000, guid: 21ef104b0b2b6ba429f0c4479038d4ae, type: 2}
 --- !u!1 &3721131296981588619
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,7 +864,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1827877742965664599}
+      - m_Target: {fileID: 2133043476399765418}
         m_MethodName: Play
         m_Mode: 3
         m_Arguments:
@@ -866,7 +874,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
-        m_CallState: 2
+        m_CallState: 0
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &7259489985548416842
