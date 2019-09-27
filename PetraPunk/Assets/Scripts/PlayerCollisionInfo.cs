@@ -9,6 +9,10 @@ public class PlayerCollisionInfo : MonoBehaviour
     public AudioCue audioCue;
     public FloatVariable distanceToObstacle;
     public GameEvent jumpEvent;
+
+    public int TimeUp = 10;
+    public IntVariable time;
+
     public float radiusOfSphere = 5;
 
     private void Update()
@@ -46,9 +50,15 @@ public class PlayerCollisionInfo : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
-        
-        if(collision.gameObject.CompareTag("Obstacle"))
+
+        if (collision.gameObject.CompareTag("TimeUp"))
+        {
+            time.Value += TimeUp*1000;
+            Destroy(collision.gameObject);
+        }
+
+
+            if (collision.gameObject.CompareTag("Obstacle"))
         {
             playerController.GetHit(collision.GetContact(0).normal);
             audioCue.Play(collision.gameObject);
