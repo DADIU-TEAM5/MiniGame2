@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ac668186a218e549b09c946740b8733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Height: 5
+  Height: 10
   AirTime: 3
   JumpCurve:
     serializedVersion: 2
