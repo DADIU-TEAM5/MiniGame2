@@ -139,7 +139,7 @@ public class tutorialController : MonoBehaviour
         tutorialGenerator.SegementDifficulty[1] = 1;
         tutorialGenerator.SegementDifficulty[2] = 1;
         tutorialGenerator.SegementDifficulty[3] = 666;
-
+        //tutorialGenerator.Level
 
 
     }
