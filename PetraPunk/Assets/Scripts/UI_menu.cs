@@ -52,7 +52,7 @@ public class UI_menu : MonoBehaviour
                 Debug.Log("new game");
                 btClick.Raise();
                 startNewLevelAudio.Raise();
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
                 break;
         }
     }
