@@ -40,7 +40,5 @@ public class ScoreManager : MonoBehaviour
 
         SpecialPointsDisplay.text = startSpecialPointsString + SpecialPoints.Value;
 
-
-
     }
 }
