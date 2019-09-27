@@ -157,7 +157,7 @@ MonoBehaviour:
   playerController: {fileID: 3790281797879785047}
   audioCue: {fileID: 11400000, guid: 2506e6da8adf7cb4f9331029bbaa1245, type: 2}
   distanceToObstacle: {fileID: 11400000, guid: 7eea5d7bdcdd10a47825f48a7ebebdb3, type: 2}
-  jumpEvent: {fileID: 0}
+  jumpEvent: {fileID: 11400000, guid: 1f43b127da4d74c46accbb951bebee17, type: 2}
   TimeUp: 10
   specialPoints: {fileID: 11400000, guid: af8849b4076b2e143b425c7d8a878316, type: 2}
   timePoints: {fileID: 11400000, guid: ed6c6a7d060b10b49873ccc5370a52ed, type: 2}
