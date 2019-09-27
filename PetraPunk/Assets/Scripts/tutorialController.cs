@@ -13,9 +13,13 @@ public class tutorialController : MonoBehaviour
     public Animator animator;
 
 
+
+    // Use Enum or int instead
     private bool isTurningRight=true;
     private bool isTurningLeft=false;
     private bool isDashing = false;
+    private bool isJumping = false;
+    private bool isFinal = false;
     private int dashCount;
 
     public float animationSpeed;
@@ -67,7 +71,7 @@ public class tutorialController : MonoBehaviour
             StartCoroutine(timeToDodge());
         }
 
-        // Part 4 - start Dashing
+        // Part 4 - Start Dashing
         if (isDashing)
         {
             Debug.Log("We Dashin");
@@ -83,9 +87,23 @@ public class tutorialController : MonoBehaviour
                 Debug.Log("Tutorial is Done");
                 dashText.enabled = false;
                 isDashing = false;
+                isJumping = true;
 
             }
 
+        }
+
+        // Part 5 - Start Jumping
+        if (isJumping)
+        {
+            Debug.Log("We Jumping");
+            isFinal = true;
+        }
+
+        // Part Final
+        if (isFinal)
+        {
+            Debug.Log("Final part initiated");
         }
 
     }
