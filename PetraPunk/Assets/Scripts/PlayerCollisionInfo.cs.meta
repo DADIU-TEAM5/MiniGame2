@@ -3,7 +3,14 @@ guid: 1f66ef1252727224bafe105bd2c265a6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - PlayerTrans: {instanceID: 0}
+  - playerController: {instanceID: 0}
+  - audioCue: {instanceID: 0}
+  - distanceToObstacle: {instanceID: 0}
+  - jumpEvent: {instanceID: 0}
+  - points: {fileID: 11400000, guid: af8849b4076b2e143b425c7d8a878316, type: 2}
+  - time: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
