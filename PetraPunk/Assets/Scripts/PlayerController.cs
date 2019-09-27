@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public static float progress;
 
 
-    float Speed;
+    public float Speed;
 
     [Header("Controller Parameters")]
     public float FlatSpeed;
@@ -34,6 +34,9 @@ public class PlayerController : MonoBehaviour
 
     [Header("Other stuff")]
 
+    Transform deathCamPos;
+    Vector3 currentPosition;
+    Vector3 lastPosition;
     bool fallAndDie;
 
     AnimationCurve jumpCurve;
@@ -141,6 +144,8 @@ public class PlayerController : MonoBehaviour
             height = 0;
             inAir = false;
         }
+            lastPosition = currentPosition;
+            currentPosition = transform.position;
     }
         else
         {
@@ -260,6 +265,9 @@ public class PlayerController : MonoBehaviour
             if(!inAir && hit.collider.gameObject.CompareTag("PitFall"))
             {
                 fallAndDie = true;
+
+                deathCamPos= hit.collider.GetComponent<PitFall>().CamPosition;
+
             }
 
 
@@ -484,10 +492,32 @@ public class PlayerController : MonoBehaviour
         
     }
 
+
+    float fallSpeed = 9.8f;
+    bool initCam;
+
+    float DeathTimer = 0;
+
     void FallAndDie()
     {
+        DeathTimer += Time.deltaTime;
+        if (!initCam)
+        {
+            camScript.MoveToDeathCam(deathCamPos);
+            initCam = true;
+            
+        }
 
-        print("you be dead");
+        fallSpeed += 9.8f*Time.deltaTime;
+
+
+
+        transform.Translate(( currentPosition -lastPosition) );
+        transform.Translate(Vector3.down *Time.deltaTime* fallSpeed);
+        if(DeathTimer >= 1)
+        {
+            life.Value = 0;
+        }
     }
 
 }
