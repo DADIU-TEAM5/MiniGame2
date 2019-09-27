@@ -512,6 +512,85 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 5855166733562188352}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1470628497
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4512068902882869908, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_Name
+      value: Life Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 205.21484
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 124.84914
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 78.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068902882869914, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068903311151450, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4512068903311151449, guid: 957cccc546c67fb48a039c7a5075dba4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 957cccc546c67fb48a039c7a5075dba4, type: 3}
 --- !u!1 &1745643300
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +626,7 @@ MonoBehaviour:
   player: {fileID: 736361915}
   phoneUI: {fileID: 35218931}
   dashText: {fileID: 1875064064}
+  health: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
   animator: {fileID: 35218933}
   animationSpeed: 0.6
   maxTurn: 9
@@ -554,7 +634,7 @@ MonoBehaviour:
   tutorialSegments:
   - {fileID: 317477315727123641, guid: c5fca4e1429c26349b96e6ccb2d2ec0d, type: 3}
   - {fileID: 36780754178830879, guid: 693fcf3dae65d2c418acaa6b49e6f44f, type: 3}
-  - {fileID: 1362102361577334878, guid: d1edf10f6d8f113498e51de528a9e332, type: 3}
+  - {fileID: 5856490195718869472, guid: 98bfc4e6f16a6b647b8caa0fa5b22fbc, type: 3}
   - {fileID: 1362102361577334878, guid: d1edf10f6d8f113498e51de528a9e332, type: 3}
   nextSegment: {fileID: 11400000, guid: f57b5a0492e711d4489537eaad87d1fa, type: 2}
 --- !u!4 &1745643302
@@ -1272,12 +1352,27 @@ PrefabInstance:
     - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
         type: 3}
       propertyPath: SlopeSpeed
-      value: 45
+      value: 85
       objectReference: {fileID: 0}
     - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
         type: 3}
       propertyPath: DashCD
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: FlatSpeed
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: FlatAcceleration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: SlopeAcceleration
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4612853147910741474, guid: 59b232afd2bc9c44d9372467360cfa7e,
         type: 3}
