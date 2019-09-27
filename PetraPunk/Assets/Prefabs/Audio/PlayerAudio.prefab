@@ -54,8 +54,10 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: 89f9d15250aa4794e9c0dc92133be43d,
       type: 2}
   PlayerSpeed: {fileID: 11400000, guid: d92c3c674db15fa49b6285130a87a678, type: 2}
+  DistanceToPipes: {fileID: 11400000, guid: 7eea5d7bdcdd10a47825f48a7ebebdb3, type: 2}
   OnSlope: {fileID: 11400000, guid: 1013881f05bb3dc49938e7948c4dbb28, type: 2}
   SeeSpeed: 0
+  SeePipeDistance: 0
   SeeOnSlope: 0
 --- !u!114 &2058130840
 MonoBehaviour:

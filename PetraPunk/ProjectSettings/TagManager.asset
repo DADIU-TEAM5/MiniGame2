@@ -11,6 +11,7 @@ TagManager:
   - Timer
   - Wall
   - Jump
+  - PitFall
   layers:
   - Default
   - TransparentFX

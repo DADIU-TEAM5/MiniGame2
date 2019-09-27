@@ -33,6 +33,10 @@ public class CameraMovement : MonoBehaviour
 
     bool lastSlopeCheck;
 
+    bool deathCam;
+    Vector3 deathCamPosition, deathCamStartPosition;
+    Quaternion deathCamRotation, DeathCameStartRotation;
+    float deathCamLerp;
 
     // Start is called before the first frame update
     void Start()
@@ -63,10 +67,20 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveCamera();
+        if (!deathCam)
+        {
+            MoveCamera();
 
-        
-        ShakeScreen();
+
+            ShakeScreen();
+        }
+        else
+        {
+            deathCamLerp += Time.deltaTime;
+            transform.position = Vector3.Lerp(deathCamStartPosition, deathCamPosition, deathCamLerp);
+            transform.rotation = Quaternion.Lerp(DeathCameStartRotation, deathCamRotation, deathCamLerp);
+            
+        }
         
 
     }
@@ -132,6 +146,18 @@ public class CameraMovement : MonoBehaviour
     public void ShakeCam()
     {
         shakeDuration = 0;
+    }
+
+    public void MoveToDeathCam(Transform dethCam)
+    {
+        deathCamPosition = dethCam.position;
+        deathCamRotation = dethCam.rotation;
+        deathCamStartPosition = transform.position;
+        DeathCameStartRotation = transform.rotation;
+
+        deathCam = true;
+
+
     }
 
 }
