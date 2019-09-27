@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6468700c3fd18da43ab418311ae331a5, type: 3}
-  m_Name: TimePoints
+  m_Script: {fileID: 11500000, guid: 8da7f9ff61a17264f844ebfee265ad94, type: 3}
+  m_Name: TestLevel
   m_EditorClassIdentifier: 
-  Value: 0
+  SegementDifficulty: 00000000
