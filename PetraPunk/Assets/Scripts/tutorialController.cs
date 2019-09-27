@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class tutorialController : MonoBehaviour
 {
-
+    public LevelGenerator lg;
     public GameObject player;
     public GameObject phoneUI;
     public Text dashText;
@@ -15,8 +15,8 @@ public class tutorialController : MonoBehaviour
 
 
     // Use Enum or int instead
-    private bool isTurningRight=true;
-    private bool isTurningLeft=false;
+    private bool isTurningRight = true;
+    private bool isTurningLeft = false;
     private bool isDashing = false;
     private bool isJumping = false;
     private bool isFinal = false;
@@ -39,12 +39,13 @@ public class tutorialController : MonoBehaviour
     void Start()
     {
         animator.speed = animationSpeed;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
         // Part 1 - start turning left - Automatic
         //if(player.transform.position.x!=0 && !isTurningRight)
         //{
@@ -53,12 +54,14 @@ public class tutorialController : MonoBehaviour
         //}
 
         // Part 2 - start turning right
-        if(player.transform.position.x > maxTurn && isTurningRight)
+        if (player.transform.position.x > maxTurn && isTurningRight)
         {
             Debug.Log("position: " + player.transform.position.x);
             isTurningRight = false;
             isTurningLeft = true;
             animator.SetBool("turnedRight", true);
+
+            lg.IsEndless = false;
         }
 
         // Part 3 - start dodging pipes
@@ -97,7 +100,7 @@ public class tutorialController : MonoBehaviour
         if (isJumping)
         {
             Debug.Log("We Jumping");
-            
+
         }
 
         // Part Final
@@ -125,8 +128,10 @@ public class tutorialController : MonoBehaviour
     public void JumpDone()
     {
         Debug.Log("Jump is has been completed");
-            isJumping = false;
-            isFinal = true;
+        lg.IsEndless = false;
+
+        isJumping = false;
+        isFinal = true;
     }
 
 }

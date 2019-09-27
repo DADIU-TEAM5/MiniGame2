@@ -17,6 +17,8 @@ public class LevelGenerator : MonoBehaviour
         }
     }
 
+    public bool Endless;
+
     bool isEndless;
 
     [Header("Possible Segments")]
@@ -41,6 +43,7 @@ public class LevelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isEndless = Endless;
 
 
         sortSegementsInTheListOfLists();
@@ -52,6 +55,7 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("isEndless " + isEndless);
         if (IsEndless ||currentSegmentToPlace!= LevelGenerationData.SegementDifficulty.Length)
         {
             
