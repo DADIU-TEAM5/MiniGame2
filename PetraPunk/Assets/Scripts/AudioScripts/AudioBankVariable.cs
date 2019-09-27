@@ -8,6 +8,11 @@ public class AudioBankVariable : ScriptableObject
     public AK.Wwise.Bank SoundBank;
 
     void OnEnable() {
+        LoadBank();
+    }
+
+    public void LoadBank() {
+        Debug.Log($"Loaded {SoundBank?.Name ?? "no bank"}");
         SoundBank.Load();
     }
 
