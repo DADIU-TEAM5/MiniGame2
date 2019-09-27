@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    public bool IsEndless;
+    public bool IsEndless
+    {
+        get
+        {
+            return isEndless;
+        }
+        set
+        {
+            isEndless = value;
+            currentSegmentToPlace = 0;
+        }
+    }
+
+    bool isEndless;
 
     [Header("Possible Segments")]
     public LevelSegment[] LevelSegments;
