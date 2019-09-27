@@ -9,7 +9,6 @@ public class tutorialController : MonoBehaviour
     public GameObject player;
     public GameObject phoneUI;
     public Text dashText;
-    public GameEvent dashEvent;
 
     public Animator animator;
 
@@ -17,6 +16,7 @@ public class tutorialController : MonoBehaviour
     private bool isTurningRight=true;
     private bool isTurningLeft=false;
     private bool isDashing = false;
+    private int dashCount;
 
     public float animationSpeed;
     public float maxTurn;
@@ -73,11 +73,18 @@ public class tutorialController : MonoBehaviour
             Debug.Log("We Dashin");
             if (!dashText.enabled)
             {
+                dashCount = 0;
                 Debug.Log("Dash Text On");
                 dashText.enabled = true;
             }
 
-            
+            if (dashCount >= 3)
+            {
+                Debug.Log("Tutorial is Done");
+                dashText.enabled = false;
+                isDashing = false;
+
+            }
 
         }
 
@@ -89,6 +96,12 @@ public class tutorialController : MonoBehaviour
         yield return new WaitForSeconds(dodgeTime);
         print(Time.time);
         isDashing = true;
+    }
+
+    public void IncreaseDashCount()
+    {
+        dashCount++;
+        Debug.Log("Dash Count: " + dashCount);
     }
 
 }
