@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 public class AudioEventVariable : ScriptableObject
 {
     public AK.Wwise.Event AudioEvent;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu]
 public class AudioBankVariable : ScriptableObject 
 {
     public AK.Wwise.Bank SoundBank;
