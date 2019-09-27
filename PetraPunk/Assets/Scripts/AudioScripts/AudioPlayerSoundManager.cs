@@ -20,6 +20,14 @@ public class AudioPlayerSoundManager : MonoBehaviour
 
     void Start()
     {
+        //WhooshSound.Post(this.gameObject);
+        //PlaceholderRun.Post(this.gameObject);
+        StartCoroutine(WaitAndThenDoSomething());
+    }
+
+    IEnumerator WaitAndThenDoSomething()
+    {
+        yield return new WaitForSeconds(0.01f);
         WhooshSound.Post(this.gameObject);
         PlaceholderRun.Post(this.gameObject);
     }
