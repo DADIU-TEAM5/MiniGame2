@@ -394,7 +394,7 @@ MonoBehaviour:
   SlopeAcceleration: 0.5
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
-  MinSpeed: 45
+  MinSpeed: 15
   HorizontalSpeed: 15
   SlopeHorizontalSpeed: 15
   slopeMultiplier: 1.5

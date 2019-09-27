@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b6150c128c83c4ca279669dc8671df, type: 3}
   m_Name: LevelSegmentChill1
   m_EditorClassIdentifier: 
-  Segment: {fileID: 0}
+  Segment: {fileID: 317477315727123641, guid: c5fca4e1429c26349b96e6ccb2d2ec0d, type: 3}
   Difficulty: 0
