@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public static float progress;
 
 
-    float Speed;
+    public float Speed;
 
     [Header("Controller Parameters")]
     public float FlatSpeed;
@@ -33,6 +33,11 @@ public class PlayerController : MonoBehaviour
 
 
     [Header("Other stuff")]
+
+    Transform deathCamPos;
+    Vector3 currentPosition;
+    Vector3 lastPosition;
+    bool fallAndDie;
 
     AnimationCurve jumpCurve;
     float maxAirTime;
@@ -83,6 +88,8 @@ public class PlayerController : MonoBehaviour
     {
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
 
+        fallAndDie = false;
+
         hitCooldown = invulnerableSecs;
 
         Speed = MinSpeed;
@@ -95,9 +102,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
 
+        if(!fallAndDie)
+        { 
 
         progress = transform.position.z;
 
@@ -118,7 +125,7 @@ public class PlayerController : MonoBehaviour
 
         Move();
 
-        if(Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             Dash(-1);
         }
@@ -131,6 +138,19 @@ public class PlayerController : MonoBehaviour
 
         ApplyJump();
 
+        if (falling && height < 1f)
+        {
+            print(height);
+            height = 0;
+            inAir = false;
+        }
+            lastPosition = currentPosition;
+            currentPosition = transform.position;
+    }
+        else
+        {
+            FallAndDie();
+        }
 
         //audio setup
         audioSlope.Value = OnSlope;
@@ -140,12 +160,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-        if (falling && height < 1f)
-        {
-            print(height);
-            height = 0;
-            inAir = false;
-        }
+        
 
     }
 
@@ -247,6 +262,13 @@ public class PlayerController : MonoBehaviour
             }
 
             
+            if(!inAir && hit.collider.gameObject.CompareTag("PitFall"))
+            {
+                fallAndDie = true;
+
+                deathCamPos= hit.collider.GetComponent<PitFall>().CamPosition;
+
+            }
 
 
             
@@ -468,6 +490,34 @@ public class PlayerController : MonoBehaviour
         //print("height " + height);
 
         
+    }
+
+
+    float fallSpeed = 9.8f;
+    bool initCam;
+
+    float DeathTimer = 0;
+
+    void FallAndDie()
+    {
+        DeathTimer += Time.deltaTime;
+        if (!initCam)
+        {
+            camScript.MoveToDeathCam(deathCamPos);
+            initCam = true;
+            
+        }
+
+        fallSpeed += 9.8f*Time.deltaTime;
+
+
+
+        transform.Translate(( currentPosition -lastPosition) );
+        transform.Translate(Vector3.down *Time.deltaTime* fallSpeed);
+        if(DeathTimer >= 1)
+        {
+            life.Value = 0;
+        }
     }
 
 }
