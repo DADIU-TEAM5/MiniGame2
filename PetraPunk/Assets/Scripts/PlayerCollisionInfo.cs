@@ -62,6 +62,12 @@ public class PlayerCollisionInfo : MonoBehaviour
             playerController.HitWall(collision.GetContact(0).normal.x,xPos);
         }
 
+        if (collision.gameObject.CompareTag("Jump"))
+        {
+            JumpData temp = collision.gameObject.GetComponent<JumpData>();
+            playerController.Jump(temp.Height, temp.AirTime,temp.JumpCurve);
+        }
+
     }
 
     private void OnCollisionExit(Collision collision)
