@@ -9,6 +9,8 @@ public class tutorialController : MonoBehaviour
     public GameObject player;
     public GameObject phoneUI;
     public Text dashText;
+    public FloatVariable health;
+    public SceneGenrator tutorialGenerator;
 
     public Animator animator;
 
@@ -28,6 +30,7 @@ public class tutorialController : MonoBehaviour
 
     public GameObject[] tutorialSegments;
     public LevelSegment nextSegment;
+    
 
     private void Awake()
     {
@@ -39,6 +42,7 @@ public class tutorialController : MonoBehaviour
     void Start()
     {
         animator.speed = animationSpeed;
+        health.Value = 99;
         
     }
 
@@ -60,8 +64,6 @@ public class tutorialController : MonoBehaviour
             isTurningRight = false;
             isTurningLeft = true;
             animator.SetBool("turnedRight", true);
-
-            lg.IsEndless = false;
         }
 
         // Part 3 - start dodging pipes
@@ -100,7 +102,7 @@ public class tutorialController : MonoBehaviour
         if (isJumping)
         {
             Debug.Log("We Jumping");
-
+            nextSegment.Segment = tutorialSegments[3];
         }
 
         // Part Final
@@ -132,6 +134,14 @@ public class tutorialController : MonoBehaviour
 
         isJumping = false;
         isFinal = true;
+        
+        tutorialGenerator.SegementDifficulty[0] = 0;
+        tutorialGenerator.SegementDifficulty[1] = 1;
+        tutorialGenerator.SegementDifficulty[2] = 1;
+        tutorialGenerator.SegementDifficulty[3] = 666;
+
+
+
     }
 
 }
