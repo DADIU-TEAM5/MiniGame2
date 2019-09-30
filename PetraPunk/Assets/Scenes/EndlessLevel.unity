@@ -716,7 +716,7 @@ PrefabInstance:
     - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
         type: 3}
       propertyPath: LevelSegments.Array.size
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
         type: 3}
@@ -798,13 +798,13 @@ PrefabInstance:
         type: 3}
       propertyPath: LevelSegments.Array.data[10]
       value: 
-      objectReference: {fileID: 11400000, guid: ab4f3cc30046d3b4cab9578e0e625789,
+      objectReference: {fileID: 11400000, guid: e1c6537e57518c346b51865d5464fd48,
         type: 2}
     - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
         type: 3}
       propertyPath: LevelSegments.Array.data[11]
       value: 
-      objectReference: {fileID: 11400000, guid: ab4f3cc30046d3b4cab9578e0e625789,
+      objectReference: {fileID: 11400000, guid: 41fdb424a107c08499bdc4f6da37fb0f,
         type: 2}
     - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
         type: 3}

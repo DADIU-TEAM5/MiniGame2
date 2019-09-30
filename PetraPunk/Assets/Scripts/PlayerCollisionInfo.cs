@@ -10,6 +10,8 @@ public class PlayerCollisionInfo : MonoBehaviour
     public FloatVariable distanceToObstacle;
     public GameEvent jumpEvent;
 
+    public float slowDownRate = 0.2F;
+    private bool isSlowingDown = false;
     public int TimeUp = 10;
     public IntVariable specialPoints;
     public FloatVariable timePoints;
@@ -22,8 +24,11 @@ public class PlayerCollisionInfo : MonoBehaviour
         float closesDistanceToObstacle = float.MaxValue;
 
        Collider[] closeObjects = Physics.OverlapSphere(transform.position, radiusOfSphere);
-        
 
+        if (isSlowingDown)
+        {
+            slowDownPlayer();
+        }
         //print(closeObjects.Length);
 
         for (int i = 0; i < closeObjects.Length; i++)
@@ -87,6 +92,14 @@ public class PlayerCollisionInfo : MonoBehaviour
             playerController.Jump(temp.Height, temp.AirTime,temp.JumpCurve);
         }
 
+        if (collision.gameObject.CompareTag("StorySlowdown"))
+        {
+            Debug.Log("Slowing Down!!!!!!!!!!");
+            isSlowingDown = true;
+
+
+        }
+
     }
 
     private void OnCollisionExit(Collision collision)
@@ -95,6 +108,23 @@ public class PlayerCollisionInfo : MonoBehaviour
         {
             playerController.leaveWall();
         }
+    }
+
+    public void slowDownPlayer()
+    {
+        if(playerController.FlatSpeed >= 0)
+        {
+            playerController.FlatSpeed -= slowDownRate;
+            if (playerController.FlatSpeed < 0)
+                playerController.FlatSpeed = 0;
+        }
+        if (playerController.SlopeSpeed >= 0)
+        {
+            playerController.SlopeSpeed -= slowDownRate;
+            if (playerController.SlopeSpeed < 0)
+                playerController.SlopeSpeed = 0;
+        }
+            
     }
 
 
