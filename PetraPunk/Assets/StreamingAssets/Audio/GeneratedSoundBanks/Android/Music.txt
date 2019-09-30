@@ -3,11 +3,14 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
+	2480792759	InCalmZone			\Default Work Unit\Music\InCalmZone	
 	3899915506	PlayerOnSlope			\Default Work Unit\PlayerOnSlope	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	41939804	CalmDrone	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\CalmDrone_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\Calm drone\CalmDrone\CalmDrone		2128683
-	633560826	DronePLacehoLDEr	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\DronePLacehoLDEr_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\TrashDrone\DronePLacehoLDEr\DronePLacehoLDEr		3346217
-	732194452	BottleBeatBassTest	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\BottleBeatBassTest_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\BeatMain\BottleBeatBassTest\BottleBeatBassTest		90958
+	376700116	BeatIntenseRR	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\BeatIntenseRR_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\Beats\BeatsIntenser\BeatIntenseRR\BeatIntenseRR		413306
+	383882074	BeatsChillest	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\BeatsChillest_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\Beats\BeatsStart\BeatsChillest\BeatsChillest		98489
+	420112959	BeatIntense	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\BeatIntense_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\Beats\BeatsIntense\BeatIntense\BeatIntense		416385
 	880957931	BottleBeatTest	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\BottleBeatTest_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\Beat2\BottleBeatTest\BottleBeatTest		409084
+	915646530	BeatChill	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\BeatChill_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\Beats\BeatsStart\BeatChill\BeatChill		573564
+	1047015718	Plingmelodi	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Android\SFX\Plingmelodi_9F132F2F.wem		\Interactive Music Hierarchy\MusicWorkUnit\Pingermucis\Plingmelodi\Plingmelodi		557777
 

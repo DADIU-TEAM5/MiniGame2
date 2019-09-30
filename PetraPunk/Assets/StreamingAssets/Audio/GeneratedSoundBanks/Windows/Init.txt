@@ -1,29 +1,44 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3263658892	HatStateGroup			\Default Work Unit\HatStateGroup	
+
 State Group	ID	Name			Wwise Object Path	Notes
 	2456446846	LevelZones			\Default Work Unit\LevelZones	
+	4277610062	HatStates			\Default Work Unit\HatStates	
 
 State	ID	Name	State Group			Notes
 	0	None	LevelZones			
 	529018163	Easy	LevelZones			
 	1160234136	Normal	LevelZones			
 	3599861390	Hard	LevelZones			
+	0	None	HatStates			
+	3940898904	Riser	HatStates			
+	4223512837	Intense	HatStates			
+	4294400669	Chill	HatStates			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	472268900	Easy	LevelZones	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music\Kicks		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	103106329	MusicSideVolume			\Default Work Unit\Music\MusicSideVolume	
+	543979504	MusicLevel			\Default Work Unit\MusicLevel	
 	1493153371	PlayerSpeed			\Default Work Unit\PlayerSpeed	
+	1873490184	SFXLevel			\Default Work Unit\SFXLevel	
+	2480792759	InCalmZone			\Default Work Unit\Music\InCalmZone	
 	3899915506	PlayerOnSlope			\Default Work Unit\PlayerOnSlope	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
+	85412153	Ambience			\Default Work Unit\Master Audio Bus\SFXBus\Ambience	
 	138295086	Kicks			\Default Work Unit\Master Audio Bus\Music\Kicks	
-	254731411	Whooshes			\Default Work Unit\Master Audio Bus\Whooshes	
-	436743010	Character			\Default Work Unit\Master Audio Bus\Character	
+	254731411	Whooshes			\Default Work Unit\Master Audio Bus\SFXBus\Whooshes	
+	436743010	Character			\Default Work Unit\Master Audio Bus\SFXBus\Character	
 	2739838641	Drone			\Default Work Unit\Master Audio Bus\Music\Drone	
-	3257506471	Impact			\Default Work Unit\Master Audio Bus\Impact	
+	3257506471	Impact			\Default Work Unit\Master Audio Bus\SFXBus\Impact	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3803850708	SFXBus			\Default Work Unit\Master Audio Bus\SFXBus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	1320542602	ReverbMain			\Default Work Unit\Master Audio Bus\ReverbMain	
+	1320542602	ReverbMain			\Default Work Unit\Master Audio Bus\SFXBus\ReverbMain	
 
 Effect plug-ins	ID	Name	Type				Notes
 	281231728	Wwise Meter (Custom)	Wwise Meter			
