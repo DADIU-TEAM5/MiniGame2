@@ -475,7 +475,7 @@ PrefabInstance:
     - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
         type: 3}
       propertyPath: LevelSegments.Array.size
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
         type: 3}
@@ -504,6 +504,48 @@ PrefabInstance:
       propertyPath: Endless
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
+        type: 3}
+      propertyPath: LevelSegments.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: eae0ef302d73d324b87110ea02759c89,
+        type: 2}
+    - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
+        type: 3}
+      propertyPath: LevelSegments.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 025066687b9c7ec459bcfcbb2fd6c190,
+        type: 2}
+    - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
+        type: 3}
+      propertyPath: LevelSegments.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5fa6f028b2d111c41bcdf118c35a6873,
+        type: 2}
+    - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
+        type: 3}
+      propertyPath: LevelSegments.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: f764a403fda2d2d41b150dfff02dd6e5,
+        type: 2}
+    - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
+        type: 3}
+      propertyPath: LevelSegments.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7d9df0174ea41f24ebf7186a0b3331d4,
+        type: 2}
+    - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
+        type: 3}
+      propertyPath: LevelSegments.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 702826d49a6d95749a011369a7c708f4,
+        type: 2}
+    - target: {fileID: 3351648188272372619, guid: f73e2f72d60d51a4c969c81b8dcd29c6,
+        type: 3}
+      propertyPath: LevelSegments.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 44f96718180d366469921c6438abd131,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f73e2f72d60d51a4c969c81b8dcd29c6, type: 3}
 --- !u!224 &1426968042 stripped
@@ -627,6 +669,7 @@ MonoBehaviour:
   phoneUI: {fileID: 35218931}
   dashText: {fileID: 1875064064}
   health: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
+  tutorialGenerator: {fileID: 11400000, guid: 16452c3343d86c243bdacf6d4ec96a7b, type: 2}
   animator: {fileID: 35218933}
   animationSpeed: 0.6
   maxTurn: 9
