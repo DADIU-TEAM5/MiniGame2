@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TestScenes/UI_menu.unity
     guid: 96ce68e546038574d8338f60818e360b
   - enabled: 1
+    path: Assets/Scenes/StoryNTurtorial.unity
+    guid: 3074f58b3798a2c47a844d3b4d395c71
+  - enabled: 1
     path: Assets/Scenes/EndlessLevel.unity
     guid: 0d9d17c413b11ed44908058ad66618d1
   - enabled: 1
