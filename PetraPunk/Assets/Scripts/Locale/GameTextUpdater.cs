@@ -15,4 +15,9 @@ public class GameTextUpdater : MonoBehaviour
     public void UpdateText() {
         TextObject.text = GameText.GetText();
     }
+
+    private void OnEnable()
+    {
+        UpdateText();
+    }
 }

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb32c6b5fe659b4b9accac18c9a96bb, type: 3}
   m_Name: LocaleManager
   m_EditorClassIdentifier: 
-  AvailableLocales: []
+  AvailableLocales:
+  - {fileID: 11400000, guid: a4b0af4ac68974346a5e787c33bae9cf, type: 2}
+  - {fileID: 11400000, guid: 9b0abef6734cdfe43a272e84d7a7a297, type: 2}
   CurrentLocale: {fileID: 11400000, guid: 02485ca4caa29fa41bef0fe99c72e112, type: 2}
   LocaleChangedEvent: {fileID: 11400000, guid: 5dd1ab56fd51c2d4a8914c91eb396e5c, type: 2}

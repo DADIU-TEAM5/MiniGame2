@@ -6,7 +6,7 @@ public class Settings : MonoBehaviour
 {
     
     [Header("General Settings")]
-    public int timerLimitMinutes;
+    public int timerLimitSeconds;
 
     [Header("ScriptableObjects Variables")]
     public IntVariable timerLimitVar;
@@ -16,7 +16,7 @@ public class Settings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerLimitVar.Value = timerLimitMinutes * 60 * 1000;
+        timerLimitVar.Value = timerLimitSeconds  * 1000;
     }
 
     // Update is called once per frame
