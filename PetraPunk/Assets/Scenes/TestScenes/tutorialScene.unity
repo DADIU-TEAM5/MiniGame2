@@ -672,7 +672,7 @@ MonoBehaviour:
   tutorialGenerator: {fileID: 11400000, guid: 16452c3343d86c243bdacf6d4ec96a7b, type: 2}
   animator: {fileID: 35218933}
   animationSpeed: 0.6
-  maxTurn: 9
+  maxTurn: 7
   dodgeTime: 10
   tutorialSegments:
   - {fileID: 317477315727123641, guid: c5fca4e1429c26349b96e6ccb2d2ec0d, type: 3}
@@ -1362,36 +1362,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
-        type: 3}
-      propertyPath: FlatAcceleration
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
-        type: 3}
-      propertyPath: SlopeAcceleration
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
-        type: 3}
-      propertyPath: OffSlopeDecay
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
-        type: 3}
-      propertyPath: ObstacleSpeedLoss
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
-        type: 3}
-      propertyPath: SlopeSpeed
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
-        type: 3}
-      propertyPath: FlatSpeed
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 3790281797879785047, guid: 59b232afd2bc9c44d9372467360cfa7e,
         type: 3}
       propertyPath: SlopeSpeed
@@ -1423,6 +1393,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 1f43b127da4d74c46accbb951bebee17,
         type: 2}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: FlatAcceleration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: SlopeAcceleration
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: OffSlopeDecay
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: ObstacleSpeedLoss
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: SlopeSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612853149198441983, guid: 59b232afd2bc9c44d9372467360cfa7e,
+        type: 3}
+      propertyPath: FlatSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59b232afd2bc9c44d9372467360cfa7e, type: 3}
 --- !u!1001 &5855166733562188352

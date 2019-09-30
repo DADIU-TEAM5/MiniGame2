@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	900571619	SteamPipe			\Obstacles\SteamPipe	
+	1805963995	PitFall			\Obstacles\PitFall	
 	3015288684	PipeHit			\Obstacles\PipeHit	
 
 Effect plug-ins	ID	Name	Type				Notes
@@ -11,6 +12,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	82547838	PipeRattle_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\PipeRattle_01_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\Pipehitter\Rattle\PipeRattle_01		56740
 	84086993	Radiate_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\Radiate_01_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\Pipehitter\RadiatorHit\Radiate_01		17193
 	86676600	VentHit_06	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\VentHit_06_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\Pipehitter\VentHit\VentHit_06		54281
+	278119928	Cartoon, Slip, Fall, Impact SND15386	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\Cartoon, Slip, Fall, Impact SND15386_32A0B821.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cartoon, Slip, Fall, Impact SND15386		31691
 	314638672	VentHit_02	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\VentHit_02_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\Pipehitter\VentHit\VentHit_02		53322
 	334814868	PipeRattle_05	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\PipeRattle_05_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\Pipehitter\Rattle\PipeRattle_05		53532
 	363871090	HumanoidHitPC_01	C:\Users\dadiu\Dropbox\DADIU\Wwise\Minigame2_WwiseProject\PetraPunk_WwiseProject\.cache\Windows\SFX\HumanoidHitPC_01_32A0B821.wem		\Actor-Mixer Hierarchy\Pipes\Hits\Pipehitter\HumanoidHitPC_01		17637
