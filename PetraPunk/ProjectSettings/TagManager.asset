@@ -12,6 +12,9 @@ TagManager:
   - Wall
   - Jump
   - PitFall
+  - TimeUp
+  - Collectible
+  - StorySlowdown
   layers:
   - Default
   - TransparentFX

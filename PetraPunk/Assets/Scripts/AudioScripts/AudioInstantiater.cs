@@ -8,7 +8,7 @@ public class AudioInstantiater : MonoBehaviour
 
     public GameObject[] AudioObjects;
 
-    void Start() {
+    void Awake() {
         if (Instance) {
             DestroyImmediate(this);
             return;

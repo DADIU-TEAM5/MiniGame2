@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class UI_menu : MonoBehaviour
 {
+    public LocaleVariable CurrentLocale;
 
     public GameObject soundButton;
     public GameObject languageButton;
+    public GameEvent languageChange;
     public FloatVariable volumeMusic;
     public FloatVariable volumeSfx;
 
@@ -19,16 +21,17 @@ public class UI_menu : MonoBehaviour
     public GameEvent menuCloseAudio;
 
     private bool sound;
-    public BoolVariable language;
+    //public BoolVariable language;
     private GameEvent btClick;
     private GameEvent menuOpenClick;
     private GameEvent menuCloseClick;
 
+
     private void Start()
-    {
+    {   
         sound = true;
 
-        language.Value = true;
+        //language.Value = true;
 
         btClick = buttonClickAudio;
         menuOpenClick = menuOpenAudio;
@@ -66,19 +69,17 @@ public class UI_menu : MonoBehaviour
                 menuCloseClick.Raise();
                 break;
             case 2:
-                btClick.Raise();
+                //btClick.Raise();
 
-                foreach (var children in languageButton.GetComponentsInChildren<Text>())
+                languageChange.Raise();
+
+                /*foreach (var children in languageButton.GetComponentsInChildren<Text>())
                 {
-                    if (language.Value == false)
-                        children.text = "language:english";
-                    else
-                    {
-                        children.text = "language:dansk";
-                    }
+                    children.text = $"language: {CurrentLocale.Value.name}";
                 }
+                */
  
-                language.Value = !language.Value;
+                //language.Value = !language.Value;
                 break;
             case 1:
                 Debug.Log("Sound is: " + sound);

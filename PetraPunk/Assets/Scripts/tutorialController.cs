@@ -9,6 +9,8 @@ public class tutorialController : MonoBehaviour
     public GameObject player;
     public GameObject phoneUI;
     public Text dashText;
+    public FloatVariable health;
+    public SceneGenrator tutorialGenerator;
 
     public Animator animator;
 
@@ -28,17 +30,23 @@ public class tutorialController : MonoBehaviour
 
     public GameObject[] tutorialSegments;
     public LevelSegment nextSegment;
+    
 
     private void Awake()
     {
         dashText.enabled = false;
         nextSegment.Segment = tutorialSegments[0];
+        tutorialGenerator.SegementDifficulty[0] = 100;
+        tutorialGenerator.SegementDifficulty[1] = 100;
+        tutorialGenerator.SegementDifficulty[2] = 100;
+        tutorialGenerator.SegementDifficulty[3] = 100;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         animator.speed = animationSpeed;
+        health.Value = 99;
         
     }
 
@@ -56,18 +64,16 @@ public class tutorialController : MonoBehaviour
         // Part 2 - start turning right
         if (player.transform.position.x > maxTurn && isTurningRight)
         {
-            Debug.Log("position: " + player.transform.position.x);
+            //Debug.Log("position: " + player.transform.position.x);
             isTurningRight = false;
             isTurningLeft = true;
             animator.SetBool("turnedRight", true);
-
-            lg.IsEndless = false;
         }
 
         // Part 3 - start dodging pipes
         if (player.transform.position.x < -maxTurn && isTurningLeft)
         {
-            Debug.Log("position: " + player.transform.position.x);
+            //Debug.Log("position: " + player.transform.position.x);
             isTurningLeft = false;
             Destroy(phoneUI);
             nextSegment.Segment = tutorialSegments[2];
@@ -77,17 +83,17 @@ public class tutorialController : MonoBehaviour
         // Part 4 - Start Dashing
         if (isDashing)
         {
-            Debug.Log("We Dashin");
+            //Debug.Log("We Dashin");
             if (!dashText.enabled)
             {
                 dashCount = 0;
-                Debug.Log("Dash Text On");
+                //Debug.Log("Dash Text On");
                 dashText.enabled = true;
             }
 
             if (dashCount >= 3)
             {
-                Debug.Log("Tutorial is Done");
+                //Debug.Log("Tutorial is Done");
                 dashText.enabled = false;
                 isDashing = false;
                 isJumping = true;
@@ -99,14 +105,14 @@ public class tutorialController : MonoBehaviour
         // Part 5 - Start Jumping
         if (isJumping)
         {
-            Debug.Log("We Jumping");
-
+            //Debug.Log("We Jumping");
+            nextSegment.Segment = tutorialSegments[3];
         }
 
         // Part Final
         if (isFinal)
         {
-            Debug.Log("Final part initiated");
+            //Debug.Log("Final part initiated");
         }
 
     }
@@ -122,16 +128,24 @@ public class tutorialController : MonoBehaviour
     public void IncreaseDashCount()
     {
         dashCount++;
-        Debug.Log("Dash Count: " + dashCount);
+        //Debug.Log("Dash Count: " + dashCount);
     }
 
     public void JumpDone()
     {
-        Debug.Log("Jump is has been completed");
+        //Debug.Log("Jump is has been completed");
         lg.IsEndless = false;
 
         isJumping = false;
         isFinal = true;
+
+        tutorialGenerator.SegementDifficulty[0] = 0;
+        tutorialGenerator.SegementDifficulty[1] = 1;
+        tutorialGenerator.SegementDifficulty[2] = 1;
+        tutorialGenerator.SegementDifficulty[3] = 666;
+        //tutorialGenerator.Level
+
+
     }
 
 }

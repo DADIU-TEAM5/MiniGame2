@@ -19,8 +19,9 @@ public class TestColli : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter(Collider other)
+    /* public void OnTriggerEnter(Collider other)
     {
         GameObject.FindGameObjectWithTag("Player").GetComponent<Timer>().AddSubtract(timePoints.Value);
     }
+    */
 }

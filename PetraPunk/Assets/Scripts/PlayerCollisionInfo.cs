@@ -10,7 +10,11 @@ public class PlayerCollisionInfo : MonoBehaviour
     public FloatVariable distanceToObstacle;
     public GameEvent jumpEvent;
 
+    public float slowDownRate = 0.2F;
+    private bool isSlowingDown = false;
     public int TimeUp = 10;
+    public IntVariable specialPoints;
+    public FloatVariable timePoints;
     public IntVariable time;
 
     public float radiusOfSphere = 5;
@@ -20,8 +24,11 @@ public class PlayerCollisionInfo : MonoBehaviour
         float closesDistanceToObstacle = float.MaxValue;
 
        Collider[] closeObjects = Physics.OverlapSphere(transform.position, radiusOfSphere);
-        
 
+        if (isSlowingDown)
+        {
+            slowDownPlayer();
+        }
         //print(closeObjects.Length);
 
         for (int i = 0; i < closeObjects.Length; i++)
@@ -57,8 +64,14 @@ public class PlayerCollisionInfo : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
+        if (collision.gameObject.CompareTag("Collectible"))
+        {
+            specialPoints.Value += 1;
+            Destroy(collision.gameObject);
+        }
 
-            if (collision.gameObject.CompareTag("Obstacle"))
+
+        if (collision.gameObject.CompareTag("Obstacle"))
         {
             playerController.GetHit(collision.GetContact(0).normal);
             audioCue.Play(collision.gameObject);
@@ -79,6 +92,14 @@ public class PlayerCollisionInfo : MonoBehaviour
             playerController.Jump(temp.Height, temp.AirTime,temp.JumpCurve);
         }
 
+        if (collision.gameObject.CompareTag("StorySlowdown"))
+        {
+            Debug.Log("Slowing Down!!!!!!!!!!");
+            isSlowingDown = true;
+
+
+        }
+
     }
 
     private void OnCollisionExit(Collision collision)
@@ -87,6 +108,30 @@ public class PlayerCollisionInfo : MonoBehaviour
         {
             playerController.leaveWall();
         }
+    }
+
+    public void slowDownPlayer()
+    {
+        
+        playerController.SlopeAcceleration = 0;
+        playerController.slopeMultiplier = 1;
+        //if(playerController.FlatSpeed >= 0)
+        //{
+        //    playerController.FlatSpeed -= slowDownRate;
+        //    if (playerController.FlatSpeed < 0)
+        //        playerController.FlatSpeed = 0;
+            
+        //}
+        //if (playerController.SlopeSpeed >= 0)
+        //{
+        //    playerController.SlopeSpeed -= slowDownRate*3;
+        //    if (playerController.SlopeSpeed < 0)
+        //        playerController.SlopeSpeed = 0;
+        //}
+
+        playerController.Speed = Mathf.Max(playerController.Speed - slowDownRate, 0);
+
+
     }
 
 

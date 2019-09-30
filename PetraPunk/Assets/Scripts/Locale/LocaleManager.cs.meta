@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: cbb32c6b5fe659b4b9accac18c9a96bb
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CurrentLocale: {fileID: 11400000, guid: 02485ca4caa29fa41bef0fe99c72e112, type: 2}
+  - LocaleChangedEvent: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
