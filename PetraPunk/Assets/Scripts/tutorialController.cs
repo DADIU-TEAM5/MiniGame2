@@ -36,6 +36,10 @@ public class tutorialController : MonoBehaviour
     {
         dashText.enabled = false;
         nextSegment.Segment = tutorialSegments[0];
+        tutorialGenerator.SegementDifficulty[0] = 100;
+        tutorialGenerator.SegementDifficulty[1] = 100;
+        tutorialGenerator.SegementDifficulty[2] = 100;
+        tutorialGenerator.SegementDifficulty[3] = 100;
     }
 
     // Start is called before the first frame update
