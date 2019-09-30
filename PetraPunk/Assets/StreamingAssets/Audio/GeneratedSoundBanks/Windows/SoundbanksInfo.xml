@@ -148,6 +148,7 @@
 			<Path>Environment.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3015288684" Name="PipeHit" ObjectPath="\Events\Obstacles\PipeHit" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="2.076922" DurationMax="3.055603"/>
+				<Event Id="1805963995" Name="PitFall" ObjectPath="\Events\Obstacles\PitFall" DurationType="OneShot" DurationMin="1.226833" DurationMax="1.226833"/>
 				<Event Id="900571619" Name="SteamPipe" ObjectPath="\Events\Obstacles\SteamPipe" MaxAttenuation="100.000000" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -170,6 +171,10 @@
 				<File Id="86676600" Language="SFX">
 					<ShortName>VentHit_06.wav</ShortName>
 					<Path>SFX\VentHit_06_32A0B821.wem</Path>
+				</File>
+				<File Id="278119928" Language="SFX">
+					<ShortName>Cartoon, Slip, Fall, Impact SND15386.wav</ShortName>
+					<Path>SFX\Cartoon, Slip, Fall, Impact SND15386_32A0B821.wem</Path>
 				</File>
 				<File Id="314638672" Language="SFX">
 					<ShortName>VentHit_02.wav</ShortName>
@@ -274,16 +279,16 @@
 			<Path>UI_and_Event.bnk</Path>
 			<IncludedEvents>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\UI and Event\Death" DurationType="OneShot" DurationMin="6.777761" DurationMax="6.777761"/>
-				<Event Id="1432588725" Name="Select" ObjectPath="\Events\UI and Event\Select" DurationType="OneShot" DurationMin="2.125011" DurationMax="2.125011"/>
+				<Event Id="1432588725" Name="Select" ObjectPath="\Events\UI and Event\Select" DurationType="OneShot" DurationMin="0.469969" DurationMax="0.469969"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="57332576" Language="SFX">
+					<ShortName>Cartoon, Clown, Comical, Honk SND11773.wav</ShortName>
+					<Path>SFX\Cartoon, Clown, Comical, Honk SND11773_32A0B821.wem</Path>
+				</File>
 				<File Id="391935103" Language="SFX">
 					<ShortName>Cartoon, Orchestral, Trumpet, Vintage, Failure, Sad SND11701.wav</ShortName>
 					<Path>SFX\Cartoon, Orchestral, Trumpet, Vintage, Failure, Sad SND11701_32A0B821.wem</Path>
-				</File>
-				<File Id="946976637" Language="SFX">
-					<ShortName>plantDead.wav</ShortName>
-					<Path>SFX\plantDead_32A0B821.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -295,21 +300,29 @@
 				<Event Id="4195921398" Name="MusicTest" ObjectPath="\Events\MusicEvents\MusicTest" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="41939804" Language="SFX">
-					<ShortName>CalmDrone.wav</ShortName>
-					<Path>SFX\CalmDrone_9F132F2F.wem</Path>
+				<File Id="376700116" Language="SFX">
+					<ShortName>BeatIntenseRR.wav</ShortName>
+					<Path>SFX\BeatIntenseRR_9F132F2F.wem</Path>
 				</File>
-				<File Id="633560826" Language="SFX">
-					<ShortName>DronePLacehoLDEr.wav</ShortName>
-					<Path>SFX\DronePLacehoLDEr_9F132F2F.wem</Path>
+				<File Id="383882074" Language="SFX">
+					<ShortName>BeatsChillest.wav</ShortName>
+					<Path>SFX\BeatsChillest_9F132F2F.wem</Path>
 				</File>
-				<File Id="732194452" Language="SFX">
-					<ShortName>BottleBeatBassTest.wav</ShortName>
-					<Path>SFX\BottleBeatBassTest_9F132F2F.wem</Path>
+				<File Id="420112959" Language="SFX">
+					<ShortName>BeatIntense.wav</ShortName>
+					<Path>SFX\BeatIntense_9F132F2F.wem</Path>
 				</File>
 				<File Id="880957931" Language="SFX">
 					<ShortName>BottleBeatTest.wav</ShortName>
 					<Path>SFX\BottleBeatTest_9F132F2F.wem</Path>
+				</File>
+				<File Id="915646530" Language="SFX">
+					<ShortName>BeatChill.wav</ShortName>
+					<Path>SFX\BeatChill_9F132F2F.wem</Path>
+				</File>
+				<File Id="1047015718" Language="SFX">
+					<ShortName>Plingmelodi.wav</ShortName>
+					<Path>SFX\Plingmelodi_9F132F2F.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
