@@ -112,19 +112,26 @@ public class PlayerCollisionInfo : MonoBehaviour
 
     public void slowDownPlayer()
     {
-        if(playerController.FlatSpeed >= 0)
-        {
-            playerController.FlatSpeed -= slowDownRate;
-            if (playerController.FlatSpeed < 0)
-                playerController.FlatSpeed = 0;
-        }
-        if (playerController.SlopeSpeed >= 0)
-        {
-            playerController.SlopeSpeed -= slowDownRate;
-            if (playerController.SlopeSpeed < 0)
-                playerController.SlopeSpeed = 0;
-        }
+        
+        playerController.SlopeAcceleration = 0;
+        playerController.slopeMultiplier = 1;
+        //if(playerController.FlatSpeed >= 0)
+        //{
+        //    playerController.FlatSpeed -= slowDownRate;
+        //    if (playerController.FlatSpeed < 0)
+        //        playerController.FlatSpeed = 0;
             
+        //}
+        //if (playerController.SlopeSpeed >= 0)
+        //{
+        //    playerController.SlopeSpeed -= slowDownRate*3;
+        //    if (playerController.SlopeSpeed < 0)
+        //        playerController.SlopeSpeed = 0;
+        //}
+
+        playerController.Speed = Mathf.Max(playerController.Speed - slowDownRate, 0);
+
+
     }
 
 
