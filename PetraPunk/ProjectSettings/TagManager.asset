@@ -14,6 +14,7 @@ TagManager:
   - PitFall
   - TimeUp
   - Collectible
+  - StorySlowdown
   layers:
   - Default
   - TransparentFX

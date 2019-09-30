@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dangerObject: {fileID: 3700650066024285786}
-  ActivationDistance: 70
+  ActivationDistance: 999
 --- !u!1001 &1679851224127462993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ PrefabInstance:
     - target: {fileID: 2597273415424940044, guid: 1f199b4823d024945a137e1487c98f77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2
+      value: -0.83
       objectReference: {fileID: 0}
     - target: {fileID: 2597273415424940044, guid: 1f199b4823d024945a137e1487c98f77,
         type: 3}
