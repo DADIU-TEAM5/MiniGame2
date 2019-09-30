@@ -339,13 +339,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4612853149412508616}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d10d494f4ec5d1f4bb41ad626d704a07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gyrocontroller: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
-  angle: 45
+  angle: 15
 --- !u!1 &6302871270875934596
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,8 +401,8 @@ MonoBehaviour:
   OffSlopeDecay: 40
   ObstacleSpeedLoss: 30
   MinSpeed: 15
-  HorizontalSpeed: 15
-  SlopeHorizontalSpeed: 15
+  HorizontalSpeed: 25
+  SlopeHorizontalSpeed: 25
   slopeMultiplier: 1.5
   invulnerableSecs: 1
   DashLength: 8
@@ -422,7 +422,7 @@ MonoBehaviour:
   life: {fileID: 11400000, guid: dd3d9fceb36089a4793206c162c1d688, type: 2}
   SteeringInput: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
   colliderAndGraphics: {fileID: 4612853147910741485}
-  OnSlope: 0
+  OnSlope: 1
 --- !u!114 &6453053320240262777
 MonoBehaviour:
   m_ObjectHideFlags: 0
