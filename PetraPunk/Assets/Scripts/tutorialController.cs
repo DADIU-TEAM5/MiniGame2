@@ -134,7 +134,7 @@ public class tutorialController : MonoBehaviour
 
         isJumping = false;
         isFinal = true;
-        
+
         tutorialGenerator.SegementDifficulty[0] = 0;
         tutorialGenerator.SegementDifficulty[1] = 1;
         tutorialGenerator.SegementDifficulty[2] = 1;
