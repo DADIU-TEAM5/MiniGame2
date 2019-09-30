@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4498904661498569325}
   m_Layer: 0
-  m_Name: Pit
+  m_Name: Pit 1x1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,12 +108,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c8470e25a79e9d94d8b3eae61d6672ee, type: 2}
+      objectReference: {fileID: 2100000, guid: 2e99b543204df1044995f6be3a2b0e73, type: 2}
     - target: {fileID: -1504981713932161579, guid: 60f331b9f06f5ab428381f66fa36e636,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 2e99b543204df1044995f6be3a2b0e73, type: 2}
+      objectReference: {fileID: 2100000, guid: ea06e7caa484a52489323a48dd9645c8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60f331b9f06f5ab428381f66fa36e636, type: 3}
 --- !u!4 &4129221451156629450 stripped
