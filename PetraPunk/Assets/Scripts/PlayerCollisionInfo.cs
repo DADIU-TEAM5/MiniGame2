@@ -110,7 +110,7 @@ public class PlayerCollisionInfo : MonoBehaviour
         }
     }
 
-    public void slowDownPlayer()
+    private void slowDownPlayer()
     {
         
         playerController.SlopeAcceleration = 0;
@@ -130,8 +130,12 @@ public class PlayerCollisionInfo : MonoBehaviour
         //}
 
         playerController.Speed = Mathf.Max(playerController.Speed - slowDownRate, 0);
+        if (playerController.Speed==0)
+        {
+            
+        }
 
-
+        
     }
 
 

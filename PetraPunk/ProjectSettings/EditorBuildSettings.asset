@@ -8,28 +8,25 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TestScenes/Gameplay.unity
     guid: 23317313c585568468d368e5b96f210d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/Logo/Logo.unity
     guid: cf2f3625a9958e8418ffc2fad62b002c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/UI_menu.unity
     guid: 96ce68e546038574d8338f60818e360b
-  - enabled: 1
-    path: Assets/Scenes/StoryNTurtorial.unity
-    guid: 3074f58b3798a2c47a844d3b4d395c71
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EndlessLevel.unity
     guid: 0d9d17c413b11ed44908058ad66618d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/Game Over.unity
     guid: a3c0701603bc7f54ab455f8840df5b15
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/UI.unity
     guid: 3781c25a8f35a1647a0c059d414ca732
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TestScenes/Logic.unity
     guid: c475d3be13793cb4ca0b24072c20854e
   m_configObjects: {}

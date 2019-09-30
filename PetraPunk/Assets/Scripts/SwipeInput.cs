@@ -7,6 +7,8 @@ public class SwipeInput : MonoBehaviour
 {
     public static bool swipeEnabled;
     public PlayerController playerCOntroller;
+    public float minDistance4Swipe = 100f;
+    public IntVariable swipe4Dash;
 
     Touch currentTouch;
     //public Text debby;
@@ -33,8 +35,6 @@ public class SwipeInput : MonoBehaviour
         if (swipeEnabled == true)
         {
 
-
-
             if (Input.touchCount > 0)
             {
 
@@ -49,7 +49,7 @@ public class SwipeInput : MonoBehaviour
                 direction = startPos.x - endPos.x;
 
             }
-            else
+            else if (SwipeDistanceCheck())
             {
                 if (direction < 0)
                     direction = 1;
@@ -58,6 +58,7 @@ public class SwipeInput : MonoBehaviour
 
                 if (startPos != Vector2.zero)
                     playerCOntroller.Dash(direction);
+            } else { 
 
                 startPos = Vector2.zero;
                 // debby.text = direction + "";
@@ -65,5 +66,12 @@ public class SwipeInput : MonoBehaviour
         }
     }
 
-   
+    private bool SwipeDistanceCheck()
+    {
+        //return VerticalMovementDistance() > minDistanceForSwipe || HorizontalMovementDistance() > minDistanceForSwipe;
+
+        return Mathf.Abs(direction) > minDistance4Swipe;
+    }
+
+
 }
