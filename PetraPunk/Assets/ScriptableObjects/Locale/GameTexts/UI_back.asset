@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57fb780ea336d474ca51a30940ada30e, type: 3}
+  m_Name: UI_back
+  m_EditorClassIdentifier: 
+  TextVariations:
+  - Locale: {fileID: 11400000, guid: a4b0af4ac68974346a5e787c33bae9cf, type: 2}
+    Text: tilbage
+  - Locale: {fileID: 11400000, guid: 9b0abef6734cdfe43a272e84d7a7a297, type: 2}
+    Text: back
+  CurrentLocale: {fileID: 11400000, guid: 02485ca4caa29fa41bef0fe99c72e112, type: 2}

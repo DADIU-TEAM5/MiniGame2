@@ -4,7 +4,22 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    public bool IsEndless;
+    public bool IsEndless
+    {
+        get
+        {
+            return isEndless;
+        }
+        set
+        {
+            isEndless = value;
+            currentSegmentToPlace = 0;
+        }
+    }
+
+    public bool Endless;
+
+    bool isEndless;
 
     [Header("Possible Segments")]
     public LevelSegment[] LevelSegments;
@@ -28,6 +43,7 @@ public class LevelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isEndless = Endless;
 
 
         sortSegementsInTheListOfLists();
@@ -39,6 +55,7 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("isEndless " + isEndless);
         if (IsEndless ||currentSegmentToPlace!= LevelGenerationData.SegementDifficulty.Length)
         {
             

@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
     Vector3 dashStartPos;
     bool isDashing;
     float dashDirection;
+    public IntVariable swipe4Dash;
     public GameEvent dashAudio;
     public GameEvent cooldownOverAudio;
     public BoolVariable dashCooldownActiveVar;
@@ -127,11 +128,18 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Dash(-1);
+            swipe4Dash.Value = -1;
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
-            Dash(1);
+            swipe4Dash.Value = 1;
+        }
+
+        if (swipe4Dash.Value != 0)
+        {
+            Dash(swipe4Dash.Value);
+
+            swipe4Dash.Value = 0;
         }
 
         ApplyDashMovement();

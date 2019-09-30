@@ -6,8 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class UI_menu : MonoBehaviour
 {
+    public LocaleVariable CurrentLocale;
 
     public GameObject soundButton;
+    public GameObject languageButton;
+    public GameEvent languageChange;
+    public FloatVariable volumeMusic;
+    public FloatVariable volumeSfx;
 
     [Header("Audio")]
     public GameEvent startNewLevelAudio;
@@ -16,13 +21,17 @@ public class UI_menu : MonoBehaviour
     public GameEvent menuCloseAudio;
 
     private bool sound;
+    //public BoolVariable language;
     private GameEvent btClick;
     private GameEvent menuOpenClick;
     private GameEvent menuCloseClick;
 
+
     private void Start()
-    {
+    {   
         sound = true;
+
+        //language.Value = true;
 
         btClick = buttonClickAudio;
         menuOpenClick = menuOpenAudio;
@@ -46,7 +55,7 @@ public class UI_menu : MonoBehaviour
                 Debug.Log("new game");
                 btClick.Raise();
                 startNewLevelAudio.Raise();
-                SceneManager.LoadScene(1);
+                SceneManager.LoadScene(2);
                 break;
         }
     }
@@ -55,9 +64,22 @@ public class UI_menu : MonoBehaviour
     {
         switch (screen)
         {
-            case 2:
+            case 3:
                 Debug.Log("back");
                 menuCloseClick.Raise();
+                break;
+            case 2:
+                //btClick.Raise();
+
+                languageChange.Raise();
+
+                /*foreach (var children in languageButton.GetComponentsInChildren<Text>())
+                {
+                    children.text = $"language: {CurrentLocale.Value.name}";
+                }
+                */
+ 
+                //language.Value = !language.Value;
                 break;
             case 1:
                 Debug.Log("Sound is: " + sound);
@@ -75,6 +97,16 @@ public class UI_menu : MonoBehaviour
                 break;
         }
             
+    }
+
+    public void musicVolume(float vol)
+    {
+        volumeMusic.Value = vol;
+    }
+
+    public void sfxVolume(float vol)
+    {
+        volumeSfx.Value = vol;
     }
 
 

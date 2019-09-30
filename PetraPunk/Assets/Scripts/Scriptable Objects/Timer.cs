@@ -5,8 +5,8 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public IntVariable runTime;
-    public IntVariable timePoints;
-    public GameObject FloatingTextPrefab;
+    //public IntVariable timePoints;
+    //public GameObject FloatingTextPrefab;
       
     // Start is called before the first frame update
     void Start()
@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour
         runTime.Value -= Mathf.FloorToInt(1000*Time.deltaTime);
     }
 
-    public void AddSubtract(int seconds)
+    /* public void AddSubtract(int seconds)
     {
         if (timePoints)
         {
@@ -42,5 +42,5 @@ public class Timer : MonoBehaviour
 
         //Instantiate(FloatingTextPrefab, transform.position, Quaternion.identity, transform);
     }
-
+    */
 }

@@ -157,6 +157,12 @@ MonoBehaviour:
   playerController: {fileID: 3790281797879785047}
   audioCue: {fileID: 11400000, guid: 2506e6da8adf7cb4f9331029bbaa1245, type: 2}
   distanceToObstacle: {fileID: 11400000, guid: 7eea5d7bdcdd10a47825f48a7ebebdb3, type: 2}
+  jumpEvent: {fileID: 11400000, guid: 1f43b127da4d74c46accbb951bebee17, type: 2}
+  slowDownRate: 0.2
+  TimeUp: 10
+  specialPoints: {fileID: 11400000, guid: af8849b4076b2e143b425c7d8a878316, type: 2}
+  timePoints: {fileID: 11400000, guid: ed6c6a7d060b10b49873ccc5370a52ed, type: 2}
+  time: {fileID: 11400000, guid: 6e2b955ab5e10654b8b3b0f3c4547e76, type: 2}
   radiusOfSphere: 5
 --- !u!1 &4612853149198441982
 GameObject:
@@ -206,6 +212,8 @@ GameObject:
   - component: {fileID: 4612853149412508617}
   - component: {fileID: 162327509537404794}
   - component: {fileID: 6769385842949030837}
+  - component: {fileID: 6037583692180970240}
+  - component: {fileID: 3535224187823223994}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -341,6 +349,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gyrocontroller: {fileID: 11400000, guid: 0f59f93a03b2ad24c83f9e9a46900c92, type: 2}
   angle: 45
+--- !u!114 &6037583692180970240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612853149412508616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78e7a201de2f96409bc016f2c3ebaf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectSwipeOnlyAfterRelease: 0
+  minDistanceForSwipe: 20
+--- !u!114 &3535224187823223994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4612853149412508616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfc27c62fd82a4240bf8c97e4032a6b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SwipeText: {fileID: 0}
+  swipe4Dash: {fileID: 0}
 --- !u!1 &6302871270875934596
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,6 +424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb98bbb7556b39459536ba5b35570c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: 0
   FlatSpeed: 45
   SlopeSpeed: 45
   FlatAcceleration: 0.5
@@ -405,6 +442,7 @@ MonoBehaviour:
   airMultiplier: 1
   airHorizontalSpeed: 15
   dashCDtimer: {fileID: 11400000, guid: 3dfe75c0337420f40831067b569d4a58, type: 2}
+  swipe4Dash: {fileID: 11400000, guid: 688b3084b3ae7e54ba392a1a8ee40de6, type: 2}
   dashAudio: {fileID: 11400000, guid: 398c6829b04ab9d4880aff2ecd6bb9b6, type: 2}
   cooldownOverAudio: {fileID: 11400000, guid: 3b0ceb7cd69c3d449ac41b94d29bbadb, type: 2}
   dashCooldownActiveVar: {fileID: 11400000, guid: 893d105e21f50244597f65a665838821,
@@ -430,6 +468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCOntroller: {fileID: 3790281797879785047}
+  minDistance4Swipe: 100
+  swipe4Dash: {fileID: 11400000, guid: 688b3084b3ae7e54ba392a1a8ee40de6, type: 2}
 --- !u!114 &4821387865526884122
 MonoBehaviour:
   m_ObjectHideFlags: 0

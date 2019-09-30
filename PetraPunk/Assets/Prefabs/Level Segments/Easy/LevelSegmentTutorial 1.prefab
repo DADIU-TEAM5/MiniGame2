@@ -121,11 +121,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5856490195718869472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8edcbefacd67324c92334b68e451d42, type: 3}
+  m_Script: {fileID: 11500000, guid: ff4e7bebf9c9f114e82269f4a3b4d1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dangerObject: {fileID: 433059046742798280}
-  ActivationDistance: 150
+  ActivationDistance: 70
 --- !u!1001 &661268607877432870
 PrefabInstance:
   m_ObjectHideFlags: 0
